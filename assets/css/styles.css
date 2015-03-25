@@ -105,12 +105,25 @@ body {
   top: -1px;
 }
 
-#img-background, #img-city, #img-cloud, #img-robot {
+#graphics img {
   position: absolute;
+}
+
+#img-background, #img-city, #img-cloud, #img-robot {
   top: 0;
   left: 0;
 }
 
 #img-cloud {
   top: 75px;
+}
+
+#img-tentacle_left {
+  top: 550px;
+  left: 100px;
+}
+
+#img-tentacle_right {
+  top: 475px;
+  left: 400px;
 }
