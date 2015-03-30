@@ -81,30 +81,6 @@ body {
   left: 225px;
 }
 
-#subscribe {
-  position: absolute;
-  top: 375px;
-  left: 225px;
-}
-#subscribe input {
-  border: 0 none;
-  background: rgba(255, 255, 255, 0.2);
-  font-size: large;
-  padding: 15px;
-  width: 325px;
-  height: 45px;
-}
-#subscribe button {
-  font-size: large;
-  border: 0 none;
-  background: rgb(229, 229, 229);
-  color: rgb(70, 70, 70);
-  height: 45px;
-  margin: 0;
-  position: relative;
-  top: -1px;
-}
-
 #graphics img {
   position: absolute;
 }
@@ -126,4 +102,51 @@ body {
 #img-tentacle_right {
   top: 475px;
   left: 400px;
+}
+
+#mc_embed_signup form {
+  padding: 0;
+}
+
+#mc_embed_signup {
+  position: absolute;
+  top: 375px;
+  left: 225px;
+}
+#mc_embed_signup form {
+  width: 421px;
+}
+#mc_embed_signup input {
+  display: inline !important;
+  border: 0 none;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: large;
+  padding: 15px;
+  width: 325px !important;
+  height: 45px;
+}
+#mc_embed_signup button {
+  display: inline !important;
+  font-size: large;
+  border: 0 none;
+  background: rgb(229, 229, 229);
+  color: rgb(70, 70, 70);
+  height: 45px;
+  margin: 0;
+  position: relative;
+  top: -1px;
+}
+
+#mc_embed_signup #mc_embed_signup_scroll div.mce_inline_error,
+#mc_embed_signup #mce-responses #mce-error-response {
+  /* background: rgba(100, 0, 0, .3); */
+  background: none;
+  font-weight: normal;
+  color: rgb(150, 25, 25);
+  text-shadow: rgb(25, 0, 0) 0 1px 0;
+}
+
+#mc_embed_signup #mce-responses #mce-success-response {
+  font-weight: normal;
+  text-shadow: rgb(17, 79, 0) 0 1px 0;
 }
