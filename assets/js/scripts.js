@@ -8,3 +8,24 @@
   ga('create', 'UA-60963027-1', 'auto');
   ga('send', 'pageview');
 })();
+
+// User Agent
+(function () {
+  var className = document.body.className;
+  var PATTERNS = {
+    firefox: /firefox/i,
+    chrome: /chrome\/(.*) safari\//i,
+    safari: /version\/(.*) safari\//i,
+    ie: /(msie|trident)/i
+  };
+
+  for (var agent in PATTERNS) {
+    if (PATTERNS.hasOwnProperty(agent) &&
+        PATTERNS[agent].test(navigator.userAgent)) {
+      className += ' ' + agent;
+      break;
+    }
+  }
+
+  document.body.className = className.replace(/(^ | $)/, '');
+})();

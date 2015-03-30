@@ -27,6 +27,7 @@ body {
   overflow: hidden;
 }
 
+/* Message content */
 #message {
   position: absolute;
   z-index: 1000;
@@ -81,6 +82,7 @@ body {
   left: 225px;
 }
 
+/* Graphic content */
 #graphics img {
   position: absolute;
 }
@@ -104,6 +106,21 @@ body {
   left: 400px;
 }
 
+/* Browser specific tweaks */
+body.firefox #title {
+  top: -50px;
+}
+body.firefox #subtitle {
+  top: 175px;
+}
+body.firefox #mc_embed_signup input {
+  width: 319px !important;
+}
+body.firefox #mc_embed_signup button {
+  top: 0;
+}
+
+/* Mail Chimp Signup */
 #mc_embed_signup form {
   padding: 0;
 }
