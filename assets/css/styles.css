@@ -14,9 +14,19 @@
 }
 
 body {
+  color: rgb(180, 180, 180);
+  text-shadow: rgb(100, 100, 100) 0 1px 0;
   background-color: rgb(37, 69, 86);
   font-family: 'Helvetica Neue', arial, sans-serif;
   margin: 0;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 #container {
@@ -46,7 +56,7 @@ body {
 
 #title {
   color: rgb(255, 241, 2);
-  text-shadow: -10px 5px 0 rgb(171, 160, 3);
+  text-shadow: rgb(171, 160, 3) -10px 5px 0;
 }
 
 #title div {
@@ -106,6 +116,19 @@ body {
   left: 400px;
 }
 
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  left: 25px;
+  z-index: 1000;
+}
+footer a {
+  color: rgb(171, 160, 3);
+  text-decoration: none;
+}
+
 /* Browser specific tweaks */
 body.firefox #title {
   top: -50px;
@@ -122,7 +145,7 @@ body.firefox #mc_embed_signup button {
 
 /* Mail Chimp Signup */
 #mc_embed_signup form {
-  padding: 0;
+  padding: 5px 0 0 0;
 }
 
 #mc_embed_signup {
@@ -139,7 +162,7 @@ body.firefox #mc_embed_signup button {
   background: rgba(255, 255, 255, 0.2);
   font-size: large;
   padding: 15px;
-  width: 325px !important;
+  width: 350px !important;
   height: 45px;
 }
 #mc_embed_signup button {
@@ -150,6 +173,7 @@ body.firefox #mc_embed_signup button {
   color: rgb(70, 70, 70);
   height: 45px;
   margin: 0;
+  padding: 2px 15px 3px;
   position: relative;
   top: -1px;
 }
