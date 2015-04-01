@@ -14,7 +14,7 @@
 }
 
 body {
-  color: rgb(180, 180, 180);
+  color: rgb(236, 236, 236);
   text-shadow: rgb(100, 100, 100) 0 1px 0;
   background-color: rgb(37, 69, 86);
   font-family: 'Helvetica Neue', arial, sans-serif;
@@ -86,7 +86,7 @@ body {
 }
 
 #description {
-  color: rgb(180, 180, 180);
+  color: rgb(236, 236, 236);
   font-size: 30px;
   top: 285px;
   left: 225px;
