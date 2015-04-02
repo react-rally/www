@@ -116,6 +116,39 @@ body {
   left: 400px;
 }
 
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1000;
+}
+header img {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 20px;
+}
+header img:hover {
+  height: 32px;
+  width: 32px;
+  top: 16px;
+}
+#img-github {
+  right: 20px;
+}
+#img-github:hover {
+  right: 16px;
+}
+#img-twitter {
+  right: 55px
+}
+#img-twitter:hover {
+  right: 51px;
+}
+
 /* Footer */
 footer {
   position: absolute;
@@ -164,6 +197,9 @@ body.firefox #mc_embed_signup button {
   padding: 15px;
   width: 350px !important;
   height: 45px;
+}
+#mc_embed_signup input::-moz-placeholder {
+  color: rgb(169, 169, 169);
 }
 #mc_embed_signup button {
   display: inline !important;
