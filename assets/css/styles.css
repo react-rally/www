@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'true_crimesregular';
+    src: url('../fonts/true-crimes-webfont.eot');
+    src: url('../fonts/true-crimes-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/true-crimes-webfont.woff') format('woff'),
+         url('../fonts/true-crimes-webfont.ttf') format('truetype'),
+         url('../fonts/true-crimes-webfont.svg#true_crimesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(50, 50, 50);
+  font-family: 'proxima-nova', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'true_crimesregular';
+  font-size: 50px;
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+section {
+  padding: 50px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+
+#title div {
+  position: absolute;
+  -webkit-transform: rotateY(45deg) rotateZ(-5deg) translateX(-150px) translateY(-100px);
+       -o-transform: rotateY(45deg) rotateZ(-5deg) translateX(-150px) translateY(-100px);
+          transform: rotateY(45deg) rotateZ(-5deg) translateX(-150px) translateY(-100px);
+}
+#title div:nth-of-type(1)  { font-size: 275px; top: 150px; left: 150px; } /*R*/
+#title div:nth-of-type(2)  { font-size: 250px; top: 130px; left: 275px; } /*E*/
+#title div:nth-of-type(3)  { font-size: 225px; top: 130px; left: 345px; } /*A*/
+#title div:nth-of-type(4)  { font-size: 200px; top: 135px; left: 430px; } /*C*/
+#title div:nth-of-type(5)  { font-size: 190px; top: 130px; left: 500px; } /*T*/
+#title div:nth-of-type(6)  { font-size: 150px; top: 145px; left: 575px; } /*R*/
+#title div:nth-of-type(7)  { font-size: 160px; top: 130px; left: 640px; } /*A*/
+#title div:nth-of-type(8)  { font-size: 155px; top: 130px; left: 705px; } /*L*/
+#title div:nth-of-type(9)  { font-size: 150px; top: 135px; left: 750px; } /*L*/
+#title div:nth-of-type(10) { font-size: 145px; top: 140px; left: 790px; } /*Y*/
+#title div:nth-of-type(11) { font-size: 120px; top: 165px; left: 840px; } /*!*/
