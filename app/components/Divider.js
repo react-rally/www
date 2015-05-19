@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import StyleSheet from 'react-style';
 import { Styles } from 'helpers/constants';
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   divider: {
     background: Styles.BG_COLOR_DIVIDER,
     height: 50
   }
-};
+});
 
 export default class Divider extends Component {
   render() {

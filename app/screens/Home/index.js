@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import StyleSheet from 'react-style';
 import browser from 'helpers/browser';
 import cssPrefix from 'helpers/cssPrefix';
 import { Sizes } from 'helpers/constants';
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   container: {
     background: 'url(assets/img/SLCBackground.png)',
     position: 'relative',
@@ -52,7 +53,7 @@ const STYLES = {
     width: 286/2,
     height: 172/2
   }
-};
+});
 
 STYLES.imgUfoDarkTwo[cssPrefix('transform')] = 'rotate(-25deg)';
 STYLES.imgUfoDarkTwo['transform'] = 'rotate(-25deg)';

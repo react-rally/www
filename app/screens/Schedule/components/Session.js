@@ -1,10 +1,11 @@
 import React, { Component, PropTypes } from 'react';
+import StyleSheet from 'react-style';
 import { Styles } from 'helpers/constants';
 import borderRadius from 'helpers/borderRadius';
 
 // rgb(48, 96, 125)
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   container: {
     background: 'rgb(27, 54, 70)',
     padding: '20px 50px',
@@ -16,7 +17,7 @@ const STYLES = {
   description: {
     color: Styles.FONT_COLOR_SCHEDULE__DESCRIPTION
   }
-};
+});
 
 function randomBoolean() {
   return Math.floor(Math.random() * 2) === 0;

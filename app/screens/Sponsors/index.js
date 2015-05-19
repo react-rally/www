@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   section: {
     background: `url(assets/img/weatheredBackground.png) ${Styles.BG_COLOR_SPONSORS}`,
     minHeight: 350
@@ -23,7 +24,7 @@ const STYLES = {
   a: {
     color: Styles.FONT_COLOR_SPONSORS
   }
-};
+});
 
 export default class Sponsors extends Component {
   render() {

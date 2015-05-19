@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import StyleSheet from 'react-style';
 import Home from './screens/Home';
 import About from './screens/About';
 import Speakers from './screens/Speakers';
@@ -10,14 +11,14 @@ import Conduct from './screens/Conduct';
 import Divider from 'components/Divider';
 import Navigation from 'components/Navigation';
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   container: {
     overflow: 'hidden',
     position: 'relative',
     margin: '0 auto',
     maxWidth: 1440
   }
-};
+});
 
 export default class App extends Component {
   render() {
