@@ -22,7 +22,7 @@ export default class Conduct extends Component {
         </p>
         <h3>Need Help?</h3>
         <p>
-          Email us at <a href="mailto:admin@reactrally.com">admin@reactrally.com</a>.
+          Email us at <a href="mailto:admin@reactrally.com" style={STYLES.a}>admin@reactrally.com</a>.
         </p>
         <h3>The Quick Version</h3>
         <p>

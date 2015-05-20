@@ -15,6 +15,9 @@ const STYLES = StyleSheet.create({
     position: 'absolute',
     right: 50,
     bottom: -183
+  },
+  a: {
+    color: Styles.FONT_COLOR_ABOUT
   }
 });
 
@@ -25,7 +28,7 @@ export default class About extends Component {
         <img src="assets/img/tentacle.png" style={STYLES.img}/>
         <h2 style={STYLES.h2}>About</h2>
         <p>
-        React Rally is a two day single track conference for web, mobile and backend developers using Facebook's <a href="http://facebook.github.io/react">React</a>. Do you use React? Do you want to? This conference is for you.
+        React Rally is a two day single track conference for web, mobile and backend developers using Facebook's <a href="http://facebook.github.io/react" target="_blank" style={STYLES.a}>React</a>. Do you use React? Do you want to? This conference is for you.
         </p>
       </section>
     );

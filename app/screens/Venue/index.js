@@ -35,6 +35,9 @@ const STYLES = StyleSheet.create({
   map: {
     border: 0,
     marginLeft: 400
+  },
+  a: {
+    color: Styles.FONT_COLOR_VENUE
   }
 });
 
@@ -45,7 +48,7 @@ export default class Venue extends Component {
         <div style={STYLES.container}>
           <h2 style={STYLES.h2}>Venue</h2>
           <p style={STYLES.p}>
-          Located in the beautiful <a href="http://www.slccfa.org/venues/rose-wagner-performing-arts-center/">Rose Wagner Performing Arts Center</a> within walking distance of great food and hotels.
+          Located in the beautiful <a href="http://www.slccfa.org/venues/rose-wagner-performing-arts-center/" target="_blank" style={STYLES.a}>Rose Wagner Performing Arts Center</a> within walking distance of great food and hotels.
           </p>
           <img src="assets/img/reactVenue.png" style={STYLES.imgReactVenue}/>
           <img src="assets/img/venue.jpg" style={STYLES.imgVenue}/>
