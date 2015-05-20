@@ -19,12 +19,9 @@ export default class Conduct extends Component {
         <p>
           All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.
         </p>
-        <p>
-          <strong>tl;dr: Be excellent with each other</strong>
-        </p>
         <h3>Need Help?</h3>
         <p>
-          You have our contact details in the emails we've sent.
+          Email us at <a href="mailto:admin@reactrally.com">admin@reactrally.com</a>.
         </p>
         <h3>The Quick Version</h3>
         <p>

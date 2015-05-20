@@ -30,6 +30,10 @@ const STYLES = {
     height: 300,
     top: 97,
     left: 33
+  },
+  map: {
+    border: 0,
+    marginLeft: 400
   }
 };
 
@@ -40,10 +44,11 @@ export default class Venue extends Component {
         <div style={STYLES.container}>
           <h2 style={STYLES.h2}>Venue</h2>
           <p style={STYLES.p}>
-            Just as long as you are too cool to fool? Cover you. So come on every guy, grab a girl. Because my love for you. I said that time may change me. Slap that slap that baby make him free! Duke, making sure white stains. Have you sought fortune, evasive and shy? Yeah, bye bye, love. The european cannon is here. Under pressure. I'm floating in a moonage daydream, oh yeah. I wrote it ten times or more. You shouldn't mess with me. Been putting out fire. Sat on a pleasant cruise. Ziggy sucked up into his mind, ah. Pray tomorrow. See them as they really are. From Ibiza to the Norfolk Broads.
+          Located in the beautiful <a href="http://www.slccfa.org/venues/rose-wagner-performing-arts-center/">Rose Wagner Performing Arts Center</a> within walking distance of great food and hotels.
           </p>
           <img src="assets/img/reactVenue.png" style={STYLES.imgReactVenue}/>
           <img src="assets/img/venue.jpg" style={STYLES.imgVenue}/>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12087.806444718673!2d-111.895488!3d40.763089!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c0bec6b46008e67!2sRose+Wagner+Performing+Arts+Center!5e0!3m2!1sen!2sus!4v1432086735738" width="600" height="450" frameborder="0" style={STYLES.map}></iframe>
         </div>
       </section>
     );

@@ -24,7 +24,7 @@ export default class About extends Component {
         <img src="assets/img/tentacle.png" style={STYLES.img}/>
         <h2 style={STYLES.h2}>About</h2>
         <p>
-          So, bye bye, love. I do for you. But her friend is nowhere to be grateful. They're quite aware what they're going through. All we need is music, sweet music. Here are we, one magical moment, such is the stuff. DJ, that was hazy cosmic jive. What this world is about. Control to Major Tom? Oh my T V C one five. Oh yeah, yeah, yeah. Just the beer light to guide us. He'd like to come and meet us. What's your name? I couldn't escape this feeling with my China girl. As I pushed my foot down to the floor. Now she walks through her sunken dream. Ee do ah buh. I'm not much cop at punching. 
+        React Rally is a two day single track conference for web, mobile and backend developers using Facebook's <a href="http://facebook.github.io/react">React</a>. Do you use React? Do you want to? This conference is for you.
         </p>
       </section>
     );

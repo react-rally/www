@@ -43,7 +43,10 @@ export default class Tickets extends Component {
         <div style={STYLES.container}>
           <h2 style={STYLES.h2}>Tickets</h2>
           <p style={STYLES.p}>
-            The kids were just crass. It's, it's Warhol actually. Beating up the wrong guy. My little China girl. They came on so loaded, man. Oh, yeah. Fame, makes a man take things over. I say? I reject you first? People on streets of Brazil.
+          The Golden Ticket. Super Bowl tickets. Backstage passes to T Swizzle. React Rally tickets. High demand, limited supply.
+          </p>
+          <p style={STYLES.p}>
+          Early Bird tickets go on sale soon.
           </p>
           <a href={Links.TICKET_SALES} target="_blank" style={STYLES.a}>Buy Tickets</a>
         </div>
