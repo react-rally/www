@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import StyleSheet from 'react-style';
 import { Styles } from 'helpers/constants';
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   section: {
     background: Styles.BG_COLOR_ABOUT,
     position: 'relative',
@@ -15,7 +16,7 @@ const STYLES = {
     right: 50,
     bottom: -183
   }
-};
+});
 
 export default class About extends Component {
   render() {

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
 import Session from './components/Session';
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   section: {
     background: `url(assets/img/weatheredBackground.png) ${Styles.BG_COLOR_SCHEDULE}`,
     minHeight: 350
@@ -21,7 +22,7 @@ const STYLES = {
   a: {
     color: Styles.FONT_COLOR_SCHEDULE
   }
-};
+});
 
 export default class Schedule extends Component {
   render() {

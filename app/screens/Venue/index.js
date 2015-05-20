@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import StyleSheet from 'react-style';
 import { Styles } from 'helpers/constants';
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   section: {
     background: Styles.BG_COLOR_VENUE,
     color: '#fff',
@@ -35,7 +36,7 @@ const STYLES = {
     border: 0,
     marginLeft: 400
   }
-};
+});
 
 export default class Venue extends Component {
   render() {

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
 import Avatar from './components/Avatar';
 import Speaker from './helpers/Speaker';
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   section: {
     background: `url(assets/img/speakersBackground.png) ${Styles.BG_COLOR_SPEAKERS}`,
     paddingTop: 100
@@ -18,7 +19,7 @@ const STYLES = {
   a: {
     color: '#FFF'
   }
-};
+});
 
 const SPEAKERS = [
   new Speaker(

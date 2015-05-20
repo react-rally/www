@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   section: {
     background: Styles.BG_COLOR_CONDUCT,
     color: Styles.FONT_COLOR_CONDUCT
@@ -9,7 +10,7 @@ const STYLES = {
   a: {
     color: Styles.FONT_COLOR_CONDUCT
   }
-};
+});
 
 export default class Conduct extends Component {
   render() {

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import StyleSheet from 'react-style';
 import EventManager from 'evtmgr';
 import { Styles, Sizes } from 'helpers/constants';
 import morph from 'helpers/morph';
 
 const TOP = Sizes.HOME_HEIGHT - Sizes.NAV_HEIGHT;
-const STYLES = {
+const STYLES = StyleSheet.create({
   menu: {
     background: Styles.BG_COLOR_NAVBAR,
     textAlign: 'center',
@@ -27,7 +28,7 @@ const STYLES = {
     fontSize: 20,
     textDecoration: 'none'
   }
-};
+});
 
 export default class Navigation extends Component {
   constructor(props) {

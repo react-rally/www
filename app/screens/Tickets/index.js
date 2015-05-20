@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import StyleSheet from 'react-style';
 import { Styles, Sizes, Links } from 'helpers/constants';
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   section: {
     background: 'url(assets/img/SLCBackground.png)',
     position: 'relative',
@@ -33,7 +34,7 @@ const STYLES = {
     top: -150,
     right: 50
   }
-};
+});
 
 export default class Tickets extends Component {
   render() {

@@ -1,7 +1,8 @@
 import React, { Component, PropTypes } from 'react';
+import StyleSheet from 'react-style';
 import { Styles } from 'helpers/constants';
 
-const STYLES = {
+const STYLES = StyleSheet.create({
   content: {
     float: 'left',
     margin: 10,
@@ -32,7 +33,7 @@ const STYLES = {
     color: Styles.FONT_COLOR_SPEAKERS__INTRO,
     textAlign: 'center'
   }
-};
+});
 
 export default class Avatar extends Component {
   render() {
