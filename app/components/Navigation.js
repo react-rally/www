@@ -21,7 +21,7 @@ const STYLES = StyleSheet.create({
   menuitem: {
     display: 'inline',
     listStyle: 'none',
-    margin: 50
+    margin: '3.5%'
   },
   a: {
     color: '#FFF',
@@ -82,7 +82,7 @@ export default class Navigation extends Component {
   }
 
   render() {
-    var menuStyles = STYLES.menu;
+    var menuStyles = {};
     if (this.state.pinned) {
       menuStyles.position = 'fixed';
       menuStyles.top = 0;
@@ -92,7 +92,7 @@ export default class Navigation extends Component {
     }
 
     return (
-      <menu style={menuStyles} onClick={this.handleClick}>
+      <menu styles={[STYLES.menu, menuStyles]} onClick={this.handleClick.bind(this)}>
         <ul role="menubar" style={STYLES.menubar}>
           <li role="menuitem" style={STYLES.menuitem}><a style={STYLES.a} href="javascript://" data-target="home">Home</a></li>
           <li role="menuitem" style={STYLES.menuitem}><a style={STYLES.a} href="javascript://" data-target="about">About</a></li>

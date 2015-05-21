@@ -10,6 +10,7 @@ import Sponsors from './screens/Sponsors';
 import Conduct from './screens/Conduct';
 import Divider from 'components/Divider';
 import Navigation from 'components/Navigation';
+import ga from 'helpers/googleAnalytics';
 
 const STYLES = StyleSheet.create({
   container: {

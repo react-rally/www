@@ -31,6 +31,28 @@ const STYLES = StyleSheet.create({
     fontFamily: 'true_crimesregular',
     position: 'absolute'
   },
+  h2: {
+    color: 'rgb(236, 236, 236)',
+    fontFamily: 'inherit',
+    fontSize: 35,
+    position: 'absolute',
+    top: 300,
+    left: 125
+  },
+  imgTwitter: {
+    position: 'absolute',
+    top: 20,
+    right: 55,
+    width: 24,
+    height: 24
+  },
+  imgGithub: {
+    position: 'absolute',
+    top: 20,
+    right: 20,
+    width: 24,
+    height: 24
+  },
   imgMoon: {
     position: 'absolute',
     top: -250,
@@ -59,11 +81,53 @@ STYLES.imgUfoDarkTwo[cssPrefix('transform')] = 'rotate(-25deg)';
 STYLES.imgUfoDarkTwo['transform'] = 'rotate(-25deg)';
 
 export default class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
+  handleTwitterMouseOver() {
+    this.setState({ twitterHover: true });
+  }
+
+  handleTwitterMouseOut() {
+    this.setState({ twitterHover: false });
+  }
+
+  handleGithubMouseOver() {
+    this.setState({ githubHover: true });
+  }
+
+  handleGithubMouseOut() {
+    this.setState({ githubHover: false });
+  }
+
+  createHoverStyle(right) {
+    return {
+      width: 32,
+      height: 32,
+      top: 16,
+      right
+    };
+  }
+
   renderTitle() {
     return 'ReactRally!'.split('').map((chr, i) => <div key={`${chr}-${i}`}>{chr}</div>);
   }
 
   render() {
+    var twitterStyle = null;
+    var githubStyle = null;
+
+    if (this.state.twitterHover) {
+      twitterStyle = this.createHoverStyle(51);
+    }
+
+    if (this.state.githubHover) {
+      githubStyle = this.createHoverStyle(16);
+    }
+
     return (
       <div id="home" style={STYLES.container}>
         <div style={STYLES.content}>
@@ -75,7 +139,25 @@ export default class Home extends Component {
             {this.renderTitle()}
           </div>
           <div style={STYLES.subtitle}>2015</div>
+          <h2 style={STYLES.h2}>August 24-25 in Salt Lake City, UT</h2>
         </div>
+        <div>
+          <a href="http://twitter.com/ReactRally" target="_blank">
+            <img src="assets/img/twitterIcon.png"
+              styles={[STYLES.imgTwitter, twitterStyle]}
+              onMouseOver={this.handleTwitterMouseOver.bind(this)}
+              onMouseOut={this.handleTwitterMouseOut.bind(this)}
+            />
+          </a>
+          <a href="http://github.com/react-rally" target="_blank">
+            <img src="assets/img/githubIcon.png"
+              styles={[STYLES.imgGithub, githubStyle]}
+              onMouseOver={this.handleGithubMouseOver.bind(this)}
+              onMouseOut={this.handleGithubMouseOut.bind(this)}
+            />
+          </a>
+        </div>
+
       </div>
     );
   }
