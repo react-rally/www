@@ -48,7 +48,7 @@ export default class Venue extends Component {
         <div style={STYLES.container}>
           <h2 style={STYLES.h2}>Venue</h2>
           <p style={STYLES.p}>
-            We are still pending a contract for our venu. Stay tuned.
+            Downtown Salt Lake City! More details coming soon.
           </p>
           {/*
           <p style={STYLES.p}>

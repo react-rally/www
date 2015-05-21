@@ -1,4 +1,11 @@
 var webpack = require('webpack');
+var plugins = [];
+
+if (process.env.PRODUCTION) {
+  plugins.push(
+    new webpack.optimize.UglifyJsPlugin()
+  );
+}
 
 module.exports = {
   entry: './index.js',
@@ -15,12 +22,5 @@ module.exports = {
   resolve: {
     modulesDirectories: [ 'app', 'node_modules' ]
   },
-  plugins: [
-    // new webpack.optimize.UglifhJsPlugin(),
-    // new webpack.DefinePlugin({
-    //   'process.env': {
-    //     NODE_ENV: JSON.stringify('production')
-    //   }
-    // })
-  ]
+  plugins: plugins
 };
