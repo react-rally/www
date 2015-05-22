@@ -49,7 +49,9 @@ export default class Tickets extends Component {
           <p style={STYLES.p}>
           Early Bird tickets go on sale soon.
           </p>
+          {/*
           <a href={Links.TICKET_SALES} target="_blank" style={STYLES.a}>Buy Tickets</a>
+          */}
         </div>
       </section>
     );

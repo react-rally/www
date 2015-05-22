@@ -3,6 +3,7 @@ import StyleSheet from 'react-style';
 import EventManager from 'evtmgr';
 import { Styles, Sizes } from 'helpers/constants';
 import morph from 'helpers/morph';
+import MenuItem from 'components/MenuItem';
 
 const TOP = Sizes.HOME_HEIGHT - Sizes.NAV_HEIGHT;
 const STYLES = StyleSheet.create({
@@ -17,16 +18,6 @@ const STYLES = StyleSheet.create({
   menubar: {
     margin: 'inherit 0',
     padding: 0
-  },
-  menuitem: {
-    display: 'inline',
-    listStyle: 'none',
-    margin: '3.5%'
-  },
-  a: {
-    color: '#FFF',
-    fontSize: 20,
-    textDecoration: 'none'
   }
 });
 
@@ -84,8 +75,13 @@ export default class Navigation extends Component {
   render() {
     var menuStyles = {};
     if (this.state.pinned) {
+      var contentWidth = document.getElementById('container').firstChild.offsetWidth;
+      var offset = (window.innerWidth - contentWidth) / 2;
+
       menuStyles.position = 'fixed';
       menuStyles.top = 0;
+      menuStyles.left = offset;
+      menuStyles.right = offset;
     } else {
       menuStyles.position = 'absolute';
       menuStyles.top = TOP;
@@ -94,14 +90,14 @@ export default class Navigation extends Component {
     return (
       <menu styles={[STYLES.menu, menuStyles]} onClick={this.handleClick.bind(this)}>
         <ul role="menubar" style={STYLES.menubar}>
-          <li role="menuitem" style={STYLES.menuitem}><a style={STYLES.a} href="javascript://" data-target="home">Home</a></li>
-          <li role="menuitem" style={STYLES.menuitem}><a style={STYLES.a} href="javascript://" data-target="about">About</a></li>
-          <li role="menuitem" style={STYLES.menuitem}><a style={STYLES.a} href="javascript://" data-target="speakers">Speakers</a></li>
-          <li role="menuitem" style={STYLES.menuitem}><a style={STYLES.a} href="javascript://" data-target="schedule">Schedule</a></li>
-          <li role="menuitem" style={STYLES.menuitem}><a style={STYLES.a} href="javascript://" data-target="tickets">Tickets</a></li>
-          <li role="menuitem" style={STYLES.menuitem}><a style={STYLES.a} href="javascript://" data-target="venue">Venue</a></li>
-          <li role="menuitem" style={STYLES.menuitem}><a style={STYLES.a} href="javascript://" data-target="sponsors">Sponsors</a></li>
-          <li role="menuitem" style={STYLES.menuitem}><a style={STYLES.a} href="javascript://" data-target="conduct">Conduct</a></li>
+          <MenuItem target="home" label="Home"/>
+          <MenuItem target="about" label="About"/>
+          <MenuItem target="speakers" label="Speakers"/>
+          <MenuItem target="schedule" label="Schedule"/>
+          <MenuItem target="tickets" label="Tickets"/>
+          <MenuItem target="venue" label="Venue"/>
+          <MenuItem target="sponsors" label="Sponsors"/>
+          <MenuItem target="conduct" label="Conduct"/>
         </ul>
       </menu>
     );

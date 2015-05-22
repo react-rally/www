@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import StyleSheet from 'react-style';
 import browser from 'helpers/browser';
 import cssPrefix from 'helpers/cssPrefix';
-import { Sizes } from 'helpers/constants';
+import { Sizes, Links } from 'helpers/constants';
 
 const STYLES = StyleSheet.create({
   container: {
@@ -37,7 +37,7 @@ const STYLES = StyleSheet.create({
     fontSize: 35,
     position: 'absolute',
     top: 300,
-    left: 125
+    left: 127
   },
   imgTwitter: {
     position: 'absolute',
@@ -74,6 +74,19 @@ const STYLES = StyleSheet.create({
     right: '25%',
     width: 286/2,
     height: 172/2
+  },
+  submitProposal: {
+    background: 'transparent',
+    border: '1px solid #fff',
+    borderRadius: 5,
+    color: '#fff',
+    display: 'inline-block',
+    fontSize: 20,
+    padding: '10px 35px',
+    textDecoration: 'none',
+    position: 'absolute',
+    top: 382,
+    left: 288
   }
 });
 
@@ -141,23 +154,23 @@ export default class Home extends Component {
           <div style={STYLES.subtitle}>2015</div>
           <h2 style={STYLES.h2}>August 24-25 in Salt Lake City, UT</h2>
         </div>
-        <div>
-          <a href="http://twitter.com/ReactRally" target="_blank">
-            <img src="assets/img/twitterIcon.png"
-              styles={[STYLES.imgTwitter, twitterStyle]}
-              onMouseOver={this.handleTwitterMouseOver.bind(this)}
-              onMouseOut={this.handleTwitterMouseOut.bind(this)}
-            />
-          </a>
-          <a href="http://github.com/react-rally" target="_blank">
-            <img src="assets/img/githubIcon.png"
-              styles={[STYLES.imgGithub, githubStyle]}
-              onMouseOver={this.handleGithubMouseOver.bind(this)}
-              onMouseOut={this.handleGithubMouseOut.bind(this)}
-            />
-          </a>
-        </div>
-
+        <a href="http://twitter.com/ReactRally" target="_blank">
+          <img src="assets/img/twitterIcon.png"
+            styles={[STYLES.imgTwitter, twitterStyle]}
+            onMouseOver={this.handleTwitterMouseOver.bind(this)}
+            onMouseOut={this.handleTwitterMouseOut.bind(this)}
+          />
+        </a>
+        <a href="http://github.com/react-rally" target="_blank">
+          <img src="assets/img/githubIcon.png"
+            styles={[STYLES.imgGithub, githubStyle]}
+            onMouseOver={this.handleGithubMouseOver.bind(this)}
+            onMouseOut={this.handleGithubMouseOut.bind(this)}
+          />
+        </a>
+        <a href={Links.PROPOSAL_FORM} target="_blank" style={STYLES.submitProposal}>
+          Submit a Proposal!
+        </a>
       </div>
     );
   }
