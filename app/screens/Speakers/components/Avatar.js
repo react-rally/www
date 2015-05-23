@@ -4,7 +4,7 @@ import { Styles } from 'helpers/constants';
 
 const STYLES = StyleSheet.create({
   content: {
-    float: 'left',
+    display: 'inline-block',
     margin: 10,
     width: 389,
     position: 'relative',

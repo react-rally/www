@@ -54,3 +54,64 @@ section {
 #title div:nth-of-type(9)  { font-size: 150px; top: 135px; left: 750px; } /*L*/
 #title div:nth-of-type(10) { font-size: 145px; top: 140px; left: 790px; } /*Y*/
 #title div:nth-of-type(11) { font-size: 120px; top: 165px; left: 840px; } /*!*/
+
+/* Responsive for most iPhones, and Galaxies */
+@media only screen and (device-width: 320px) {
+  menu > ul > li {
+    margin: 2% !important;
+  }
+
+  #venue iframe {
+    margin-left: 125px !important;
+    margin-top: 25px !important;
+  }
+}
+
+/* Responsive for iPhone 6 */
+@media only screen and (device-width: 375px) {
+  menu > ul > li {
+    margin: 2% !important;
+  }
+
+  #venue iframe {
+    margin-left: 125px !important;
+    margin-top: 100px !important;
+  }
+}
+
+/* Responsive for HTC, and some Galaxies */
+@media only screen and (device-width: 360px) {
+  menu > ul > li {
+    margin: 2% !important;
+  }
+
+  #venue iframe {
+    margin-left: 125px !important;
+    margin-top: 25px !important;
+  }
+}
+
+/* Responsive for Desktop */
+@media only screen and (max-width: 1250px) {
+  menu > ul > li {
+    margin: 3% !important;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  menu > ul > li {
+    margin: 2.5% !important;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  menu > ul > li {
+    margin: 2% !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  menu > ul > li > a {
+    font-size: 15px !important;
+  }
+}

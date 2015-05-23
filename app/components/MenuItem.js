@@ -10,7 +10,8 @@ const STYLES = StyleSheet.create({
   a: {
     color: '#FFF',
     fontSize: 20,
-    textDecoration: 'none'
+    textDecoration: 'none',
+    lineHeight: '23px'
   },
   aHover: {
     textShadow: '0 0 25px rgba(255, 255, 255, 1)'

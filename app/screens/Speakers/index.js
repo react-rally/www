@@ -14,7 +14,8 @@ const STYLES = StyleSheet.create({
   },
   content: {
     overflow: 'auto',
-    padding: '0 50px'
+    padding: '0 50px',
+    textAlign: 'center'
   },
   a: {
     color: '#FFF'
