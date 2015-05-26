@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StyleSheet from 'react-style';
+import Radium from 'radium'
 import { Styles, Sizes, Links } from 'helpers/constants';
 
 const STYLES = StyleSheet.create({
@@ -27,7 +28,11 @@ const STYLES = StyleSheet.create({
     fontSize: 20,
     padding: '10px 35px',
     margin: '25px 0 0 350px',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    ':hover': {
+      backgroundColor: '#fff',
+      color: '#000'
+    }
   },
   img: {
     position: 'absolute',
@@ -36,7 +41,7 @@ const STYLES = StyleSheet.create({
   }
 });
 
-export default class Tickets extends Component {
+class TicketsComponent extends Component {
   render() {
     return (
       <section id="tickets" style={STYLES.section}>
@@ -44,16 +49,19 @@ export default class Tickets extends Component {
         <div style={STYLES.container}>
           <h2 style={STYLES.h2}>Tickets</h2>
           <p style={STYLES.p}>
-          The Golden Ticket. Super Bowl tickets. Backstage passes to T Swizzle. React Rally tickets. High demand, limited supply.
+            The Golden Ticket. Super Bowl tickets. Backstage passes to T Swizzle. React Rally tickets. High demand, limited supply.
           </p>
           <p style={STYLES.p}>
-          Early Bird tickets go on sale soon.
+            Early Bird tickets go on sale on Wednesday, May 27th at 9:00 AM MST for $300. Regular tickets are $400.
           </p>
-          {/*
-          <a href={Links.TICKET_SALES} target="_blank" style={STYLES.a}>Buy Tickets</a>
-          */}
+          <p style={STYLES.p}>
+            <a href={Links.TICKET_SALES} target="_blank" style={STYLES.a}>Buy Tickets</a>
+          </p>
         </div>
       </section>
     );
   }
 }
+
+var Tickets = Radium.Enhancer(TicketsComponent)
+export default Tickets

@@ -3,6 +3,7 @@ import StyleSheet from 'react-style';
 import browser from 'helpers/browser';
 import cssPrefix from 'helpers/cssPrefix';
 import { Sizes, Links } from 'helpers/constants';
+import Radium from 'radium'
 
 const STYLES = StyleSheet.create({
   container: {
@@ -86,14 +87,18 @@ const STYLES = StyleSheet.create({
     textDecoration: 'none',
     position: 'absolute',
     top: 382,
-    left: 288
+    left: 288,
+    ':hover': {
+      backgroundColor: '#fff',
+      color: '#000'
+    }
   }
 });
 
 STYLES.imgUfoDarkTwo[cssPrefix('transform')] = 'rotate(-25deg)';
 STYLES.imgUfoDarkTwo['transform'] = 'rotate(-25deg)';
 
-export default class Home extends Component {
+class HomeComponent extends Component {
   constructor(props) {
     super(props);
 
@@ -168,10 +173,16 @@ export default class Home extends Component {
             onMouseOut={this.handleGithubMouseOut.bind(this)}
           />
         </a>
-        <a href={Links.PROPOSAL_FORM} target="_blank" style={STYLES.submitProposal}>
-          Submit a Proposal!
+        <a key="submit" href={Links.PROPOSAL_FORM} target="_blank" style={STYLES.submitProposal}>
+          Submit A Proposal!
+        </a>
+        <a key="buy" href={Links.TICKET_SALES} target="_blank" style={[STYLES.submitProposal, {left: 575}]}>
+          Buy A Ticket!
         </a>
       </div>
     );
   }
 }
+
+var Home = Radium.Enhancer(HomeComponent)
+export default Home
