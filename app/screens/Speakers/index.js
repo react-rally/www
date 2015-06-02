@@ -34,6 +34,11 @@ const SPEAKERS = [
     'assets/img/speakers/holtbt.jpg'
   ),
   new Speaker(
+    'Lee Byron',
+    'React, GraphQL, Immutable.js at Facebook',
+    'assets/img/speakers/leeb.jpg'
+  ),
+  new Speaker(
     'You?',
     <a href={Links.PROPOSAL_FORM} target="_blank" style={STYLES.a}>Submit a Proposal!</a>,
     'assets/img/speakers/anonymous.png'

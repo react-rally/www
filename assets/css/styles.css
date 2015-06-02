@@ -36,7 +36,7 @@ section {
   line-height: 25px;
 }
 
-
+/* Header title styles */
 #title div {
   position: absolute;
   -webkit-transform: rotateY(45deg) rotateZ(-5deg) translateX(-150px) translateY(-100px);

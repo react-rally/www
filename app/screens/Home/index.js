@@ -4,6 +4,7 @@ import browser from 'helpers/browser';
 import cssPrefix from 'helpers/cssPrefix';
 import { Sizes, Links } from 'helpers/constants';
 import Radium from 'radium'
+import Icon from './components/Icon';
 
 const STYLES = StyleSheet.create({
   container: {
@@ -40,20 +41,6 @@ const STYLES = StyleSheet.create({
     top: 300,
     left: 127
   },
-  imgTwitter: {
-    position: 'absolute',
-    top: 20,
-    right: 55,
-    width: 24,
-    height: 24
-  },
-  imgGithub: {
-    position: 'absolute',
-    top: 20,
-    right: 20,
-    width: 24,
-    height: 24
-  },
   imgMoon: {
     position: 'absolute',
     top: -250,
@@ -76,7 +63,7 @@ const STYLES = StyleSheet.create({
     width: 286/2,
     height: 172/2
   },
-  submitProposal: {
+  buttonLink: {
     background: 'transparent',
     border: '1px solid #fff',
     borderRadius: 5,
@@ -87,7 +74,7 @@ const STYLES = StyleSheet.create({
     textDecoration: 'none',
     position: 'absolute',
     top: 382,
-    left: 288,
+    left: 175,
     ':hover': {
       backgroundColor: '#fff',
       color: '#000'
@@ -105,29 +92,12 @@ class HomeComponent extends Component {
     this.state = {};
   }
 
-  handleTwitterMouseOver() {
-    this.setState({ twitterHover: true });
+  openModal() {
+    this.setState({ isModalOpen: true });
   }
 
-  handleTwitterMouseOut() {
-    this.setState({ twitterHover: false });
-  }
-
-  handleGithubMouseOver() {
-    this.setState({ githubHover: true });
-  }
-
-  handleGithubMouseOut() {
-    this.setState({ githubHover: false });
-  }
-
-  createHoverStyle(right) {
-    return {
-      width: 32,
-      height: 32,
-      top: 16,
-      right
-    };
+  closeModal() {
+    this.setState({ isModalOpen: false });
   }
 
   renderTitle() {
@@ -135,17 +105,6 @@ class HomeComponent extends Component {
   }
 
   render() {
-    var twitterStyle = null;
-    var githubStyle = null;
-
-    if (this.state.twitterHover) {
-      twitterStyle = this.createHoverStyle(51);
-    }
-
-    if (this.state.githubHover) {
-      githubStyle = this.createHoverStyle(16);
-    }
-
     return (
       <div id="home" style={STYLES.container}>
         <div style={STYLES.content}>
@@ -159,24 +118,31 @@ class HomeComponent extends Component {
           <div style={STYLES.subtitle}>2015</div>
           <h2 style={STYLES.h2}>August 24-25 in Salt Lake City, UT</h2>
         </div>
-        <a href="http://twitter.com/ReactRally" target="_blank">
-          <img src="assets/img/twitterIcon.png"
-            styles={[STYLES.imgTwitter, twitterStyle]}
-            onMouseOver={this.handleTwitterMouseOver.bind(this)}
-            onMouseOut={this.handleTwitterMouseOut.bind(this)}
-          />
-        </a>
-        <a href="http://github.com/react-rally" target="_blank">
-          <img src="assets/img/githubIcon.png"
-            styles={[STYLES.imgGithub, githubStyle]}
-            onMouseOver={this.handleGithubMouseOver.bind(this)}
-            onMouseOut={this.handleGithubMouseOut.bind(this)}
-          />
-        </a>
-        <a key="submit" href={Links.PROPOSAL_FORM} target="_blank" style={STYLES.submitProposal}>
+        <Icon
+          href="http://eepurl.com/biqrcn"
+          src="assets/img/emailIcon.png"
+          alt="Email icon"
+          title="Subscribe for updates"
+          right={90}
+        />
+        <Icon
+          href="http://twitter.com/ReactRally"
+          src="assets/img/twitterIcon.png"
+          alt="Twitter logo"
+          title="Follow us on Twitter"
+          right={55}
+        />
+        <Icon
+          href="http://github.com/react-rally"
+          src="assets/img/githubIcon.png"
+          alt="GitHub logo"
+          title="Follow us on GitHub"
+          right={20}
+        />
+        <a key="submit" href={Links.PROPOSAL_FORM} target="_blank" style={STYLES.buttonLink}>
           Submit A Proposal!
         </a>
-        <a key="buy" href={Links.TICKET_SALES} target="_blank" style={[STYLES.submitProposal, {left: 575}]}>
+        <a key="buy" href={Links.TICKET_SALES} target="_blank" style={[STYLES.buttonLink, {left: 450}]}>
           Buy A Ticket!
         </a>
       </div>
