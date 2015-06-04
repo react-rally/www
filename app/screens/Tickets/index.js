@@ -27,7 +27,8 @@ const STYLES = StyleSheet.create({
     display: 'inline-block',
     fontSize: 20,
     padding: '10px 35px',
-    margin: '25px 0 0 350px',
+    margin: '25px 0 0 33%',
+    whiteSpace: 'nowrap',
     textDecoration: 'none',
     ':hover': {
       backgroundColor: '#fff',
