@@ -34,6 +34,11 @@ const SPEAKERS = [
     'assets/img/speakers/holtbt.jpg'
   ),
   new Speaker(
+    'Jessica Kerr',
+    'Functional Developer at Monsanto',
+    'assets/img/speakers/jessitron.jpg'
+  ),
+  new Speaker(
     'Lee Byron',
     'React, GraphQL, Immutable.js at Facebook',
     'assets/img/speakers/leeb.jpg'
