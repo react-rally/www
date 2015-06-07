@@ -85,19 +85,11 @@ const STYLES = StyleSheet.create({
 STYLES.imgUfoDarkTwo[cssPrefix('transform')] = 'rotate(-25deg)';
 STYLES.imgUfoDarkTwo['transform'] = 'rotate(-25deg)';
 
-class HomeComponent extends Component {
+class Home extends Component {
   constructor(props) {
     super(props);
 
     this.state = {};
-  }
-
-  openModal() {
-    this.setState({ isModalOpen: true });
-  }
-
-  closeModal() {
-    this.setState({ isModalOpen: false });
   }
 
   renderTitle() {
@@ -150,5 +142,5 @@ class HomeComponent extends Component {
   }
 }
 
-var Home = Radium.Enhancer(HomeComponent)
-export default Home
+Home = Radium.Enhancer(Home);
+export default Home;
