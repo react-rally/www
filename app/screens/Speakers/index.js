@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
 import Avatar from './components/Avatar';
-import Speaker from './helpers/Speaker';
+import SpeakerList from './helpers/speakers';
 
 const STYLES = StyleSheet.create({
   section: {
@@ -22,42 +22,22 @@ const STYLES = StyleSheet.create({
   }
 });
 
-const SPEAKERS = [
-  new Speaker(
-    'Christopher Chedeau',
-    'Frenchy Front-end Engineer at Facebook.',
-    'assets/img/speakers/vjeux.jpg'
-  ),
-  new Speaker(
-    'Brian Holt',
-    'Senior UI Engineer at Netflix.',
-    'assets/img/speakers/holtbt.jpg'
-  ),
-  new Speaker(
-    'Jessica Kerr',
-    'Functional Developer at Monsanto',
-    'assets/img/speakers/jessitron.jpg'
-  ),
-  new Speaker(
-    'Lee Byron',
-    'React, GraphQL, Immutable.js at Facebook',
-    'assets/img/speakers/leeb.jpg'
-  ),
-  new Speaker(
-    'You?',
-    <a href={Links.PROPOSAL_FORM} target="_blank" style={STYLES.a}>Submit a Proposal!</a>,
-    'assets/img/speakers/anonymous.png'
-  )
-];
+SpeakerList.push({
+  "name": "You?",
+  "intro": <a href={Links.PROPOSAL_FORM} target="_blank" style={STYLES.a}>Submit a Proposal!</a>,
+  "image": "assets/img/speakers/anonymous.png"
+});
 
 export default class Speakers extends Component {
   renderSpeakers() {
-    return SPEAKERS.map((speaker, i) => {
+    return SpeakerList.map((speaker, i) => {
       return <Avatar
           key={i}
           url={speaker.image}
           name={speaker.name}
           intro={speaker.intro}
+          twitter={speaker.twitter}
+          github={speaker.github}
         />
     });
   }
