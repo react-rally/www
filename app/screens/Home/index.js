@@ -9,6 +9,8 @@ import Icon from './components/Icon';
 const STYLES = StyleSheet.create({
   container: {
     background: 'url(assets/img/SLCBackground.png)',
+    lineHeight: 'inherit',
+    padding: 0,
     position: 'relative',
     overflow: 'hidden'
   },
@@ -22,7 +24,7 @@ const STYLES = StyleSheet.create({
     margin: 0,
     color: 'rgb(255, 241, 2)',
     textShadow: 'rgb(171, 160, 3) -10px 5px 0',
-    top: browser.firefox ? -50 : ''
+    top: browser.firefox ? -50 : null
   },
   subtitle: {
     top: browser.firefox ? 175 : 200,
@@ -98,7 +100,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div id="home" style={STYLES.container}>
+      <section id="home" style={STYLES.container}>
         <div style={STYLES.content}>
           <img src="assets/img/moon.png" style={STYLES.imgMoon}/>
           <img src="assets/img/ufoMain.png" style={STYLES.imgUfoMain}/>
@@ -137,7 +139,7 @@ class Home extends Component {
         <a key="buy" href={Links.TICKET_SALES} target="_blank" style={[STYLES.buttonLink, {left: 450}]}>
           Buy A Ticket!
         </a>
-      </div>
+      </section>
     );
   }
 }

@@ -3,7 +3,7 @@ import Radium from 'radium'
 import StyleSheet from 'react-style';
 import { Styles } from 'helpers/constants';
 
-const SOCIAL_LINK_HEIGHT = 80;
+const SOCIAL_LINK_HEIGHT = 100;
 const STYLES = StyleSheet.create({
   content: {
     display: 'inline-block',
@@ -41,7 +41,7 @@ const STYLES = StyleSheet.create({
   socialLink: {
     width: 100,
     height: SOCIAL_LINK_HEIGHT,
-    paddingTop: 15,
+    paddingTop: 30,
     display: 'inline-block',
     position: 'absolute',
     transition: 'background-color 150ms'
