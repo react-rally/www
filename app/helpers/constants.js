@@ -3,7 +3,8 @@ export default {
     CODE_OF_CONDUCT: 'http://confcodeofconduct.com/',
     TICKET_SALES: 'https://ti.to/trace-events/react-rally-2015',
     PROPOSAL_FORM: 'https://docs.google.com/forms/d/1NglNZ8H294KFILhOozIpFrt5XCtZV9QzuKFmwn8Xw28/viewform',
-    SPONSOR_PROSPECTUS: 'https://docs.google.com/forms/d/1NjwsES-vwzYm3d8jE3_tD_zwoW1YG08imcKe6UD4v_0/viewform'
+    // SPONSOR_PROSPECTUS: 'https://docs.google.com/forms/d/1NjwsES-vwzYm3d8jE3_tD_zwoW1YG08imcKe6UD4v_0/viewform'
+    SPONSOR_PROSPECTUS: 'assets/pdf/sponsor.pdf'
   },
   Styles: {
     BG_COLOR_NAVBAR: 'rgba(77, 92, 94, .75)',
