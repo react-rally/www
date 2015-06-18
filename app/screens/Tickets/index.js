@@ -53,7 +53,7 @@ class TicketsComponent extends Component {
             The Golden Ticket. Super Bowl tickets. Backstage passes to T Swizzle. React Rally tickets. High demand, limited supply.
           </p>
           <p style={STYLES.p}>
-            Another limited batch of Early Bird tickets go on sale on Wednesday, June 3rd at 12:00pm MDT for $350.
+            Early Bird tickets are all sold out. Standard tickets will go on sale on Wednesday, July 1st at 12:00pm MDT for $400.
           </p>
           <p style={STYLES.p}>
             <a href={Links.TICKET_SALES} target="_blank" style={STYLES.a}>Buy Tickets</a>
