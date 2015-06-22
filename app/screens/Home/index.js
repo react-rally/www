@@ -133,9 +133,6 @@ class Home extends Component {
           title="Follow us on GitHub"
           right={20}
         />
-        <a key="submit" href={Links.PROPOSAL_FORM} target="_blank" style={STYLES.buttonLink}>
-          Submit A Proposal!
-        </a>
         <a key="buy" href={Links.TICKET_SALES} target="_blank" style={[STYLES.buttonLink, {left: 450}]}>
           Buy A Ticket!
         </a>
