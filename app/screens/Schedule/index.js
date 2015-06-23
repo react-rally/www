@@ -30,8 +30,8 @@ export default class Schedule extends Component {
       <section id="schedule" style={STYLES.section}>
         <h2 style={STYLES.h2}>Schedule</h2>
         <p>
-          The schedule will be posted once the CFP ends.
-          In the mean time you can <a href={Links.PROPOSAL_FORM} style={STYLES.a} target="_blank">submit a proposal</a>.
+          Our CFP has ended, and we are busy sorting through all your amazing proposals.
+          We will be announcing the schedule once the speakers have been selected.
         </p>
         {/*
         <img src="assets/img/cropCircle.png" style={STYLES.img}/>

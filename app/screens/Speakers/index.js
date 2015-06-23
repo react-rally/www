@@ -22,12 +22,6 @@ const STYLES = StyleSheet.create({
   }
 });
 
-SpeakerList.push({
-  "name": "You?",
-  "intro": <a href={Links.PROPOSAL_FORM} target="_blank" style={STYLES.a}>Submit a Proposal!</a>,
-  "image": "assets/img/speakers/anonymous.png"
-});
-
 export default class Speakers extends Component {
   renderSpeakers() {
     return SpeakerList.map((speaker, i) => {
