@@ -35,13 +35,18 @@ const STYLES = StyleSheet.create({
     fontFamily: 'true_crimesregular',
     position: 'absolute'
   },
+  wrapper: {
+    position: 'absolute',
+    top: 300,
+    left: 125,
+    width: 600,
+    height: 425,
+    color: '#fff'
+  },
   h2: {
     color: 'rgb(236, 236, 236)',
     fontFamily: 'inherit',
-    fontSize: 35,
-    position: 'absolute',
-    top: 300,
-    left: 127
+    fontSize: 35
   },
   imgMoon: {
     position: 'absolute',
@@ -50,18 +55,18 @@ const STYLES = StyleSheet.create({
   },
   imgUfoMain: {
     position: 'absolute',
-    top: 300,
-    right: '35%'
+    top: 325,
+    right: '20%'
   },
   imgUfoDarkOne: {
     position: 'absolute',
     top: 500,
-    right: '10%'
+    right: '5%'
   },
   imgUfoDarkTwo: {
     position: 'absolute',
     top: 375,
-    right: '25%',
+    right: '20%',
     width: 286/2,
     height: 172/2
   },
@@ -74,8 +79,8 @@ const STYLES = StyleSheet.create({
     fontSize: 20,
     padding: '10px 35px',
     textDecoration: 'none',
-    position: 'absolute',
-    top: 382,
+    position: 'relative',
+    top: 25,
     left: 175,
     ':hover': {
       backgroundColor: '#fff',
@@ -88,12 +93,6 @@ STYLES.imgUfoDarkTwo[cssPrefix('transform')] = 'rotate(-25deg)';
 STYLES.imgUfoDarkTwo['transform'] = 'rotate(-25deg)';
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
   renderTitle() {
     return 'ReactRally!'.split('').map((chr, i) => <div key={`${chr}-${i}`}>{chr}</div>);
   }
@@ -110,7 +109,17 @@ class Home extends Component {
             {this.renderTitle()}
           </div>
           <div style={STYLES.subtitle}>2015</div>
-          <h2 style={STYLES.h2}>August 24-25 in Salt Lake City, UT</h2>
+          <div style={STYLES.wrapper}>
+            <h2 style={STYLES.h2}>August 24-25 in Salt Lake City, UT</h2>
+            <p>
+              Facebook's ReactJS has taken client side development by storm.
+              From single-page apps, to server rendering, to native mobile, to apps on your TV, ReactJS is everywhere.
+              Come find out what makes it so incredible.
+            </p>
+            <a key="buy" href={Links.TICKET_SALES} target="_blank" style={STYLES.buttonLink}>
+              Buy A Ticket!
+            </a>
+          </div>
         </div>
         <Icon
           href="http://eepurl.com/biqrcn"
@@ -133,9 +142,6 @@ class Home extends Component {
           title="Follow us on GitHub"
           right={20}
         />
-        <a key="buy" href={Links.TICKET_SALES} target="_blank" style={[STYLES.buttonLink, {left: 450}]}>
-          Buy A Ticket!
-        </a>
       </section>
     );
   }
