@@ -29,38 +29,28 @@ const STYLES = StyleSheet.create({
     overflow: 'hidden'
   },
   linkContainer: {
-    top: 0,
-    position: 'relative',
-    width: 200,
-    height: SOCIAL_LINK_HEIGHT,
-    transition: 'top 150ms'
-  },
-  linkContainerMouseOver: {
-    top: -SOCIAL_LINK_HEIGHT
-  },
-  socialLink: {
-    width: 100,
-    height: SOCIAL_LINK_HEIGHT,
-    paddingTop: 30,
-    display: 'inline-block',
     position: 'absolute',
-    transition: 'background-color 150ms'
-  },
-  socialLinkFull: {
-    width: 200
-  },
-  twitterLink: {
-    backgroundColor: 'rgba(43, 155, 197, 0.8)',
-    left: 0,
+    top: 10,
+    left: 10,
+    width: 180,
+    height: 180,
+    transition: 'opacity 150ms',
+    overflow: 'hidden',
+    borderRadius: 100,
+    backgroundColor: 'rgb(51, 51, 51)',
+    opacity: 0,
     ':hover': {
-      backgroundColor: 'rgba(43, 155, 197, 1)'
+      opacity: 0.8
     }
   },
-  githubLink: {
-    backgroundColor: 'rgba(51, 51, 51, 0.8)',
-    right: 0,
+  socialLink: {
+    color: '#fff',
+    fontSize: 32,
+    paddingTop: 74,
+    margin: '0 10px',
+    display: 'inline-block',
     ':hover': {
-      backgroundColor: 'rgba(51, 51, 51, 1)'
+      color: '#ccc'
     }
   },
   name: {
@@ -76,66 +66,35 @@ const STYLES = StyleSheet.create({
 });
 
 class Avatar extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
-  handleContainerMouseOver() {
-    this.setState({
-      containerMouseOver: true
-    });
-  }
-
-  handleContainerMouseOut() {
-    this.setState({
-      containerMouseOver: false
-    });
+  renderSocialLink(social) {
+    var prop = social.toLowerCase();
+    return (
+      <a
+        key={prop}
+        target="_blank"
+        title={'Follow ' + this.props.name.split(' ')[0] + ' on ' + social}
+        href={'//' + prop + '.com/' + this.props[prop]}
+        style={STYLES.socialLink}
+      >
+        <i className={'fa fa-' + prop}/>
+      </a>
+    );
   }
 
   render() {
-    var containerStyle = this.state.containerMouseOver ?
-                          STYLES.linkContainerMouseOver :
-                          null;
-    var twitterFullStyle = this.props.twitter && !this.props.github ?
-                            STYLES.socialLinkFull :
-                            null;
-    var githubFullStyle = this.props.github && !this.props.twitter ?
-                            STYLES.socialLinkFull :
-                            null;
-
     return (
       <div style={STYLES.content}>
         <img style={STYLES.imgBackground} src="assets/img/avatarBackground.png"/>
         <div
           style={STYLES.avatarContainer}
-          onMouseOver={this.handleContainerMouseOver.bind(this)}
-          onMouseOut={this.handleContainerMouseOut.bind(this)}
         >
           <img style={STYLES.imgAvatar} src={this.props.url}/>
-          <div styles={[STYLES.linkContainer, containerStyle]}>
+          <div style={STYLES.linkContainer}>
           {this.props.twitter && (
-            <a
-              ref="twitterLink"
-              target="_blank"
-              title={'Follow ' + this.props.name.split(' ')[0] + ' on Twitter'}
-              href={'//twitter.com/' + this.props.twitter}
-              styles={[STYLES.socialLink, STYLES.twitterLink, twitterFullStyle]}
-            >
-              <img src="assets/img/twitter32.png"/>
-            </a>
+            this.renderSocialLink('Twitter')
           )}
           {this.props.github && (
-            <a
-              ref="githubLink"
-              target="_blank"
-              title={'Follow ' + this.props.name.split(' ')[0] + ' on GitHub'}
-              href={'//github.com/' + this.props.github}
-              styles={[STYLES.socialLink, STYLES.githubLink, githubFullStyle]}
-            >
-              <img src="assets/img/github32.png"/>
-            </a>
+            this.renderSocialLink('GitHub')
           )}
           </div>
         </div>
