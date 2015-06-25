@@ -11,7 +11,6 @@ const STYLES = StyleSheet.create({
     background: 'url(assets/img/SLCBackground.png)',
     lineHeight: 'inherit',
     padding: 0,
-    position: 'relative',
     overflow: 'hidden'
   },
   content: {
@@ -60,8 +59,8 @@ const STYLES = StyleSheet.create({
   },
   imgUfoDarkOne: {
     position: 'absolute',
-    top: 500,
-    right: '5%'
+    top: 450,
+    right: '3%'
   },
   imgUfoDarkTwo: {
     position: 'absolute',
@@ -89,8 +88,11 @@ const STYLES = StyleSheet.create({
   }
 });
 
+STYLES.imgUfoDarkOne[cssPrefix('transform')] = 'rotate(15deg)';
+STYLES.imgUfoDarkOne['transform'] = 'rotate(15deg)';
 STYLES.imgUfoDarkTwo[cssPrefix('transform')] = 'rotate(-25deg)';
 STYLES.imgUfoDarkTwo['transform'] = 'rotate(-25deg)';
+
 
 class Home extends Component {
   renderTitle() {
@@ -123,21 +125,21 @@ class Home extends Component {
         </div>
         <Icon
           href="http://eepurl.com/biqrcn"
-          src="assets/img/emailIcon.png"
+          src="envelope-o"
           alt="Email icon"
           title="Subscribe for updates"
           right={90}
         />
         <Icon
           href="http://twitter.com/ReactRally"
-          src="assets/img/twitterIcon.png"
+          src="twitter"
           alt="Twitter logo"
           title="Follow us on Twitter"
           right={55}
         />
         <Icon
           href="http://github.com/react-rally"
-          src="assets/img/githubIcon.png"
+          src="github"
           alt="GitHub logo"
           title="Follow us on GitHub"
           right={20}
