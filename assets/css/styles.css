@@ -34,6 +34,7 @@ section {
   padding: 50px;
   font-size: 18px;
   line-height: 25px;
+  position: relative;
 }
 
 /* Header title styles */

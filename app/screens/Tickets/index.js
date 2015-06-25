@@ -6,7 +6,6 @@ import { Styles, Sizes, Links } from 'helpers/constants';
 const STYLES = StyleSheet.create({
   section: {
     background: 'url(assets/img/SLCBackground.png)',
-    position: 'relative',
     minHeight: 390,
     color: '#fff'
   },

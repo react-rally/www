@@ -25,6 +25,8 @@ export default {
     FONT_COLOR_TICKETS: 'rgb(255, 241, 2)',
     FONT_COLOR_VENUE: 'rgb(230, 230, 230)',
     FONT_COLOR_SPONSORS: 'rgb(35, 75, 97)',
+    FONT_COLOR_CONDUCT: '#FFF',
+    FONT_COLOR_ORGANIZERS: 'rgb(55, 124, 155)'
   },
   Sizes: {
     HOME_HEIGHT: 802,

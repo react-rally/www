@@ -5,7 +5,6 @@ import { Styles } from 'helpers/constants';
 const STYLES = StyleSheet.create({
   section: {
     background: Styles.BG_COLOR_ABOUT,
-    position: 'relative',
     paddingBottom: 125
   },
   h2: {
@@ -14,7 +13,8 @@ const STYLES = StyleSheet.create({
   img: {
     position: 'absolute',
     right: 50,
-    bottom: -183
+    bottom: -183,
+    zIndex: 1
   },
   a: {
     color: Styles.FONT_COLOR_ABOUT

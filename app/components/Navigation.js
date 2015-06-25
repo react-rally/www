@@ -13,7 +13,8 @@ const STYLES = StyleSheet.create({
     padding: 10,
     margin: 0,
     left: 0,
-    right: 0
+    right: 0,
+    zIndex: 1
   },
   menubar: {
     margin: 'inherit 0',
