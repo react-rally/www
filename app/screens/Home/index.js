@@ -8,7 +8,7 @@ import Icon from './components/Icon';
 
 const STYLES = StyleSheet.create({
   container: {
-    background: 'url(assets/img/SLCBackground.png)',
+    background: 'url(assets/img/SLCBackground.png) rgb(36, 78, 101)',
     lineHeight: 'inherit',
     padding: 0,
     overflow: 'hidden'

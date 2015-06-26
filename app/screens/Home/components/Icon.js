@@ -8,7 +8,7 @@ const STYLES = StyleSheet.create({
     backgroundColor: 'rgb(59, 56, 67)',
     color: 'rgb(215, 215, 215)',
     display: 'inline-block',
-    paddingTop: 4,
+    paddingTop: 3,
     width: 24,
     height: 24,
     position: 'absolute',
