@@ -3,37 +3,41 @@ import Radium from 'radium'
 import StyleSheet from 'react-style';
 import { Styles } from 'helpers/constants';
 
-const SOCIAL_LINK_HEIGHT = 100;
+const SCALE = .5;
 const STYLES = StyleSheet.create({
   content: {
     display: 'inline-block',
-    margin: 10,
-    width: 389,
+    margin: '10px 30px',
+    width: 389*SCALE,
     position: 'relative',
-    paddingTop: 400
+    paddingTop: 400*SCALE
   },
   imgBackground: {
     position: 'absolute',
     top: 0,
-    left: 0
+    left: 0,
+    width: 389*SCALE,
+    height: 396*SCALE
   },
   imgAvatar: {
+    width: 200*SCALE,
+    height: 200*SCALE
   },
   avatarContainer: {
     borderRadius: 100,
     position: 'absolute',
-    top: 100,
-    left: 77,
-    width: 200,
-    height: 200,
+    top: 100*SCALE,
+    left: 77*SCALE,
+    width: 200*SCALE,
+    height: 200*SCALE,
     overflow: 'hidden'
   },
   linkContainer: {
     position: 'absolute',
-    top: 10,
-    left: 10,
-    width: 180,
-    height: 180,
+    top: 10*SCALE,
+    left: 10*SCALE,
+    width: 180*SCALE,
+    height: 180*SCALE,
     transition: 'opacity 150ms',
     overflow: 'hidden',
     borderRadius: 100,
@@ -45,17 +49,16 @@ const STYLES = StyleSheet.create({
   },
   socialLink: {
     color: '#fff',
-    fontSize: 32,
-    paddingTop: 74,
-    margin: '0 10px',
+    fontSize: 32*(SCALE*1.5),
+    paddingTop: 74*SCALE,
+    margin: '0 5px',
     display: 'inline-block',
     ':hover': {
       color: '#ccc'
     }
   },
   name: {
-    color: Styles.FONT_COLOR_SPEAKERS__NAME,
-    fontWeight: 'bold',
+    color: Styles.FONT_COLOR_SPEAKERS__INTRO,
     textAlign: 'center',
     marginBottom: 10
   },
@@ -85,9 +88,7 @@ class Avatar extends Component {
     return (
       <div style={STYLES.content}>
         <img style={STYLES.imgBackground} src="assets/img/avatarBackground.png"/>
-        <div
-          style={STYLES.avatarContainer}
-        >
+        <div style={STYLES.avatarContainer}>
           <img style={STYLES.imgAvatar} src={this.props.url}/>
           <div style={STYLES.linkContainer}>
           {this.props.twitter && (
@@ -99,7 +100,7 @@ class Avatar extends Component {
           </div>
         </div>
         <div style={STYLES.name}>{this.props.name}</div>
-        <div style={STYLES.intro}>{this.props.intro}</div>
+        {/*<div style={STYLES.intro}>{this.props.intro}</div>*/}
       </div>
     );
   }
