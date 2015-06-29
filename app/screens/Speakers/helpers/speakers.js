@@ -65,7 +65,7 @@ module.exports = [
   {
     "name": "Abhinav Rastogi",
     "intro": "",
-    "image": "assets/img/speakers/_abhinavrastogi.jpeg",
+    "image": "assets/img/speakers/abhinavrastogi.jpeg",
     "twitter": "_abhinavrastogi",
     "github": "abhinavrastogi"
   },
