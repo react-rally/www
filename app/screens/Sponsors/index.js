@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
+import ButtonLink from 'components/ButtonLink';
 
 const STYLES = StyleSheet.create({
   section: {
@@ -21,8 +22,8 @@ const STYLES = StyleSheet.create({
     display: 'inline-block',
     margin: 100
   },
-  a: {
-    color: Styles.FONT_COLOR_SPONSORS
+  p: {
+    textAlign: 'center'
   }
 });
 
@@ -31,10 +32,6 @@ export default class Sponsors extends Component {
     return (
       <section id="sponsors" style={STYLES.section}>
         <h2 style={STYLES.h2}>Sponsors</h2>
-        <p>
-          Interested in being a sponsor?
-          Please <a href={Links.SPONSOR_PROSPECTUS} style={STYLES.a} target="_blank">download the prospectus</a>.
-        </p>
         {/*
         <div style={STYLES.content}>
           <div style={STYLES.img}></div>
@@ -44,6 +41,10 @@ export default class Sponsors extends Component {
           <div style={STYLES.img}></div>
         </div>
         */}
+        <p style={STYLES.p}>
+          Want to help support React Rally? We'd love to talk with you.<br/>
+          <ButtonLink href={Links.SPONSOR_PROSPECTUS}>Download our prospectus</ButtonLink>
+        </p>
       </section>
     );
   }

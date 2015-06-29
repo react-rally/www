@@ -5,6 +5,7 @@ import cssPrefix from 'helpers/cssPrefix';
 import { Sizes, Links } from 'helpers/constants';
 import Radium from 'radium'
 import Icon from './components/Icon';
+import ButtonLink from 'components/ButtonLink';
 
 const STYLES = StyleSheet.create({
   container: {
@@ -70,21 +71,9 @@ const STYLES = StyleSheet.create({
     height: 172/2
   },
   buttonLink: {
-    background: 'transparent',
-    border: '1px solid #fff',
-    borderRadius: 5,
-    color: '#fff',
-    display: 'inline-block',
-    fontSize: 20,
-    padding: '10px 35px',
-    textDecoration: 'none',
     position: 'relative',
     top: 25,
-    left: 175,
-    ':hover': {
-      backgroundColor: '#fff',
-      color: '#000'
-    }
+    left: 175
   }
 });
 
@@ -118,9 +107,9 @@ class Home extends Component {
               From single-page apps, to server rendering, to native mobile, to apps on your TV, ReactJS is everywhere.
               Come find out what makes it so incredible.
             </p>
-            <a key="buy" href={Links.TICKET_SALES} target="_blank" style={STYLES.buttonLink}>
-              Buy A Ticket!
-            </a>
+            <ButtonLink href={Links.TICKET_SALES} style={STYLES.buttonLink}>
+              Buy Tickets
+            </ButtonLink>
           </div>
         </div>
         <Icon
