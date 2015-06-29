@@ -106,8 +106,7 @@ export default class Schedule extends Component {
           <div style={STYLES.orientLeft}>
             <h3 style={STYLES.dayHeader}>Monday, August 24th, 2015</h3>
             <p>
-              Our CFP has ended, and we are busy sorting through all your amazing proposals.
-              We will be announcing the schedule once the speakers have been selected.
+              We will be announcing the schedule very soon. Stay tuned...
             </p>
             {/*
             <Session orient="left" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
