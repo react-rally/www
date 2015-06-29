@@ -21,6 +21,13 @@ module.exports = [
     "github": "jessitron"
   },
   {
+    "name": "Lin Clark",
+    "intro": "",
+    "image": "assets/img/speakers/linclark.jpg",
+    "twitter": "linclark",
+    "github": "linclark"
+  },
+  {
     "name": "Lee Byron",
     "intro": "React, GraphQL, Immutable.js at Facebook",
     "image": "assets/img/speakers/leeb.jpg",
@@ -117,5 +124,12 @@ module.exports = [
     "image": "assets/img/speakers/ccheever.jpeg",
     "twitter": "ccheever",
     "github": "ccheever"
+  },
+  {
+    "name": "Jamis Charles",
+    "intro": "",
+    "image": "assets/img/speakers/jamischarles.jpeg",
+    "twitter": "jamischarles",
+    "github": "jamischarles"
   }
 ];
