@@ -75,8 +75,8 @@ class Avatar extends Component {
       <a
         key={prop}
         target="_blank"
-        title={'Follow ' + this.props.name.split(' ')[0] + ' on ' + social}
-        href={'//' + prop + '.com/' + this.props[prop]}
+        title={'Follow ' + this.props.speaker.name.split(' ')[0] + ' on ' + social}
+        href={'//' + prop + '.com/' + this.props.speaker[prop]}
         style={STYLES.socialLink}
       >
         <i className={'fa fa-' + prop}/>
@@ -89,32 +89,34 @@ class Avatar extends Component {
       <div style={STYLES.content}>
         <img style={STYLES.imgBackground} src="assets/img/avatarBackground.png"/>
         <div style={STYLES.avatarContainer}>
-          <img style={STYLES.imgAvatar} src={this.props.url}/>
+          <img style={STYLES.imgAvatar} src={this.props.speaker.image}/>
           <div style={STYLES.linkContainer}>
-          {this.props.twitter && (
+          {this.props.speaker.twitter && (
             this.renderSocialLink('Twitter')
           )}
-          {this.props.github && (
+          {this.props.speaker.github && (
             this.renderSocialLink('GitHub')
           )}
           </div>
         </div>
-        <div style={STYLES.name}>{this.props.name}</div>
-        {/*<div style={STYLES.intro}>{this.props.intro}</div>*/}
+        <div style={STYLES.name}>{this.props.speaker.name}</div>
+        {/*<div style={STYLES.intro}>{this.props.speaker.intro}</div>*/}
       </div>
     );
   }
 }
 
 Avatar.propTypes = {
-  url: PropTypes.string,
-  name: PropTypes.string,
-  github: PropTypes.string,
-  twitter: PropTypes.string,
-  intro: PropTypes.oneOfType([
-    PropTypes.string,
-    React.PropTypes.element
-  ])
+  speaker: PropTypes.shape({
+    image: PropTypes.string,
+    name: PropTypes.string,
+    github: PropTypes.string,
+    twitter: PropTypes.string,
+    intro: PropTypes.oneOfType([
+      PropTypes.string,
+      React.PropTypes.element
+    ])
+  })
 };
 
 Avatar = Radium.Enhancer(Avatar);

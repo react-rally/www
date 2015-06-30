@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
+import SpeakerData from 'helpers/speakers';
 import Avatar from './components/Avatar';
-import SpeakerList from './helpers/speakers';
 
 const STYLES = StyleSheet.create({
   section: {
@@ -23,14 +23,11 @@ const STYLES = StyleSheet.create({
 
 export default class Speakers extends Component {
   renderSpeakers() {
-    return SpeakerList.map((speaker, i) => {
+    return Object.keys(SpeakerData).map((key, i) => {
+      var speaker = SpeakerData[key];
       return <Avatar
-          key={i}
-          url={speaker.image}
-          name={speaker.name}
-          intro={speaker.intro}
-          twitter={speaker.twitter}
-          github={speaker.github}
+          key={key}
+          speaker={speaker}
         />
     });
   }

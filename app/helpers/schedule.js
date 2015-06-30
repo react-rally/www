@@ -1,0 +1,167 @@
+module.exports = [
+  [
+    {
+      "time": "8:00",
+      "title": "Registration"
+    },
+    {
+      "time": "9:00",
+      "title": "",
+      "description": "",
+      "speaker": "jessitron"
+    },
+    {
+      "time": "9:30",
+      "title": "Elegant React with ES6 (and a bit of ES7)",
+      "description": "This talk is about how to write cleaner, more efficient React code using ES6 and ES7. It will cover various topics from how to write components that work as both higher-order components and as decorators to using Symbols to quickly iterate over stored objects.",
+      "speaker": "jemyoung"
+    },
+    {
+      "time": "10:00",
+      "title": "Break"
+    },
+    {
+      "time": "10:30",
+      "title": "Bringing Observable Data to React",
+      "description": "With the addition of the new Observe API, React becomes truly reactive! This fresh feature allows components to subscribe to observable data sources, and respond automatically as data is fetched or updated. The talk will cover when and how to use the new API in your own applications, and discuss how it stands to change the way we build and organize React components. We'll also detail how Parse implemented the first data source designed to interact with this API, and the lessons we learned along the way. Finally, we'll explore some unique use cases for observable data to inspire your own projects.",
+      "speaker": "immediatedelay"
+    },
+    {
+      "time": "11:00",
+      "title": "Testable React Components",
+      "description": "Testing is a good way to see whether the program actually runs as you intended, and this session is to show you some of the keys to how to write components that will be easier to test.",
+      "speaker": "ryoia"
+    },
+    {
+      "time": "11:30",
+      "title": "Why is React \"functional\"?",
+      "description": "We all know that React works, but being functional implies so much more than the typical dictionary definition would imply. Using React and Om as an example, I’d like to walk you through some tenets of functional programming. A win much bigger than the words ‘virtual dom’ exists in React, and through my examples, you’ll see what makes reasoning about functional systems such a treat.",
+      "speaker": "johnkpaul"
+    },
+    {
+      "time": "12:00",
+      "title": "Lunch"
+    },
+    {
+      "time": "2:00",
+      "title": "",
+      "description": "",
+      "speaker": "leeb"
+    },
+    {
+      "time": "2:30",
+      "title": "",
+      "description": "",
+      "speaker": "schrockn"
+    },
+    {
+      "time": "3:00",
+      "title": "Break"
+    },
+    {
+      "time": "4:00",
+      "title": "Syncing state using socket streams",
+      "description": "tl;dr: This talk will be about syncing application state across clients over the network using sockets and observable streams and managing it using the Flux pattern. Also, canvas and functional reactive programming.\n\nBasically, I will talk about how to build a simple multi-player game, which stores player state in a Flux store and syncs it across other players using sockets. Socket programming usually means event based async programming. Using streams/observables (RxJS) we can use sockets in a reactive manner, which makes it cleaner and easier to reason about.",
+      "speaker": "abhinavrastogi"
+    },
+    {
+      "time": "4:30",
+      "title": "",
+      "description": "",
+      "speaker": "linclark"
+    },
+    {
+      "time": "5:00",
+      "title": "Interoperable CSS",
+      "description": "Most people aren't aware just what an achievement CommonJS was and the true extent of its impact. It took a language that only ran in browsers, had no concept of separate files, used global variables and a single global DOM to communicate; and built something viable, then something thriving, then something dominant. All by adding only a couple of pieces of syntax and a new mental model.\n\nThere have been a lot of ideas and a lot of speculation about the future of CSS in the last year or so, largely driven by the ingenuity of the React community — will we write styling code purely in JS? Will CSS continue to be useful? Will someone concoct some X-files-style JS+CSS alien-human hybrid language that takes over the world? It's all possible (mostly).\n\nThis talk is about a new format for CSS, one that's now supported by default in Webpack & JSPM, and available with plugins for Browserify. It's called Interoperable CSS, and it hopes to do for CSS what CommonJS did for JavaScript.",
+      "speaker": "glenmaddern"
+    },
+    {
+      "time": "6:30",
+      "title": "Party"
+    }
+  ],
+  [
+    {
+      "time": "8:00",
+      "title": "Registration"
+    },
+    {
+      "time": "9:00",
+      "title": "",
+      "description": "",
+      "speaker": "vjeux"
+    },
+    {
+      "time": "9:30",
+      "title": "Exponent - a React Native development tool",
+      "description": "Exponent ( http://exp.host ) is a way create and view rich articles built with React Native. Anyone with an iPhone and the Exponent app can view Exponent articles, and you can develop for it with just a text editor and a web browser -- no need for Xcode or even a simulator.",
+      "speaker": "ccheever"
+    },
+    {
+      "time": "10:00",
+      "title": "Break"
+    },
+    {
+      "time": "10:30",
+      "title": "",
+      "description": "",
+      "speaker": "holtbt"
+    },
+    {
+      "time": "11:00",
+      "title": "React & Web Audio Api: Building a MIDI Interace",
+      "description": "The Web Audio API has taken a huge leap forward by introducing MIDI into the equation. That means making music in the browser with all the great instruments you've had at home! Learn what it takes to build your own synths, styles or effects with React!",
+      "speaker": "peterpme"
+    },
+    {
+      "time": "11:30",
+      "title": "React and WebGl",
+      "description": "Let's explore some of the similarities and differences between these two technologies, as well as how they can be used together in a production application. React is geared toward easy-to-maintain DOM manipulation, while WebGL excels at rendering complex shapes in 3D space. These differences allow us to make interesting tradeoffs, and allow us to do some pretty incredible things.",
+      "speaker": "rickyvetter"
+    },
+    {
+      "time": "12:00",
+      "title": "Lunch"
+    },
+    {
+      "time": "2:00",
+      "title": "Flux for Data Visualization: A Preliminary Manifesto",
+      "description": "All you need for a simple bar chart is D3.js, the standard library for interactive data visualization on the web. But for a highly complex visualization - and here \"visualization\" should be interpreted broadly to include all manner of charts, graphs, and dashboards with interactivity provided through scrolling, paging, filtering, focusing, and zooming - managing the state of the visualization becomes a complex task. And the problem multiplies if the data updates in real time.\n\nThis talk introduces a Flux-based strategy to separate the state of the visualization into three stores: one for the configuration of the visualization, one for the data that is the subject of visualization, and a third that bridges - and depends on - the first two and provides methods for accessing exactly the state information needed to render the current configuration of the data visualization using the subset of the current dataset that falls within the domain under inspection.",
+      "speaker": "iPancreas"
+    },
+    {
+      "time": "2:30",
+      "title": "Connection Lost...",
+      "description": "The world is more connected than ever. Many have smartphones connected to the web using cellular-network as well as laptops on WIFI. Inspite of these unreliable data-connections we still design most web-applications with the assumption that the people using them has a solid dependable connection to our services.\n\nThis talk will challenge this approach and discuss how offline-first design can be applied to React apps. How does it fit into Flux architechture and how can it make our apps even faster and more awesome. You'll learn what APIs the browser gives us today and how we can achieve truly offline-capable apps. But we'll also get a sneak peak into the future of what's coming.",
+      "speaker": "jakobdamjensen"
+    },
+    {
+      "time": "3:00",
+      "title": "Break"
+    },
+    {
+      "time": "4:00",
+      "title": "Flow or: How I learned to stop worrying and typecheck my React code!",
+      "description": "Flow is a gradual static type system for JavaScript. I'll talk about why we're building it, how it works, where React fits in to it's story, what it is/isn't good for, and why it's probably not like many other type systems you might've used in the past.",
+      "speaker": "lbljeffmo"
+    },
+    {
+      "time": "4:30",
+      "title": "Migrating critical apps to React",
+      "description": "You love React. You want to rewrite your whole app in React right now. But you have millions of paying users, and maintaining a stable app is absolutely critical. How do you migrate now and optimize for future change?\n\nI'll cover the lessons we learned when gradually moving a business critical PayPal Backbone/Node app with millions of users to React.",
+      "speaker": "jamischarles"
+    },
+    {
+      "time": "5:00",
+      "title": "How React literally waters my lawn",
+      "description": "I hate yard work, but React makes everything better. For this talk, I'll show you how I ported my home-built sprinkler system's old-and-busted iOS app to a hot-and-modern React web app. Including a live demo with a camera feed from my home.",
+      "speaker": "djsmith42"
+    },
+    {
+      "time": "6:30",
+      "title": "Speaker Dinner"
+    }
+
+  ]
+];

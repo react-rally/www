@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
+import ScheduleData from 'helpers/schedule';
+import SpeakerData from 'helpers/speakers';
 import Session from './components/Session';
 
 const poleColor = 'rgb(50, 96, 124)';
@@ -12,8 +14,7 @@ const STYLES = StyleSheet.create({
   container: {
     position: 'relative',
     padding: '0 100px',
-    minHeight: 1000
-    // minHeight: 2500
+    minHeight: 3200
   },
   h2: {
     color: Styles.FONT_COLOR_SCHEDULE
@@ -90,6 +91,17 @@ const STYLES = StyleSheet.create({
 });
 
 export default class Schedule extends Component {
+  renderSessions(which) {
+    return ScheduleData[which].map(function (session, index) {
+      return <Session
+        key={index}
+        orient={which === 0 ? 'left' : 'right'}
+        session={session}
+        speaker={SpeakerData[session.speaker]}
+      />;
+    });
+  }
+
   render() {
     return (
       <section id="schedule" style={STYLES.section}>
@@ -105,36 +117,11 @@ export default class Schedule extends Component {
           </div>
           <div style={STYLES.orientLeft}>
             <h3 style={STYLES.dayHeader}>Monday, August 24th, 2015</h3>
-            <p>
-              We will be announcing the schedule very soon. Stay tuned...
-            </p>
-            {/*
-            <Session orient="left" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="left" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="left" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="left" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="left" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="left" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="left" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="left" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="left" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="left" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            */}
+            {this.renderSessions(0)}
           </div>
           <div style={STYLES.orientRight}>
             <h3 style={STYLES.dayHeader}>Tuesday, August 25th, 2015</h3>
-            {/*
-            <Session orient="right" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="right" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="right" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="right" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="right" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="right" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="right" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="right" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="right" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            <Session orient="right" topic="Ancient alien" description="extraterrestrial origin legendary times Machu Picchu"/>
-            */}
+            {this.renderSessions(1)}
           </div>
         </div>
       </section>
