@@ -6,8 +6,8 @@ module.exports = [
     },
     {
       "time": "9:00",
-      "title": "",
-      "description": "",
+      "title": "TBA",
+      "description": "Stay tuned...",
       "speaker": "jessitron"
     },
     {
@@ -44,14 +44,14 @@ module.exports = [
     },
     {
       "time": "2:00",
-      "title": "",
-      "description": "",
+      "title": "TBA",
+      "description": "Stay tuned...",
       "speaker": "leeb"
     },
     {
       "time": "2:30",
-      "title": "",
-      "description": "",
+      "title": "TBA",
+      "description": "Stay tuned...",
       "speaker": "schrockn"
     },
     {
@@ -66,8 +66,8 @@ module.exports = [
     },
     {
       "time": "4:30",
-      "title": "",
-      "description": "",
+      "title": "TBA",
+      "description": "Stay tuned...",
       "speaker": "linclark"
     },
     {
@@ -88,8 +88,8 @@ module.exports = [
     },
     {
       "time": "9:00",
-      "title": "",
-      "description": "",
+      "title": "TBA",
+      "description": "Stay tuned...",
       "speaker": "vjeux"
     },
     {
@@ -104,8 +104,8 @@ module.exports = [
     },
     {
       "time": "10:30",
-      "title": "",
-      "description": "",
+      "title": "TBA",
+      "description": "Stay tuned...",
       "speaker": "holtbt"
     },
     {

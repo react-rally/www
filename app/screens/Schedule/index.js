@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import Modal from 'react-modal';
 import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
 import ScheduleData from 'helpers/schedule';
 import SpeakerData from 'helpers/speakers';
 import Session from './components/Session';
+
+Modal.setAppElement(document.getElementById('container'));
+Modal.injectCSS();
 
 const poleColor = 'rgb(50, 96, 124)';
 const STYLES = StyleSheet.create({
@@ -87,19 +91,97 @@ const STYLES = StyleSheet.create({
     marginLeft: 100,
     marginBottom: 50,
     color: poleColor
+  },
+  modal__content: {
+    position: 'relative',
+    height: 500
+  },
+  modal__header: {
+    margin: 0,
+    padding: 20,
+    borderBottom: '1px solid #aaa'
+  },
+  modal__speaker: {
+    color: '#aaa',
+    marginLeft: 10
+  },
+  modal__description: {
+    padding: 20
+  },
+  modal__toolbar: {
+    padding: 20,
+    borderTop: '1px solid #aaa',
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    textAlign: 'right'
   }
 });
 
 export default class Schedule extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
+  handleSessionClick(session) {
+    this.setState({
+      isModalOpen: true,
+      session
+    });
+  }
+
+  handleCloseModalClick() {
+    this.setState({ isModalOpen: false });
+  }
+
+  handleModalRequestClose() {
+    this.setState({ isModalOpen: false });
+  }
+
   renderSessions(which) {
-    return ScheduleData[which].map(function (session, index) {
+    return ScheduleData[which].map((session, index) => {
+      var speaker = SpeakerData[session.speaker];
       return <Session
         key={index}
         orient={which === 0 ? 'left' : 'right'}
         session={session}
-        speaker={SpeakerData[session.speaker]}
+        speaker={speaker}
+        onClick={speaker ? this.handleSessionClick.bind(this) : null}
       />;
     });
+  }
+
+  renderModal() {
+    if (!this.state.isModalOpen) {
+      return null;
+    }
+
+    var session = this.state.session;
+    var speaker = SpeakerData[session.speaker];
+
+    return (
+      <div style={STYLES.modal__content}>
+        <h4 style={STYLES.modal__header}>
+          {session.title}
+          <small style={STYLES.modal__speaker}>by {speaker.name}</small>
+        </h4>
+        <p
+          style={STYLES.modal__description}
+          dangerouslySetInnerHTML={{__html: session.description.replace(/\n/g, '<br/>')}}
+        />
+        <div style={STYLES.modal__toolbar}>
+          <button
+            type="button"
+            onClick={this.handleCloseModalClick.bind(this)}
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    );
   }
 
   render() {
@@ -124,6 +206,13 @@ export default class Schedule extends Component {
             {this.renderSessions(1)}
           </div>
         </div>
+        <Modal
+          closeTimeoutMS={150}
+          isOpen={this.state.isModalOpen}
+          onRequestClose={this.handleModalRequestClose.bind(this)}
+        >
+          {this.renderModal()}
+        </Modal>
       </section>
     );
   }

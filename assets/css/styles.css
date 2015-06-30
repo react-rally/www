@@ -37,6 +37,22 @@ section {
   position: relative;
 }
 
+button {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #000;
+  display: inline-block;
+  padding: 10px 35px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
 /* Header title styles */
 #title div {
   position: absolute;
@@ -55,6 +71,36 @@ section {
 #title div:nth-of-type(9)  { font-size: 150px; top: 135px; left: 750px; } /*L*/
 #title div:nth-of-type(10) { font-size: 145px; top: 140px; left: 790px; } /*Y*/
 #title div:nth-of-type(11) { font-size: 120px; top: 165px; left: 840px; } /*!*/
+
+/* Modal */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-perspective: 600;
+  perspective: 600;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  width: 600px;
+  height: 500px;
+  margin: 100px auto;
+  padding: 0;
+  transform: scale(0.5) rotateX(-30deg);
+  transition: all 150ms ease-in;
+}
+.ReactModal__Content--after-open {
+  transform: scale(1) rotateX(0deg);
+}
+.ReactModal__Content--before-close {
+  transform: scale(0.5) rotateX(30deg);
+}
 
 /* Responsive for most iPhones, and Galaxies */
 @media only screen and (device-width: 320px) {

@@ -21,7 +21,8 @@ const STYLES = StyleSheet.create({
     marginLeft: 5
   },
   title: {
-    color: Styles.FONT_COLOR_SCHEDULE__TOPIC
+    color: Styles.FONT_COLOR_SCHEDULE__TOPIC,
+    cursor: 'pointer'
   },
   description: {
     color: Styles.FONT_COLOR_SCHEDULE__DESCRIPTION
@@ -51,7 +52,8 @@ const STYLES = StyleSheet.create({
     marginTop: 2,
     boxSizing: 'border-box',
     borderRadius: 25,
-    border: '1px solid #fff'
+    border: '1px solid #fff',
+    cursor: 'pointer'
   }
 });
 
@@ -63,8 +65,26 @@ function randomRadius(factor = 150) {
   return randomBoolean() ? Math.floor(Math.random() * factor) : 0;
 }
 
-export default class Session extends Component { 
+export default class Session extends Component {
+  handleClick() {
+    if (this.props.onClick) {
+      this.props.onClick(this.props.session);
+    }
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      this.props.session.time !== nextProps.session.time ||
+      this.props.session.title !== nextProps.session.title ||
+      (!this.props.speaker && !nextProps.speaker) ||
+      this.props.speaker.name !== nextProps.speaker.name ||
+      this.props.speaker.image !== nextProps.speaker.image
+    );
+  }
+
   render() {
+    var session = this.props.session;
+    var speaker = this.props.speaker;
     var contentStyles = STYLES.content;
     var poleStyles = STYLES.pole;
 
@@ -76,14 +96,12 @@ export default class Session extends Component {
       randomRadius(90) // Don't crowd avatar
     );
 
-    contentStyles.minHeight = this.props.speaker ? 115 : 60;
+    contentStyles.minHeight = speaker ? 115 : 60;
     contentStyles.left = this.props.orient === 'left' ? 100 : null;
     contentStyles.right = this.props.orient === 'right' ? 100 : null;
+    contentStyles.float = this.props.orient;
     poleStyles.left = this.props.orient === 'left' ? 150 : 0;
     poleStyles.right = this.props.orient === 'right' ? 150 : 0;
-    if (this.props.orient === 'right') {
-      contentStyles.float = 'right';
-    }
 
     return (
       <div style={STYLES.container}>
@@ -91,14 +109,18 @@ export default class Session extends Component {
         <div style={contentStyles}>
           <div style={STYLES.contentLeft}>
             <i className="fa fa-clock-o"></i>
-            <small style={STYLES.time}>{this.props.session.time}</small>
-          {this.props.speaker && (
-            <img style={STYLES.avatar} src={this.props.speaker.image}/>
+            <small style={STYLES.time}>{session.time}</small>
+          {speaker && (
+            <img
+              style={STYLES.avatar}
+              src={speaker.image}
+              onClick={this.handleClick.bind(this)}
+            />
           )}
           </div>
-          <div styles={[STYLES.contentRight, {top: this.props.speaker ? -85 : -25}]}>
-            <div style={STYLES.title}>{this.props.session.title}</div>
-            <div style={STYLES.description}>{this.props.speaker ? this.props.speaker.name : ''}</div>
+          <div styles={[STYLES.contentRight, {top: speaker ? -85 : -25}]}>
+            <div style={STYLES.title} onClick={this.handleClick.bind(this)}>{session.title}</div>
+            <div style={STYLES.description}>{speaker ? speaker.name : ''}</div>
           </div>
         </div>
       </div>
@@ -115,5 +137,6 @@ Session.propTypes = {
   speaker: PropTypes.shape({
     name: PropTypes.string,
     image: PropTypes.string
-  })
+  }),
+  onClick: PropTypes.func
 };
