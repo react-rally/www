@@ -80,7 +80,7 @@ module.exports = {
     "name": "Jakob Dam Jensen",
     "intro": "I'm a Senior Frontend Developer living in Denmark. I've been developing web-applications for about ten years and love Javascript (yep - I kid you not). I had a quick detour developing iOS apps for a couple of years after iPhoneOS 2 with the SDK as released. After that I've been exploring how to make the web experience richer by applying some of the same patterns.",
     "image": "assets/img/speakers/jakobdamjensen.png",
-    "twitter": "jakobdamjensen",
+    "twitter": "jdj_dk",
     "github": "jakobdamjensen"
   },
   "iPancreas": {
