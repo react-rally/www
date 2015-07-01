@@ -3,7 +3,6 @@ export default {
     CODE_OF_CONDUCT: 'http://confcodeofconduct.com/',
     TICKET_SALES: 'https://ti.to/trace-events/react-rally-2015',
     PROPOSAL_FORM: 'https://docs.google.com/forms/d/1NglNZ8H294KFILhOozIpFrt5XCtZV9QzuKFmwn8Xw28/viewform',
-    // SPONSOR_PROSPECTUS: 'https://docs.google.com/forms/d/1NjwsES-vwzYm3d8jE3_tD_zwoW1YG08imcKe6UD4v_0/viewform'
     SPONSOR_PROSPECTUS: 'docs/sponsor.pdf'
   },
   Styles: {
@@ -20,7 +19,7 @@ export default {
     FONT_COLOR_SPEAKERS__NAME: 'rgb(255, 241, 2)',
     FONT_COLOR_SPEAKERS__INTRO: 'rgb(244, 244, 244)',
     FONT_COLOR_SCHEDULE: 'rgb(122, 122, 122)',
-    FONT_COLOR_SCHEDULE__TOPIC: 'rgb(70, 211, 188)',
+    FONT_COLOR_SCHEDULE__TITLE: 'rgb(70, 211, 188)',
     FONT_COLOR_SCHEDULE__DESCRIPTION: 'rgb(247, 247, 247)',
     FONT_COLOR_TICKETS: 'rgb(255, 241, 2)',
     FONT_COLOR_VENUE: 'rgb(230, 230, 230)',

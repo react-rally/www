@@ -21,7 +21,7 @@ const STYLES = StyleSheet.create({
     marginLeft: 5
   },
   title: {
-    color: Styles.FONT_COLOR_SCHEDULE__TOPIC,
+    color: Styles.FONT_COLOR_SCHEDULE__TITLE,
     cursor: 'pointer'
   },
   description: {
