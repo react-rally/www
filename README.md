@@ -8,9 +8,10 @@ npm start
 open http://127.0.0.1:8080
 ```
 
-## Publishing
+## Deploying
 
 ```bash
+# Once your changes have been commited
 npm run deploy
 
 # Next three lines only needed if developing on branch other than gh-pages
