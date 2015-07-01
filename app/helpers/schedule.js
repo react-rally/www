@@ -44,8 +44,8 @@ module.exports = [
     },
     {
       "time": "2:00",
-      "title": "TBA",
-      "description": "Stay tuned...",
+      "title": "Exploring GraphQL",
+      "description": "GraphQL is a query language that lets client applications concisely describe the data they require, and a server-side library that binds to your existing application code. GraphQL powers Facebook's mobile applications and is the data language of Relay. Learn more about GraphQL and how it might simplify your data driven applications.",
       "speaker": "leeb"
     },
     {
@@ -72,10 +72,14 @@ module.exports = [
     },
     {
       "time": "5:00",
-      "title": "Interoperable CSS",
-      "description": "Most people aren't aware just what an achievement CommonJS was and the true extent of its impact. It took a language that only ran in browsers, had no concept of separate files, used global variables and a single global DOM to communicate; and built something viable, then something thriving, then something dominant. All by adding only a couple of pieces of syntax and a new mental model.\n\nThere have been a lot of ideas and a lot of speculation about the future of CSS in the last year or so, largely driven by the ingenuity of the React community — will we write styling code purely in JS? Will CSS continue to be useful? Will someone concoct some X-files-style JS+CSS alien-human hybrid language that takes over the world? It's all possible (mostly).\n\nThis talk is about a new format for CSS, one that's now supported by default in Webpack & JSPM, and available with plugins for Browserify. It's called Interoperable CSS, and it hopes to do for CSS what CommonJS did for JavaScript.",
-      "speaker": "glenmaddern"
+      "title": "TBA"
     },
+    // {
+    //   "time": "5:00",
+    //   "title": "Interoperable CSS",
+    //   "description": "Most people aren't aware just what an achievement CommonJS was and the true extent of its impact. It took a language that only ran in browsers, had no concept of separate files, used global variables and a single global DOM to communicate; and built something viable, then something thriving, then something dominant. All by adding only a couple of pieces of syntax and a new mental model.\n\nThere have been a lot of ideas and a lot of speculation about the future of CSS in the last year or so, largely driven by the ingenuity of the React community — will we write styling code purely in JS? Will CSS continue to be useful? Will someone concoct some X-files-style JS+CSS alien-human hybrid language that takes over the world? It's all possible (mostly).\n\nThis talk is about a new format for CSS, one that's now supported by default in Webpack & JSPM, and available with plugins for Browserify. It's called Interoperable CSS, and it hopes to do for CSS what CommonJS did for JavaScript.",
+    //   "speaker": "glenmaddern"
+    // },
     {
       "time": "6:30",
       "title": "Party"
@@ -104,8 +108,8 @@ module.exports = [
     },
     {
       "time": "10:30",
-      "title": "TBA",
-      "description": "Stay tuned...",
+      "title": "Falcor: Simplifying Your Data",
+      "description": "Many of us have the issue where we have to pass props to children again and again because we have data that a parent has and a deeply nested child needs. It's a difficulty that comes with React and no one has quite solved it yet. At Netflix, we believe we have a good solution for it that is explicit, performant, and terse without sacrificing clarity.\n\nThe name of the soon-to-be open sourced library is Falcor and it takes care not only of your data tunneling issue but also caching, cache invalidation, and even simple AJAX operations. Let's chat about how we can push React data to the next level.",
       "speaker": "holtbt"
     },
     {

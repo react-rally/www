@@ -8,7 +8,7 @@ module.exports = {
   },
   "holtbt": {
     "name": "Brian Holt",
-    "intro": "",
+    "intro": "Brian is currently working as a senior user interface engineer at Netflix. This means he's using JavaScript to enable your (and his) binge watching of House of Cards. Previously he was at reddit in SLC. When not on a Netflix bender, Brian is probably hanging out with wife and dog, running, traveling, or playing video games. Brian is presently a resident of San Francisco, CA.",
     "image": "assets/img/speakers/holtbt.jpg",
     "twitter": "holtbt",
     "github": "btholt"
@@ -29,7 +29,7 @@ module.exports = {
   },
   "leeb": {
     "name": "Lee Byron",
-    "intro": "",
+    "intro": "I make things at Facebook, including React, Immutable.js, and GraphQL, and am a member of TC39, the JavaScript standards committee.",
     "image": "assets/img/speakers/leeb.jpg",
     "twitter": "leeb",
     "github": "leebyron"
@@ -132,11 +132,11 @@ module.exports = {
     "twitter": "jamischarles",
     "github": "jamischarles"
   },
-  "glenmaddern": {
-    "name": "Glen Maddern",
-    "intro": "Glen Maddern is an independent web developer from Melbourne, Australia. He believes there’s never been a more potent target for ideas than the browser and the web, and loves the incredible pace at which new ideas are emerging and the new ways ideas can be shared. He's an organiser of CSSConf AU, contributor to CSS Modules and JSPM, and author of Interoperable CSS.",
-    "image": "assets/img/speakers/glenmaddern.jpg",
-    "twitter": "glenmaddern",
-    "github": "geelen"
-  }
+  // "glenmaddern": {
+  //   "name": "Glen Maddern",
+  //   "intro": "Glen Maddern is an independent web developer from Melbourne, Australia. He believes there’s never been a more potent target for ideas than the browser and the web, and loves the incredible pace at which new ideas are emerging and the new ways ideas can be shared. He's an organiser of CSSConf AU, contributor to CSS Modules and JSPM, and author of Interoperable CSS.",
+  //   "image": "assets/img/speakers/glenmaddern.jpg",
+  //   "twitter": "glenmaddern",
+  //   "github": "geelen"
+  // }
 };
