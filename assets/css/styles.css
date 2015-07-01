@@ -143,6 +143,19 @@ button:hover {
   menu > ul > li {
     margin: 3% !important;
   }
+
+  #schedule .pole {
+    display: none;
+  }
+  #schedule .dayOne,
+  #schedule .dayTwo {
+    float: none !important;
+    width: auto !important;
+  }
+  #schedule .dayTwo .session__content {
+    float: left !important;
+    left: 100px !important;
+  }
 }
 
 @media only screen and (max-width: 1075px) {

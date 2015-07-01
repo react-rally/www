@@ -105,8 +105,8 @@ export default class Session extends Component {
 
     return (
       <div style={STYLES.container}>
-        <div style={poleStyles}></div>
-        <div style={contentStyles}>
+        <div style={poleStyles} className="pole"></div>
+        <div style={contentStyles} className="session__content">
           <div style={STYLES.contentLeft}>
             <i className="fa fa-clock-o"></i>
             <small style={STYLES.time}>{session.time}</small>

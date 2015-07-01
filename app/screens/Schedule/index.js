@@ -17,7 +17,7 @@ const STYLES = StyleSheet.create({
   },
   container: {
     position: 'relative',
-    padding: '0 100px',
+    padding: 0,
     minHeight: 3200
   },
   h2: {
@@ -74,18 +74,13 @@ const STYLES = StyleSheet.create({
     border: '6px solid ' + poleColor
   },
   orientLeft: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    bottom: 0,
-    right: '50%'
+    float: 'left',
+    width: '50%'
   },
   orientRight: {
-    position: 'absolute',
-    top: 125,
-    right: 0,
-    bottom: 0,
-    left: '50%'
+    float: 'right',
+    width: '50%',
+    marginTop: 125
   },
   dayHeader: {
     marginLeft: 100,
@@ -190,18 +185,20 @@ export default class Schedule extends Component {
         <h2 style={STYLES.h2}>Schedule</h2>
         <img src="assets/img/cropCircle.png" style={STYLES.img}/>
         <div style={STYLES.container}>
-          <div style={STYLES.pole}></div>
-          <div style={STYLES.poleTopOuter}>
-            <div style={STYLES.poleTopInner}></div>
+          <div className="pole">
+            <div style={STYLES.pole}></div>
+            <div style={STYLES.poleTopOuter}>
+              <div style={STYLES.poleTopInner}></div>
+            </div>
+            <div style={STYLES.poleBottomOuter}>
+              <div style={STYLES.poleBottomInner}></div>
+            </div>
           </div>
-          <div style={STYLES.poleBottomOuter}>
-            <div style={STYLES.poleBottomInner}></div>
-          </div>
-          <div style={STYLES.orientLeft}>
+          <div style={STYLES.orientLeft} className="dayOne">
             <h3 style={STYLES.dayHeader}>Monday, August 24th, 2015</h3>
             {this.renderSessions(0)}
           </div>
-          <div style={STYLES.orientRight}>
+          <div style={STYLES.orientRight} className="dayTwo">
             <h3 style={STYLES.dayHeader}>Tuesday, August 25th, 2015</h3>
             {this.renderSessions(1)}
           </div>
