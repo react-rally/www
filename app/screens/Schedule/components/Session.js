@@ -22,7 +22,8 @@ const STYLES = StyleSheet.create({
   },
   title: {
     color: Styles.FONT_COLOR_SCHEDULE__TITLE,
-    cursor: 'pointer'
+    cursor: 'pointer',
+    textDecoration: 'none'
   },
   description: {
     color: Styles.FONT_COLOR_SCHEDULE__DESCRIPTION
@@ -104,9 +105,9 @@ export default class Session extends Component {
     poleStyles.right = this.props.orient === 'right' ? 150 : 0;
 
     return (
-      <div style={STYLES.container}>
-        <div style={poleStyles} className="pole"></div>
-        <div style={contentStyles} className="session__content">
+      <div style={STYLES.container} className="Session">
+        <div style={poleStyles} className="Session__pole"></div>
+        <div style={contentStyles} className="Session__content">
           <div style={STYLES.contentLeft}>
             <i className="fa fa-clock-o"></i>
             <small style={STYLES.time}>{session.time}</small>
@@ -119,7 +120,7 @@ export default class Session extends Component {
           )}
           </div>
           <div styles={[STYLES.contentRight, {top: speaker ? -85 : -25}]}>
-            <div style={STYLES.title} onClick={this.handleClick.bind(this)}>{session.title}</div>
+            <a href="javascript://" style={STYLES.title} onClick={this.handleClick.bind(this)}>{session.title}</a>
             <div style={STYLES.description}>{speaker ? speaker.name : ''}</div>
           </div>
         </div>

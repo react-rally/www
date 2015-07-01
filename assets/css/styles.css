@@ -112,6 +112,11 @@ button:hover {
     margin-left: 125px !important;
     margin-top: 25px !important;
   }
+
+  .ReactModal__Content {
+    zoom: 2;
+    width: 80%;
+  }
 }
 
 /* Responsive for iPhone 6 */
@@ -123,6 +128,11 @@ button:hover {
   #venue iframe {
     margin-left: 125px !important;
     margin-top: 100px !important;
+  }
+  
+  .ReactModal__Content {
+    zoom: 2;
+    width: 80%;
   }
 }
 
@@ -136,6 +146,11 @@ button:hover {
     margin-left: 125px !important;
     margin-top: 25px !important;
   }
+
+  .ReactModal__Content {
+    zoom: 2;
+    width: 80%;
+  }
 }
 
 /* Responsive for Desktop */
@@ -144,7 +159,12 @@ button:hover {
     margin: 3% !important;
   }
 
-  #schedule .pole {
+  #schedule .Session {
+    margin-bottom: 50px !important;
+    zoom: 1.5 !important;
+  }
+  #schedule .Schedule__pole,
+  #schedule .Session__pole {
     display: none;
   }
   #schedule .dayOne,
@@ -152,7 +172,7 @@ button:hover {
     float: none !important;
     width: auto !important;
   }
-  #schedule .dayTwo .session__content {
+  #schedule .dayTwo .Session__content {
     float: left !important;
     left: 100px !important;
   }

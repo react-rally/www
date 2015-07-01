@@ -185,7 +185,7 @@ export default class Schedule extends Component {
         <h2 style={STYLES.h2}>Schedule</h2>
         <img src="assets/img/cropCircle.png" style={STYLES.img}/>
         <div style={STYLES.container}>
-          <div className="pole">
+          <div className="Schedule__pole">
             <div style={STYLES.pole}></div>
             <div style={STYLES.poleTopOuter}>
               <div style={STYLES.poleTopInner}></div>
