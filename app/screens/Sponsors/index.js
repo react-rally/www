@@ -40,6 +40,20 @@ export default class Sponsors extends Component {
     return (
       <section id="sponsors" style={STYLES.section}>
         <h2 style={STYLES.h2}>Sponsors</h2>
+        {/*
+        <h3 style={STYLES.h3}>Premier</h3>
+        <h3 style={STYLES.h3}>Platinum</h3>
+        <h3 style={STYLES.h3}>Gold</h3>
+        <h3 style={STYLES.h3}>Silver</h3>
+        <h3 style={STYLES.h3}>Supporters</h3>
+        <div style={STYLES.content}>
+          <div style={STYLES.img}>
+            <a href="https://www.facebook.com/careers/" target="_blank">
+              <img src="assets/img/sponsors/facebook.png"/>
+            </a>
+          </div>
+        </div>
+        */}
         <p style={STYLES.p}>
           Want to help support React Rally? We'd love to talk with you.<br/>
           <ButtonLink
