@@ -132,11 +132,11 @@ module.exports = {
     "twitter": "jamischarles",
     "github": "jamischarles"
   },
-  // "glenmaddern": {
-  //   "name": "Glen Maddern",
-  //   "intro": "Glen Maddern is an independent web developer from Melbourne, Australia. He believes there’s never been a more potent target for ideas than the browser and the web, and loves the incredible pace at which new ideas are emerging and the new ways ideas can be shared. He's an organiser of CSSConf AU, contributor to CSS Modules and JSPM, and author of Interoperable CSS.",
-  //   "image": "assets/img/speakers/glenmaddern.jpg",
-  //   "twitter": "glenmaddern",
-  //   "github": "geelen"
-  // }
+  "glenmaddern": {
+    "name": "Glen Maddern",
+    "intro": "Glen Maddern is an independent web developer from Melbourne, Australia. He believes there’s never been a more potent target for ideas than the browser and the web, and loves the incredible pace at which new ideas are emerging and the new ways ideas can be shared. He's an organiser of CSSConf AU, contributor to CSS Modules and JSPM, and author of Interoperable CSS.",
+    "image": "assets/img/speakers/glenmaddern.jpg",
+    "twitter": "glenmaddern",
+    "github": "geelen"
+  }
 };
