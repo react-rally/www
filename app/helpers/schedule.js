@@ -1,4 +1,5 @@
 module.exports = [
+  // Day ONE
   [
     {
       "time": "8:00",
@@ -81,6 +82,8 @@ module.exports = [
       "title": "Party"
     }
   ],
+
+  // Day TWO
   [
     {
       "time": "8:00",
