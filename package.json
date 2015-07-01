@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/webpack-dev-server --inline --content-base ./",
-    "build": "PRODUCTION=1 ./node_modules/.bin/webpack"
+    "build": "PRODUCTION=1 ./node_modules/.bin/webpack",
+    "deploy": "./scripts/deploy"
   },
   "repository": {
     "type": "git",
