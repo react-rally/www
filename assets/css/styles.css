@@ -113,6 +113,10 @@ button:hover {
     margin-top: 25px !important;
   }
 
+  #schedule .Session {
+    zoom: 1.5 !important;
+  }
+ 
   .ReactModal__Content {
     zoom: 2;
     width: 80%;
@@ -130,6 +134,10 @@ button:hover {
     margin-top: 100px !important;
   }
   
+  #schedule .Session {
+    zoom: 1.5 !important;
+  }
+
   .ReactModal__Content {
     zoom: 2;
     width: 80%;
@@ -147,6 +155,10 @@ button:hover {
     margin-top: 25px !important;
   }
 
+  #schedule .Session {
+    zoom: 1.5 !important;
+  }
+
   .ReactModal__Content {
     zoom: 2;
     width: 80%;
@@ -161,8 +173,8 @@ button:hover {
 
   #schedule .Session {
     margin-bottom: 50px !important;
-    zoom: 1.5 !important;
   }
+
   #schedule .Schedule__pole,
   #schedule .Session__pole {
     display: none;
