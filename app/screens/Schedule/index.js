@@ -12,7 +12,7 @@ Modal.injectCSS();
 const poleColor = 'rgb(50, 96, 124)';
 const STYLES = StyleSheet.create({
   section: {
-    background: `url(assets/img/weatheredBackground.png) ${Styles.BG_COLOR_SCHEDULE}`,
+    background: `url(assets/dist/img/weatheredBackground.png) ${Styles.BG_COLOR_SCHEDULE}`,
     paddingBottom: 150
   },
   container: {
@@ -183,7 +183,7 @@ export default class Schedule extends Component {
     return (
       <section id="schedule" style={STYLES.section}>
         <h2 style={STYLES.h2}>Schedule</h2>
-        <img src="assets/img/cropCircle.png" style={STYLES.img}/>
+        <img src="assets/dist/img/cropCircle.png" style={STYLES.img}/>
         <div style={STYLES.container}>
           <div className="Schedule__pole">
             <div style={STYLES.pole}></div>

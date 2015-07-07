@@ -6,7 +6,7 @@ import Avatar from './components/Avatar';
 
 const STYLES = StyleSheet.create({
   section: {
-    background: `url(assets/img/speakersBackground.png) ${Styles.BG_COLOR_SPEAKERS}`,
+    background: `url(assets/dist/img/speakersBackground.png) ${Styles.BG_COLOR_SPEAKERS}`,
     paddingTop: 100
   },
   h2: {

@@ -37,7 +37,7 @@ export default class About extends Component {
 
     return (
       <section id="about" style={STYLES.section}>
-        <img src="assets/img/tentacle.png" style={STYLES.img}/>
+        <img src="assets/dist/img/tentacle.png" style={STYLES.img}/>
         <h2 style={STYLES.h2}>About</h2>
         <p>
           React Rally is a two day, single track conference for developers of all backgrounds using Facebook's {reactLink}.

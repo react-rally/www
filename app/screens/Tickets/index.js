@@ -6,7 +6,7 @@ import ButtonLink from 'components/ButtonLink';
 
 const STYLES = StyleSheet.create({
   section: {
-    background: 'url(assets/img/SLCBackground.png)',
+    background: 'url(assets/dist/img/SLCBackground.png)',
     minHeight: 390,
     color: '#fff'
   },
@@ -33,7 +33,7 @@ class TicketsComponent extends Component {
   render() {
     return (
       <section id="tickets" style={STYLES.section}>
-        <img src="assets/img/robot_withLaser.png" style={STYLES.img}/>
+        <img src="assets/dist/img/robot_withLaser.png" style={STYLES.img}/>
         <div style={STYLES.container}>
           <h2 style={STYLES.h2}>Tickets</h2>
           <p style={STYLES.p}>

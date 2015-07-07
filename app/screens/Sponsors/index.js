@@ -5,7 +5,7 @@ import ButtonLink from 'components/ButtonLink';
 
 const STYLES = StyleSheet.create({
   section: {
-    background: `url(assets/img/weatheredBackground.png) ${Styles.BG_COLOR_SPONSORS}`,
+    background: `url(assets/dist/img/weatheredBackground.png) ${Styles.BG_COLOR_SPONSORS}`,
     minHeight: 350
   },
   h2: {
@@ -49,7 +49,7 @@ export default class Sponsors extends Component {
         <div style={STYLES.content}>
           <div style={STYLES.img}>
             <a href="https://www.facebook.com/careers/" target="_blank">
-              <img src="assets/img/sponsors/facebook.png"/>
+              <img src="assets/dist/img/sponsors/facebook.png"/>
             </a>
           </div>
         </div>

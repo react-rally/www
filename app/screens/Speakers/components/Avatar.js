@@ -87,7 +87,7 @@ class Avatar extends Component {
   render() {
     return (
       <div style={STYLES.content}>
-        <img style={STYLES.imgBackground} src="assets/img/avatarBackground.png"/>
+        <img style={STYLES.imgBackground} src="assets/dist/img/avatarBackground.png"/>
         <div style={STYLES.avatarContainer}>
           <img style={STYLES.imgAvatar} src={this.props.speaker.image}/>
           <div style={STYLES.linkContainer}>

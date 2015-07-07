@@ -56,31 +56,31 @@ export default class Organizers extends Component {
       <section id="organizers" styles={[STYLES.container, containerStyles]}>
         <h2 style={STYLES.h2}>Organizers</h2>
         <Avatar
-          url="assets/img/organizers/matt.jpeg"
+          url="assets/dist/img/organizers/matt.jpeg"
           name="Matt Zabriskie"
           twitter="mzabriskie"
           role="co-organizer"
         />
         <Avatar
-          url="assets/img/organizers/jamison.jpeg"
+          url="assets/dist/img/organizers/jamison.jpeg"
           name="Jamison Dance"
           twitter="jergason"
           role="co-organizer"
         />
         <Avatar
-          url="assets/img/organizers/sunny.jpeg"
+          url="assets/dist/img/organizers/sunny.jpeg"
           name="Sunny Leggett"
           twitter="Sunny4days"
           role="admin"
         />
         <Avatar
-          url="assets/img/organizers/aimee.jpeg"
+          url="assets/dist/img/organizers/aimee.jpeg"
           name="Aimee Knight"
           twitter="Aimee_Knight"
           role="advisor"
         />
         <Avatar
-          url="assets/img/organizers/joe.jpeg"
+          url="assets/dist/img/organizers/joe.jpeg"
           name="Joe Eames"
           twitter="josepheames"
           role="advisor"
