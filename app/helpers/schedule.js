@@ -61,7 +61,7 @@ module.exports = [
     },
     {
       "time": "4:00",
-      "title": "Syncing state using socket streams",
+      "title": "Syncing stores using socket streams",
       "description": "tl;dr: This talk will be about syncing application state across clients over the network using sockets and observable streams and managing it using the Flux pattern. Also, canvas and functional reactive programming.\n\nBasically, I will talk about how to build a simple multi-player game, which stores player state in a Flux store and syncs it across other players using sockets. Socket programming usually means event based async programming. Using streams/observables (RxJS) we can use sockets in a reactive manner, which makes it cleaner and easier to reason about.",
       "speaker": "abhinavrastogi"
     },
