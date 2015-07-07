@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/webpack-dev-server --inline --content-base ./",
-    "build": "PRODUCTION=1 ./node_modules/.bin/webpack",
+    "compress-images": "node imagemin.js",
+    "build": "npm run compress-images && PRODUCTION=1 ./node_modules/.bin/webpack",
     "deploy": "./scripts/deploy"
   },
   "repository": {
@@ -33,6 +34,8 @@
     "babel-loader": "5.0.0",
     "css-loader": "0.12.0",
     "file-loader": "0.8.1",
+    "imagemin": "3.2.0",
+    "imagemin-pngquant": "4.1.0",
     "style-loader": "0.12.1",
     "webpack": "1.8.10",
     "webpack-dev-server": "1.8.2"

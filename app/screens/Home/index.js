@@ -9,14 +9,14 @@ import ButtonLink from 'components/ButtonLink';
 
 const STYLES = StyleSheet.create({
   container: {
-    background: 'url(assets/img/SLCBackground.png) rgb(36, 78, 101)',
+    background: 'url(assets/dist/img/SLCBackground.png) rgb(36, 78, 101)',
     lineHeight: 'inherit',
     padding: 0,
     overflow: 'hidden'
   },
   content: {
     height: Sizes.HOME_HEIGHT,
-    background: 'url(assets/img/SLCcity.png) no-repeat -325px 375px'
+    background: 'url(assets/dist/img/SLCcity.png) no-repeat -325px 375px'
   },
   title: {
     fontFamily: 'true_crimesregular',
@@ -92,10 +92,10 @@ class Home extends Component {
     return (
       <section id="home" style={STYLES.container}>
         <div style={STYLES.content}>
-          <img src="assets/img/moon.png" style={STYLES.imgMoon}/>
-          <img src="assets/img/ufoMain.png" style={STYLES.imgUfoMain}/>
-          <img src="assets/img/ufoDark.png" style={STYLES.imgUfoDarkOne}/>
-          <img src="assets/img/ufoDark.png" style={STYLES.imgUfoDarkTwo}/>
+          <img src="assets/dist/img/moon.png" style={STYLES.imgMoon}/>
+          <img src="assets/dist/img/ufoMain.png" style={STYLES.imgUfoMain}/>
+          <img src="assets/dist/img/ufoDark.png" style={STYLES.imgUfoDarkOne}/>
+          <img src="assets/dist/img/ufoDark.png" style={STYLES.imgUfoDarkTwo}/>
           <div id="title" style={STYLES.title}>
             {this.renderTitle()}
           </div>
