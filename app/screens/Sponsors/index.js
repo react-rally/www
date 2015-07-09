@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
+import sponsors from 'helpers/sponsors';
 import ButtonLink from 'components/ButtonLink';
 
 const STYLES = StyleSheet.create({
@@ -35,25 +36,43 @@ const STYLES = StyleSheet.create({
   }
 });
 
+class Sponsor extends Component {
+  render() {
+    return (
+      <div style={STYLES.img}>
+        <a href={this.props.url} target="_blank">
+          <img src={this.props.imageUrl} alt={this.props.name} />
+        </a>
+      </div>
+    )
+  }
+}
+
+Sponsor.propTypes = {
+  url: React.PropTypes.string.isRequired,
+  imageUrl: React.PropTypes.string.isRequired,
+  name: React.PropTypes.string.isRequired
+};
+
 export default class Sponsors extends Component {
+  renderSponsor(sponsor, i) {
+    return <Sponsor key={i} name={sponsor.name} url={sponsor.url} imageUrl={sponsor.imageUrl} />
+  }
+
   render() {
     return (
       <section id="sponsors" style={STYLES.section}>
-        <h2 style={STYLES.h2}>Sponsors</h2>
         {/*
         <h3 style={STYLES.h3}>Premier</h3>
         <h3 style={STYLES.h3}>Platinum</h3>
         <h3 style={STYLES.h3}>Gold</h3>
         <h3 style={STYLES.h3}>Silver</h3>
+        */}
+        <h2 style={STYLES.h2}>Sponsors</h2>
         <h3 style={STYLES.h3}>Supporters</h3>
         <div style={STYLES.content}>
-          <div style={STYLES.img}>
-            <a href="https://www.facebook.com/careers/" target="_blank">
-              <img src="assets/dist/img/sponsors/facebook.png"/>
-            </a>
-          </div>
+          {sponsors.supporters.map(this.renderSponsor)}
         </div>
-        */}
         <p style={STYLES.p}>
           Want to help support React Rally? We'd love to talk with you.<br/>
           <ButtonLink

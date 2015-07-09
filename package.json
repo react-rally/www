@@ -37,7 +37,7 @@
     "imagemin": "3.2.0",
     "imagemin-pngquant": "4.1.0",
     "style-loader": "0.12.1",
-    "webpack": "1.8.10",
-    "webpack-dev-server": "1.8.2"
+    "webpack": "1.10.1",
+    "webpack-dev-server": "1.10.1"
   }
 }
