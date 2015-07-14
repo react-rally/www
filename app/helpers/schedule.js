@@ -51,8 +51,8 @@ module.exports = [
     },
     {
       "time": "2:30",
-      "title": "TBA",
-      "description": "Stay tuned...",
+      "title": "GraphQL Servers",
+      "description": "In this talk, we'll dive into the structure of GraphQL servers, the APIs they enable, and where we want to take the broader ecosystem around GraphQL.",
       "speaker": "schrockn"
     },
     {

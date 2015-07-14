@@ -50,7 +50,7 @@ module.exports = {
   },
   "schrockn": {
     "name": "Nick Schrock",
-    "intro": "",
+    "intro": "Nicholas has been an engineer at Facebook for over six years, working on its internal architecture and abstraction for most of that time. In 2012, he co-designed the initial version of GraphQL and has been working on that system ever since.",
     "image": "assets/dist/img/speakers/schrockn.jpg",
     "twitter": "schrockn",
     "github": "schrockn"
