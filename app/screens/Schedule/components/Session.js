@@ -17,6 +17,9 @@ const STYLES = StyleSheet.create({
     minHeight: 60,
     position: 'relative'
   },
+  clockIcon: {
+    verticalAlign: 'middle'
+  },
   time: {
     marginLeft: 5
   },
@@ -109,7 +112,7 @@ export default class Session extends Component {
         <div style={poleStyles} className="Session__pole"></div>
         <div style={contentStyles} className="Session__content">
           <div style={STYLES.contentLeft}>
-            <i className="fa fa-clock-o"></i>
+            <i className="fa fa-clock-o" style={STYLES.clockIcon}></i>
             <small style={STYLES.time}>{session.time}</small>
           {speaker && (
             <img
