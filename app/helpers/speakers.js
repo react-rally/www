@@ -1,7 +1,7 @@
 module.exports = {
   "vjeux": {
     "name": "Christopher Chedeau",
-    "intro": "",
+    "intro": "I'm a front-end engineer at Facebook. I helped build a community around React and was at the origin of the React Native project. My goal is to open source all the things at Facebook to massively improve the developer experience (DX) of the front-end world.",
     "image": "assets/dist/img/speakers/vjeux.jpg",
     "twitter": "vjeux",
     "github": "vjeux"
@@ -15,7 +15,7 @@ module.exports = {
   },
   "jessitron": {
     "name": "Jessica Kerr",
-    "intro": "",
+    "intro": "Jessica Kerr is a functional developer, primarily in Clojure and Scala. She speaks at conferences in the US and Europe about types vs tests, architecture, and other challenges of software development. She has so far avoided front end development, but sees hope in React and Elm.",
     "image": "assets/dist/img/speakers/jessitron.jpg",
     "twitter": "jessitron",
     "github": "jessitron"

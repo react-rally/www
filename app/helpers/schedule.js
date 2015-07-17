@@ -7,8 +7,8 @@ module.exports = [
     },
     {
       "time": "9:00",
-      "title": "TBA",
-      "description": "Stay tuned...",
+      "title": "Principles of Functional Programming in React",
+      "description": "As software grows, we look for new ways to break it into parts and then hook the parts together. Functional programming is about new ways to isolate and then integrate code. Learn principles behind the trappings of functional programming. React embodies some of these principles — and can embody all of them, if we use it carefully. See how we are untangling the spaghetti of MVC, first with React, then Flux, then Elm. Find out how you’re already following functional principles, and how your can choose to benefit from even more.",
       "speaker": "jessitron"
     },
     {
@@ -91,8 +91,8 @@ module.exports = [
     },
     {
       "time": "9:00",
-      "title": "TBA",
-      "description": "Stay tuned...",
+      "title": "Animated",
+      "description": "When talking about animations, most people think about fire and forget animations. But as we transition to mobile, gesture based animations are more prominent than ever. In this talk I'm going to introduce the Animated library that lets you write performant animations in a very React-y way.",
       "speaker": "vjeux"
     },
     {
