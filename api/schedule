@@ -1,6 +1,5 @@
-module.exports = [
-  // Day ONE
-  [
+{
+  "dayOne": [
     {
       "time": "8:00",
       "title": "Registration"
@@ -83,8 +82,7 @@ module.exports = [
     }
   ],
 
-  // Day TWO
-  [
+  "dayTwo": [
     {
       "time": "8:00",
       "title": "Registration"
@@ -167,4 +165,4 @@ module.exports = [
     }
 
   ]
-];
+}

@@ -1,4 +1,4 @@
-module.exports = {
+{
   "vjeux": {
     "name": "Christopher Chedeau",
     "intro": "I'm a front-end engineer at Facebook. I helped build a community around React and was at the origin of the React Native project. My goal is to open source all the things at Facebook to massively improve the developer experience (DX) of the front-end world.",
@@ -139,4 +139,4 @@ module.exports = {
     "twitter": "glenmaddern",
     "github": "geelen"
   }
-};
+}

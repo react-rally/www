@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
-import sponsors from 'helpers/sponsors';
+import SponsorsData from '../../../api/sponsors';
+import Sponsor from './components/Sponsor';
 import ButtonLink from 'components/ButtonLink';
 
 const STYLES = StyleSheet.create({
@@ -19,10 +20,6 @@ const STYLES = StyleSheet.create({
   content: {
     textAlign: 'center'
   },
-  img: {
-    display: 'inline-block',
-    margin: 25
-  },
   p: {
     textAlign: 'center'
   },
@@ -36,25 +33,31 @@ const STYLES = StyleSheet.create({
   }
 });
 
-class Sponsor extends Component {
-  render() {
-    return (
-      <div style={STYLES.img}>
-        <a href={this.props.url} target="_blank">
-          <img src={this.props.imageUrl} alt={this.props.name} />
-        </a>
-      </div>
-    )
-  }
-}
-
-Sponsor.propTypes = {
-  url: React.PropTypes.string.isRequired,
-  imageUrl: React.PropTypes.string.isRequired,
-  name: React.PropTypes.string.isRequired
-};
-
 export default class Sponsors extends Component {
+  renderSponsorSection(title, data) {
+    var result;
+    if (data) {
+      var sponsors;
+      if (Array.isArray(data)) {
+        sponsors = data.map(this.renderSponsor);
+      } else {
+        sponsors = this.renderSponsor(data);
+      }
+
+      result = (
+        <div>
+          <h3 style={STYLES.h3}>{title}</h3>
+          <div style={STYLES.content}>
+            {sponsors}
+          </div>
+        </div>
+      );
+    } else {
+      result = <noscript/>;
+    }
+    return result;
+  }
+
   renderSponsor(sponsor, i) {
     return <Sponsor key={i} name={sponsor.name} url={sponsor.url} imageUrl={sponsor.imageUrl} />
   }
@@ -62,17 +65,12 @@ export default class Sponsors extends Component {
   render() {
     return (
       <section id="sponsors" style={STYLES.section}>
-        {/*
-        <h3 style={STYLES.h3}>Premier</h3>
-        <h3 style={STYLES.h3}>Platinum</h3>
-        <h3 style={STYLES.h3}>Gold</h3>
-        <h3 style={STYLES.h3}>Silver</h3>
-        */}
         <h2 style={STYLES.h2}>Sponsors</h2>
-        <h3 style={STYLES.h3}>Supporters</h3>
-        <div style={STYLES.content}>
-          {sponsors.supporters.map(this.renderSponsor)}
-        </div>
+        {this.renderSponsorSection('Premier', SponsorsData.premier)}
+        {this.renderSponsorSection('Platinum', SponsorsData.platinum)}
+        {this.renderSponsorSection('Gold', SponsorsData.gold)}
+        {this.renderSponsorSection('Silver', SponsorsData.silver)}
+        {this.renderSponsorSection('Supporters', SponsorsData.supporters)}
         <p style={STYLES.p}>
           Want to help support React Rally? We'd love to talk with you.<br/>
           <ButtonLink

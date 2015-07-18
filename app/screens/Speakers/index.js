@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
-import SpeakerData from 'helpers/speakers';
+import SpeakerData from '../../../api/speakers';
 import Avatar from './components/Avatar';
 
 const STYLES = StyleSheet.create({

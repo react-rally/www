@@ -16,6 +16,7 @@ module.exports = {
     loaders: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
+      { test: /\/api\//, loader: 'json-loader' },
       { test: /(\.eot|\.woff|\.ttf|\.svg)/, loader: 'file-loader' }
     ]
   },

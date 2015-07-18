@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Modal from 'react-modal';
 import StyleSheet from 'react-style';
 import { Styles, Links } from 'helpers/constants';
-import ScheduleData from 'helpers/schedule';
-import SpeakerData from 'helpers/speakers';
+import ScheduleData from '../../../api/schedule';
+import SpeakerData from '../../../api/speakers';
 import Session from './components/Session';
 
 Modal.setAppElement(document.getElementById('container'));
@@ -141,7 +141,7 @@ export default class Schedule extends Component {
       var speaker = SpeakerData[session.speaker];
       return <Session
         key={index}
-        orient={which === 0 ? 'left' : 'right'}
+        orient={which === 'dayOne' ? 'left' : 'right'}
         session={session}
         speaker={speaker}
         onClick={speaker ? this.handleSessionClick.bind(this) : null}
@@ -196,11 +196,11 @@ export default class Schedule extends Component {
           </div>
           <div style={STYLES.orientLeft} className="dayOne">
             <h3 style={STYLES.dayHeader}>Monday, August 24th, 2015</h3>
-            {this.renderSessions(0)}
+            {this.renderSessions("dayOne")}
           </div>
           <div style={STYLES.orientRight} className="dayTwo">
             <h3 style={STYLES.dayHeader}>Tuesday, August 25th, 2015</h3>
-            {this.renderSessions(1)}
+            {this.renderSessions("dayTwo")}
           </div>
         </div>
         <Modal
