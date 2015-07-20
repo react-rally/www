@@ -14,7 +14,7 @@ const STYLES = StyleSheet.create({
     margin: 0,
     left: 0,
     right: 0,
-    zIndex: 1
+    zIndex: 1000
   },
   menubar: {
     margin: 'inherit 0',

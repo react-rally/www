@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import StyleSheet from 'react-style';
-import { Styles } from 'helpers/constants';
+import { Styles, Links } from 'helpers/constants';
+import ButtonLink from 'components/ButtonLink';
 
 const STYLES = StyleSheet.create({
   section: {
@@ -33,10 +34,16 @@ const STYLES = StyleSheet.create({
   },
   map: {
     border: 0,
-    marginLeft: 400
+    marginLeft: 400,
+    zIndex: 100,
+    position: 'relative'
   },
   a: {
     color: Styles.FONT_COLOR_VENUE
+  },
+  link: {
+    zIndex: 100,
+    position: 'relative'
   }
 });
 
@@ -47,7 +54,14 @@ export default class Venue extends Component {
         <div style={STYLES.container}>
           <h2 style={STYLES.h2}>Venue</h2>
           <p style={STYLES.p}>
-          Located in the beautiful <a href="http://www.slccfa.org/venues/rose-wagner-performing-arts-center/" target="_blank" style={STYLES.a}>Rose Wagner Performing Arts Center</a> within walking distance of great food and hotels.
+            If you're looking for a hotel while you're in town for the conference, we recommend Hotel Monaco.
+            This is a beautiful four star hotel within walking distance of the conference, and attendees of the conference get a discounted rate.
+          </p>
+          <p style={STYLES.p}>
+            <ButtonLink href={Links.HOTEL_RESERVATION} style={STYLES.link}>Book a Room</ButtonLink>
+          </p>
+ <p style={STYLES.p}>
+            Our conference will be held in the beautiful <a href="http://www.slccfa.org/venues/rose-wagner-performing-arts-center/" target="_blank" style={STYLES.a}>Rose Wagner Performing Arts Center</a> within walking distance of great food and hotels.
           </p>
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12087.806444718673!2d-111.895488!3d40.763089!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c0bec6b46008e67!2sRose+Wagner+Performing+Arts+Center!5e0!3m2!1sen!2sus!4v1432086735738" width="600" height="450" frameBorder="0" style={STYLES.map}></iframe>
           <img src="assets/dist/img/reactVenue.png" style={STYLES.imgReactVenue}/>

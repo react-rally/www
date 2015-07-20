@@ -3,6 +3,7 @@ export default {
     CODE_OF_CONDUCT: 'http://confcodeofconduct.com/',
     TICKET_SALES: 'https://ti.to/trace-events/react-rally-2015',
     PROPOSAL_FORM: 'https://docs.google.com/forms/d/1NglNZ8H294KFILhOozIpFrt5XCtZV9QzuKFmwn8Xw28/viewform',
+    HOTEL_RESERVATION: 'https://gc.synxis.com/rez.aspx?Hotel=26759&Chain=10179&arrive=8/21/2015&depart=8/28/2015&adult=1&child=0&group=12360603209',
     SPONSOR_PROSPECTUS: 'docs/sponsor.pdf'
   },
   Styles: {
