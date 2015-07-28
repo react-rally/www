@@ -1,19 +1,33 @@
 {
+  "premier": [
+    {
+      "name": "Rangle.io",
+      "url": "http://rangle.io/",
+      "image": "assets/dist/img/sponsors/rangle.png"
+    }
+  ],
+  "gold": [
+    {
+      "name": "HireVue",
+      "url": "http://hirevue.com/",
+      "image": "assets/dist/img/sponsors/hirevue.png"
+    }
+  ],
   "supporters": [
     {
       "name": "Facebook",
       "url": "https://facebook.com/careers/",
-      "imageUrl": "assets/dist/img/sponsors/facebook.png"
+      "image": "assets/dist/img/sponsors/facebook.png"
     },
     {
       "name": "Instructure",
-      "url": "https://instructure.com",
-      "imageUrl": "assets/dist/img/sponsors/instructure.png"
+      "url": "http://instructure.com/careers/",
+      "image": "assets/dist/img/sponsors/instructure.png"
     },
     {
       "name": "KualiCo",
       "url": "https://kuali.co",
-      "imageUrl": "assets/dist/img/sponsors/kualico.png"
+      "image": "assets/dist/img/sponsors/kualico.png"
     }
   ]
 }

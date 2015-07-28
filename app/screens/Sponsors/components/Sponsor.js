@@ -14,7 +14,7 @@ export default class Sponsor extends Component {
     return (
       <div style={STYLES.img}>
         <a href={this.props.url} target="_blank">
-          <img src={this.props.imageUrl} alt={this.props.name} />
+          <img src={this.props.image} alt={this.props.name} />
         </a>
       </div>
     )
@@ -23,6 +23,6 @@ export default class Sponsor extends Component {
 
 Sponsor.propTypes = {
   url: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired
 };

@@ -59,7 +59,7 @@ export default class Sponsors extends Component {
   }
 
   renderSponsor(sponsor, i) {
-    return <Sponsor key={i} name={sponsor.name} url={sponsor.url} imageUrl={sponsor.imageUrl} />
+    return <Sponsor key={i} name={sponsor.name} url={sponsor.url} image={sponsor.image} />
   }
 
   render() {
