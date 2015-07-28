@@ -22,7 +22,7 @@
   },
   "linclark": {
     "name": "Lin Clark",
-    "intro": "",
+    "intro": "Lin is the Dev Star at npm, Inc. She has contributed to many open source projects, most notably as core a module maintainer on a CMS which powers an estimated 8% of all CMS-driven sites. She has been involved in W3C standardization efforts any many open source projects across different ecosystems.",
     "image": "assets/dist/img/speakers/linclark.jpg",
     "twitter": "linclark",
     "github": "linclark"

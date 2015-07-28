@@ -66,8 +66,8 @@
     },
     {
       "time": "4:30",
-      "title": "TBA",
-      "description": "Stay tuned...",
+      "title": "Making small modules actually work with webpack and npm",
+      "description": "Server-side JavaScript developers have been developing with small modules for years. Small modules have been more pain than their worth for many front-end developers, though. The tools for doing it well haven't been there.\n\nBut the tools are starting to change as the front-end is moving towards a componentized future. Frameworks like React are encouraging developers to create components that are compact and easy to reason about, as well as easy to share.\n\nIn this talk, we'll look at some of those tools, such as webpack and npm, to see how they help you work with small modules today and what's coming in the future.",
       "speaker": "linclark"
     },
     {
