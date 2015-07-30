@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+  <title>React Rally</title>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="description" content="A community React conference August 24 - 25 2015 in Salt Lake City, UT"/>
+  <meta name="keywords" content="React, JS, JavaScript, Conference, Salt Lake City, UT"/>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <style type="text/css">
+    body {
+      background-color: #f5f8fa;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      padding: 50px;
+    }
+
+    #container {
+      margin: 0 auto;
+      max-width: 800px;
+      min-width: 500px;
+      overflow: hidden;
+    }
+
+    .Tweet__Container {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .Tweet__Message {
+      background-color: #fff;
+      border: 1px solid #e1e8ed;
+      border-radius: 5px;
+      display: inline-block;
+      font-size: 22px;
+      line-height: 28px;
+      margin-right: 25px;
+      padding: 13px 15px 15px;
+      width: 635px;
+    }
+    .Tweet__Message a {
+      color: #0084b4;
+      text-decoration: none;
+    }
+    .Tweet__Message a:hover {
+      text-decoration: underline;
+    }
+    .Tweet__Button {
+      background-color: #0084b4;
+      background: rgba(0, 132, 180, .8);
+      border: 1px solid transparent;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.15);      
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: normal;
+      padding: 9px 16px 8px 17px;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .Tweet__Button:hover {
+      background-color: #00719A;
+    }
+    .Tweet__Button img {
+      width: 17px;
+      height: 19px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body> 
+  <div id="container">
+    <p>Friends of React Rally, thank you so much for helping us create some buzz for our conference.</p>
+    <p>This is going to be a fantastic event, and the speaker lineup, and sessions are going to be amazing!</p>
+    <p>Here's some canned tweets to make it easy, or feel free to craft your own.</p>
+    <p>See you all in August!</p>
+    <p>-Matt &amp; Jamison</p>
+  </div>
+
+  <div class="Tweet" style="display:none;" id="template">
+    <div class="Tweet__Container">
+      <p class="Tweet__Message"></p>
+    </div>
+    <div class="Tweet__Container">
+      <button class="Tweet__Button">
+        <span><img src="assets/dist/img/tweet-icon.png"/></span>
+        <span>Tweet</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    var TWEETS = [
+      {
+        text: 'Who am I going to see at @ReactRally?'
+      },
+      {
+        text: 'Come hear me talk at @ReactRally August 24-25 in Salt Lake City.',
+        url: 'http://reactrally.com/#speakers',
+        hashtags: ['reactjs']
+      },
+      {
+        text: 'If you\'re interested in @reactjs, you\'re not going to want to miss out on @ReactRally.',
+        url: 'http://reactrally.com',
+        hashtags: ['reactjs']
+      },
+      {
+        text: 'Looking forward to @ReactRally. The talks look amazing!',
+        url: 'http://reactrally.com/#schedule',
+        hashtags: ['reactjs']
+      },
+      {
+        text: 'Fantastic speaker lineup for @ReactRally.',
+        url: 'http://reactrally.com/#speakers',
+        hashtags: ['reactjs']
+      },
+      {
+        text: 'If you haven\'t got a ticket for @ReactRally, what are you waiting for?',
+        url: 'http://reactrally.com/#tickets',
+        hashtags: ['reactjs']
+      },
+      {
+        text: 'If you\'re attending @ReactRally, don\'t miss out on the workshop put on by @ReactJSTraining afterwards.',
+        url: 'http://reactrally.com/#tickets',
+        hashtags: ['reactjs']
+      }
+    ];
+    var container = document.getElementById('container');
+    var template = document.getElementById('template');
+    var fragment = document.createDocumentFragment();
+
+    function createTweet(tweet) {
+      var component = template.cloneNode(true);
+      component.style.display = '';
+      component.removeAttribute('id');
+
+      component.querySelector('p.Tweet__Message').innerHTML = formatMessage(tweet);
+      component.querySelector('button.Tweet__Button').onclick = function () {
+        window.open(buildURL(tweet), 'Twitter', 'width=640,height=300');
+      };
+
+      return component;
+    }
+
+    function formatMessage(tweet) {
+      var text = tweet.text;
+
+      // Replace @ mentions
+      text = text.replace(/( |^)@(.*?)(\W|$)/gi, '$1<a href="https://twitter.com/$2" target="_blank">@$2</a>$3');
+
+      // Insert URL
+      if (tweet.url) {
+        text += ' <a href="' + tweet.url + '" target="_blank">' + tweet.url + '</a>';
+      }
+
+      // Insert Hashtags
+      if (tweet.hashtags) {
+        for (var i=0, l=tweet.hashtags.length; i<l; i++) {
+          var tag = tweet.hashtags[i];
+          text += ' <a href="https://twitter.com/hashtag/' + tag + '" target="_blank">#' + tag + '</a>';
+        }
+      }
+
+      return text;
+    }
+
+    function buildURL(tweet) {
+      return 'https://twitter.com/intent/tweet?text=' + encodeURI(tweet.text) +
+        (tweet.url ? ('&url=' + encodeURIComponent(tweet.url)) : '') +
+        (tweet.hashtags ? ('&hashtags=' + tweet.hashtags.join(',')) : '');
+    }
+
+    for (var i=0, l=TWEETS.length; i<l; i++) {
+      fragment.appendChild(createTweet(TWEETS[i]));
+    }
+
+    container.appendChild(fragment);
+  </script>
+</body>
+</html>
+
