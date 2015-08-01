@@ -73,7 +73,7 @@ const STYLES = StyleSheet.create({
   buttonLink: {
     position: 'relative',
     top: 25,
-    left: 175
+    left: 25
   }
 });
 
@@ -109,6 +109,9 @@ class Home extends Component {
             </p>
             <ButtonLink href={Links.TICKET_SALES} style={STYLES.buttonLink}>
               Buy Tickets
+            </ButtonLink>
+            <ButtonLink href={Links.HOTEL_RESERVATION} style={STYLES.buttonLink}>
+              Book a Hotel Room
             </ButtonLink>
           </div>
         </div>
