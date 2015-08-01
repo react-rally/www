@@ -29,7 +29,7 @@
     {
       "time": "11:00",
       "title": "Testable React Components",
-      "description": "Testing is a good way to see whether the program actually runs as you intended, and this session is to show you some of the keys to how to write components that will be easier to test.",
+      "description": "Testing is a good way to see whether the program actually runs as you intended, and I'd like to show you some of the gotchas when testing react components, and how some components are easier to test than others.",
       "speaker": "ryoia"
     },
     {
