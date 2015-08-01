@@ -3,7 +3,10 @@
     {
       "name": "Rangle.io",
       "url": "http://rangle.io/",
-      "image": "assets/dist/img/sponsors/rangle.png"
+      "image": "assets/dist/img/sponsors/rangle.jpg",
+      "style": {
+        "border": "1px solid rgb(198, 192, 202)"
+      }
     }
   ],
   "gold": [
