@@ -18,7 +18,7 @@ const STYLES = StyleSheet.create({
   container: {
     position: 'relative',
     padding: 0,
-    minHeight: 3200
+    minHeight: 3350
   },
   h2: {
     color: Styles.FONT_COLOR_SCHEDULE
@@ -197,10 +197,14 @@ export default class Schedule extends Component {
           <div style={STYLES.orientLeft} className="dayOne">
             <h3 style={STYLES.dayHeader}>Monday, August 24th, 2015</h3>
             {this.renderSessions("dayOne")}
+            <h3 style={STYLES.dayHeader}>Wednesday, August 26th, 2015</h3>
+            <Session orient="left" session={{time: "9:00", title: "Workshop Day One"}}/>
           </div>
           <div style={STYLES.orientRight} className="dayTwo">
             <h3 style={STYLES.dayHeader}>Tuesday, August 25th, 2015</h3>
             {this.renderSessions("dayTwo")}
+            <h3 style={STYLES.dayHeader}>Thursday, August 27th, 2015</h3>
+            <Session orient="right" session={{time: "9:00", title: "Workshop Day Two"}}/>
           </div>
         </div>
         <Modal
