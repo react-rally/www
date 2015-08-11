@@ -9,6 +9,13 @@
       }
     }
   ],
+  "platinum": [
+    {
+      "name": "MX",
+      "url": "http://mx.com",
+      "image": "assets/dist/img/sponsors/mx.png"
+    }
+  ],
   "gold": [
     {
       "name": "HireVue",
@@ -30,7 +37,7 @@
     {
       "name": "KualiCo",
       "url": "https://kuali.co",
-      "image": "assets/dist/img/sponsors/kualico.png"
+      "image": "assets/dist/img/sponsors/kualicologo-small.png"
     }
   ]
 }
