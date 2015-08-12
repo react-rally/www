@@ -4,7 +4,8 @@ import StyleSheet from 'react-style';
 const STYLES = StyleSheet.create({
   img: {
     display: 'inline-block',
-    margin: 25
+    margin: 25,
+    verticalAlign: 'middle'
   }
 });
 

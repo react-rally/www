@@ -21,6 +21,14 @@
       "name": "HireVue",
       "url": "http://hirevue.com/",
       "image": "assets/dist/img/sponsors/hirevue.png"
+    },
+    {
+      "raygun": "Raygun.io",
+      "url": "https://raygun.io/",
+      "image": "assets/dist/img/sponsors/raygun.jpg",
+      "style": {
+        "border": "1px solid rgb(198, 192, 202)"
+      }
     }
   ],
   "supporters": [
