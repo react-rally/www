@@ -29,6 +29,14 @@
       "style": {
         "border": "1px solid rgb(198, 192, 202)"
       }
+    },
+    {
+      "name": "Pluralsight",
+      "url": "http://www.pluralsight.com/",
+      "image": "assets/dist/img/sponsors/pluralsight.jpg",
+      "style": {
+        "border": "1px solid rgb(198, 192, 202)"
+      }
     }
   ],
   "supporters": [
