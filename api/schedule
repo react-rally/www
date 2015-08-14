@@ -158,11 +158,6 @@
       "title": "How React literally waters my lawn",
       "description": "I hate yard work, but React makes everything better. For this talk, I'll show you how I ported my home-built sprinkler system's old-and-busted iOS app to a hot-and-modern React web app. Including a live demo with a camera feed from my home.",
       "speaker": "djsmith42"
-    },
-    {
-      "time": "6:30",
-      "title": "Speaker Dinner"
     }
-
   ]
 }
