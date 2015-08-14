@@ -110,8 +110,8 @@ class Home extends Component {
             <ButtonLink href={Links.TICKET_SALES} style={STYLES.buttonLink}>
               Buy Tickets
             </ButtonLink>
-            <ButtonLink href={Links.HOTEL_RESERVATION} style={STYLES.buttonLink}>
-              Book a Hotel Room
+            <ButtonLink href={Links.TICKET_SALES} style={STYLES.buttonLink}>
+              Attend the Workshop
             </ButtonLink>
           </div>
         </div>
