@@ -42,7 +42,7 @@
   "silver": [
     {
       "name": "Code School",
-      "url": "https://www.codeschool.com/",
+      "url": "https://www.codeschool.com/reactrally2015",
       "image": "assets/dist/img/sponsors/codeschool.jpg",
       "style": {
         "border": "1px solid rgb(198, 192, 202)"
