@@ -53,13 +53,6 @@ export default class Venue extends Component {
       <section id="venue" style={STYLES.section}>
         <div style={STYLES.container}>
           <h2 style={STYLES.h2}>Venue</h2>
-          <p style={STYLES.p}>
-            If you're looking for a hotel while you're in town for the conference, we recommend Hotel Monaco.
-            This is a beautiful four star hotel within walking distance of the conference, and attendees of the conference get a discounted rate.
-          </p>
-          <p style={STYLES.p}>
-            <ButtonLink href={Links.HOTEL_RESERVATION} style={STYLES.link}>Book a Room</ButtonLink>
-          </p>
  <p style={STYLES.p}>
             Our conference will be held in the beautiful <a href="http://www.slccfa.org/venues/rose-wagner-performing-arts-center/" target="_blank" style={STYLES.a}>Rose Wagner Performing Arts Center</a> within walking distance of great food and hotels.
           </p>
