@@ -39,6 +39,21 @@
       }
     }
   ],
+  "silver": [
+    {
+      "name": "Code School",
+      "url": "https://www.codeschool.com/",
+      "image": "assets/dist/img/sponsors/codeschool.jpg",
+      "style": {
+        "border": "1px solid rgb(198, 192, 202)"
+      }
+    },
+    {
+      "name": "Canopy",
+      "url": "https://www.canopytax.com/",
+      "image": "assets/dist/img/sponsors/canopy.jpg"
+    }
+  ],
   "supporters": [
     {
       "name": "Facebook",
@@ -54,6 +69,11 @@
       "name": "KualiCo",
       "url": "https://kuali.co",
       "image": "assets/dist/img/sponsors/kualicologo-small.png"
+    },
+    {
+      "name": "Red Sky",
+      "url": "http://redskysol.com/",
+      "image": "assets/dist/img/sponsors/redsky.png"
     }
   ]
 }
