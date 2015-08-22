@@ -18,7 +18,7 @@ const STYLES = StyleSheet.create({
   container: {
     position: 'relative',
     padding: 0,
-    minHeight: 3450
+    minHeight: 3600
   },
   h2: {
     color: Styles.FONT_COLOR_SCHEDULE
