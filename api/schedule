@@ -1,12 +1,12 @@
 {
   "dayOne": [
     {
-      "time": "7:30",
-      "title": "Breakfast"
+      "time": "7:00",
+      "title": "Registration"
     },
     {
-      "time": "8:00",
-      "title": "Registration"
+      "time": "7:30",
+      "title": "Breakfast"
     },
     {
       "time": "9:00",
@@ -88,12 +88,12 @@
 
   "dayTwo": [
     {
-      "time": "7:30",
-      "title": "Breakfast"
+      "time": "7:00",
+      "title": "Registration"
     },
     {
-      "time": "8:00",
-      "title": "Registration"
+      "time": "7:30",
+      "title": "Breakfast"
     },
     {
       "time": "9:00",
