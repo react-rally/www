@@ -95,7 +95,7 @@
     "intro": "My name is Jeff and I make stuff at Facebook. Right now I work primarily on the Flow project but I've also worked on lots of other things like react (mostly that JSX stuff you totally loved the first time you saw it), jest, our mobile site, TC39, and thingsandstuff!",
     "image": "assets/dist/img/speakers/lbljeffmo.jpeg",
     "twitter": "lbljeffmo",
-    "github": "lbljeffmo"
+    "github": "jeffmo"
   },
   "ryoia": {
     "name": "Julia Gao",
