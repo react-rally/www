@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'true_crimesregular';
+    src: url('../fonts/true-crimes-webfont.eot');
+    src: url('../fonts/true-crimes-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/true-crimes-webfont.woff') format('woff'),
+         url('../fonts/true-crimes-webfont.ttf') format('truetype'),
+         url('../fonts/true-crimes-webfont.svg#true_crimesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(236, 236, 236);
+  text-shadow: rgb(100, 100, 100) 0 1px 0;
+  background-color: rgb(37, 69, 86);
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  margin: 0;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+#container {
+  margin: 0 auto;
+  position: relative;
+  width: 1440px;
+  height: 900px;
+  overflow: hidden;
+}
+
+/* Message content */
+#message {
+  position: absolute;
+  z-index: 1000;
+  width: 850px;
+  height: 500px;
+}
+
+#title, #subtitle {
+  font-family: 'true_crimesregular';
+}
+
+#title, #subtitle, #description {
+  position: absolute;
+  margin: 0;
+}
+
+#title {
+  color: rgb(255, 241, 2);
+  text-shadow: rgb(171, 160, 3) -10px 5px 0;
+}
+
+#title div {
+  position: absolute;
+  -webkit-transform: rotateY(45deg) rotateZ(-5deg) translateX(-150px) translateY(-100px);
+       -o-transform: rotateY(45deg) rotateZ(-5deg) translateX(-150px) translateY(-100px);
+          transform: rotateY(45deg) rotateZ(-5deg) translateX(-150px) translateY(-100px);
+}
+#title div:nth-of-type(1)  { font-size: 275px; top: 150px; left: 150px; } /*R*/
+#title div:nth-of-type(2)  { font-size: 250px; top: 130px; left: 275px; } /*E*/
+#title div:nth-of-type(3)  { font-size: 225px; top: 130px; left: 345px; } /*A*/
+#title div:nth-of-type(4)  { font-size: 200px; top: 135px; left: 430px; } /*C*/
+#title div:nth-of-type(5)  { font-size: 190px; top: 130px; left: 500px; } /*T*/
+#title div:nth-of-type(6)  { font-size: 150px; top: 145px; left: 575px; } /*R*/
+#title div:nth-of-type(7)  { font-size: 160px; top: 130px; left: 640px; } /*A*/
+#title div:nth-of-type(8)  { font-size: 155px; top: 130px; left: 705px; } /*L*/
+#title div:nth-of-type(9)  { font-size: 150px; top: 135px; left: 750px; } /*L*/
+#title div:nth-of-type(10) { font-size: 145px; top: 140px; left: 790px; } /*Y*/
+#title div:nth-of-type(11) { font-size: 120px; top: 165px; left: 840px; } /*!*/
+
+#subtitle {
+  top: 200px;
+  left: 400px;
+  font-size: 100px;
+  color: rgb(180, 180, 180);
+  text-shadow: -5px 5px 0 rgb(112, 112, 112);
+}
+
+#description {
+  color: rgb(236, 236, 236);
+  font-size: 30px;
+  top: 285px;
+  left: 225px;
+}
+
+/* Graphic content */
+#graphics img {
+  position: absolute;
+}
+
+#img-background, #img-city, #img-cloud, #img-robot {
+  top: 0;
+  left: 0;
+}
+
+#img-cloud {
+  top: 75px;
+}
+
+#img-tentacle_left {
+  top: 550px;
+  left: 100px;
+}
+
+#img-tentacle_right {
+  top: 475px;
+  left: 400px;
+}
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1000;
+}
+header a {
+  color: rgb(171, 160, 3);
+  text-decoration: none;
+}
+header img {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 20px;
+}
+header img:hover {
+  height: 32px;
+  width: 32px;
+  top: 16px;
+}
+#year-2015 {
+  position: absolute;
+  top: 22px;
+  right: 100px;
+}
+#img-github {
+  right: 20px;
+}
+#img-github:hover {
+  right: 16px;
+}
+#img-twitter {
+  right: 55px
+}
+#img-twitter:hover {
+  right: 51px;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  left: 25px;
+  z-index: 1000;
+}
+footer a {
+  color: rgb(171, 160, 3);
+  text-decoration: none;
+}
+
+/* Browser specific tweaks */
+body.firefox #title {
+  top: -50px;
+}
+body.firefox #subtitle {
+  top: 175px;
+}
+body.firefox #mc_embed_signup input {
+  width: 319px !important;
+}
+body.firefox #mc_embed_signup button {
+  top: 0;
+}
+
+/* Mail Chimp Signup */
+#mc_embed_signup form {
+  padding: 5px 0 0 0;
+}
+
+#mc_embed_signup {
+  position: absolute;
+  top: 375px;
+  left: 225px;
+}
+#mc_embed_signup form {
+  width: 421px;
+}
+#mc_embed_signup input {
+  display: inline !important;
+  border: 0 none;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: large;
+  padding: 15px;
+  width: 350px !important;
+  height: 45px;
+}
+#mc_embed_signup input::-moz-placeholder {
+  color: rgb(169, 169, 169);
+}
+#mc_embed_signup button {
+  display: inline !important;
+  font-size: large;
+  border: 0 none;
+  background: rgb(229, 229, 229);
+  color: rgb(70, 70, 70);
+  height: 45px;
+  margin: 0;
+  padding: 2px 15px 3px;
+  position: relative;
+  top: -1px;
+}
+
+#mc_embed_signup #mc_embed_signup_scroll div.mce_inline_error,
+#mc_embed_signup #mce-responses #mce-error-response {
+  /* background: rgba(100, 0, 0, .3); */
+  background: none;
+  font-weight: normal;
+  color: rgb(150, 25, 25);
+  text-shadow: rgb(25, 0, 0) 0 1px 0;
+}
+
+#mc_embed_signup #mce-responses #mce-success-response {
+  font-weight: normal;
+  text-shadow: rgb(17, 79, 0) 0 1px 0;
+}
