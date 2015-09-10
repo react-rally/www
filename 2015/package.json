@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/webpack-dev-server --inline --content-base ./",
     "imagemin": "node imagemin.js",
-    "build": "npm run imagemin && PRODUCTION=1 ./node_modules/.bin/webpack",
+    "build": "npm run imagemin && NODE_ENV=production ./node_modules/.bin/webpack",
     "deploy": "./scripts/deploy"
   },
   "repository": {
