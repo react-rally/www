@@ -7,25 +7,28 @@ export default class Header extends Component {
     return (
       <header className={"Header" + (isHomeScreen ? "" : " Header--padded")}>
       {isHomeScreen ? (
-        <div>
-          <div className="Home__Header">
-            <h1>August 25-26 in Salt Lake City, UT</h1>
-            <p>
-              Facebook's ReactJS has taken client side development by storm.
-              From single-page apps, to server rendering, to native mobile, to apps on your TV, ReactJS is everywhere.
-              Come find out what makes it so incredible.
-            </p>
-            <div>
-              <button className="large">Register Now</button>&nbsp;&nbsp;&nbsp;&nbsp;
-              <button className="large transparent">Submit Proposal</button>
+        <div className="Home__Header">
+          <div className="Home__Header__Wrapper">
+            <div className="Home__Header__Content">
+              <h1>August 25-26 in Salt Lake City, UT</h1>
+              <p>
+                Facebook's ReactJS has taken client side development by storm.
+                From single-page apps, to server rendering, to native mobile, to apps on your TV, ReactJS is everywhere.
+                Come find out what makes it so incredible.
+              </p>
+              <div>
+                <button className="large">Register Now</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button className="large transparent">Submit Proposal</button>
+              </div>
+              <ul className="Home__Header__Nav navigation">
+                <li><Link to="/speakers">Speakers</Link></li>
+                <li><Link to="/schedule">Schedule</Link></li>
+                <li><Link to="/venue">Venue</Link></li>
+                <li><Link to="/sponsors">Sponsors</Link></li>
+                <li><Link to="/conduct">Conduct</Link></li>
+              </ul>
             </div>
-            <ul className="Home__Header__Nav navigation">
-              <li><Link to="/speakers">Speakers</Link></li>
-              <li><Link to="/schedule">Schedule</Link></li>
-              <li><Link to="/venue">Venue</Link></li>
-              <li><Link to="/sponsors">Sponsors</Link></li>
-              <li><Link to="/conduct">Conduct</Link></li>
-            </ul>
+            <img className="Home__Header__ReactLogo" src="assets/img/ReactLogo.svg"/>
           </div>
           <div className="Home__Header__Newsletter">
             Subscribe to updates for React Rally&nbsp;&nbsp;&nbsp;&nbsp;

@@ -1,18 +1,17 @@
 /* font colors */
-$color-primary: #444444;
-$color-gray: #939393;
-$color-lightgray: #cbcbcb;
-$color-darkgray: #333333;
-$color-white: #ffffff;
-$color-green: #00ad92;
-$color-orange: #ff6000;
+$color-primary: #4A4A4A;
+$color-lightgray: #BCBCBC;
+$color-darkgray: #444444;
+$color-white: #FFFFFF;
+$color-green: #00AD92;
+$color-orange: #FF6D40;
 
 /* fill colors */
-$fill-white: #ffffff;
-$fill-lightgray: #f4f4f4;
-$fill-darkgray: #e7e7e7;
-$fill-lightgreen: #01a08a;
-$fill-darkgreen: #008a75;
+$fill-white: #FFFFFF;
+$fill-lightgray: #F4F4F4;
+$fill-darkgray: #DCDCDC;
+$fill-lightgreen: #00AD93;
+$fill-darkgreen: #008874;
 
 /* dimensions */
 $width-column: 12%;
@@ -137,13 +136,24 @@ ul.navigation {
 
 /* -- Home -- */
 .Home__Header {
-  background-color: $fill-lightgreen;
+  background: url(../img/SaltLakeCity.png) no-repeat;
+  background-size: cover;
+}
+.Home__Header__Wrapper {
+  background-color: rgba($fill-lightgreen, .9);
   color: $color-white;
   text-align: center;
   padding: 50px 28% 0;
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
 }
-.Home__Header h1 {
+.Home__Header__Wrapper h1 {
   color: $color-white;
+}
+.Home__Header__Content {
+  position: relative;
+  z-index: 100;
 }
 .Home__Header__Nav {
   margin-top: 25px;
@@ -156,6 +166,14 @@ ul.navigation {
   color: $color-white;
   text-align: center;
   padding: 15px 0;
+  z-index: 100;
+}
+.Home__Header__ReactLogo {
+  opacity: 0.1;
+  position: absolute;
+  right: 100px;
+  bottom: -175px;
+  z-index: 0;
 }
 
 /* -- Header -- */
