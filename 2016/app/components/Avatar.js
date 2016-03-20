@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 
 export default (props) => {
+  let size = props.size || 200
   return (
     <div className="Avatar">
-      <img src={"https://avatars2.githubusercontent.com/u/199035?v=3&s=" + (props.size || 200)}/>
+      <img src={props.url} style={{width: size, height: size}}/>
       <b>{props.name}</b><br/>
       <em>{props.title}</em>
     </div>
