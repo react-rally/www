@@ -16,13 +16,18 @@ $fill-darkgreen: #008874;
 
 /* dimensions */
 $width-column: 12%;
+$size-font-xlarge: 40px;
+$size-font-large: 28px;
+$size-font-default: 20px;
+$size-font-medium: 18px;
+$size-font-small: 14px;
 
 /* typography */
 body {
   background-color: $fill-white;
   color: $color-primary;
   font-family: Helveica Neue, arial, sans-serif;
-  font-size: medium;
+  font-size: $size-font-default;
   margin: 0;
 }
 
@@ -41,13 +46,14 @@ h1, h2, h3, h4, h5, h6 {
 
 section h1 {
   color: $color-darkgray;
-  font-size: xx-large;
+  font-size: $size-font-xlarge;
   margin-bottom: 50px;
 }
 
 /* forms */
 button, input[type="text"] {
   border-radius: 2px;
+  font-size: $size-font-medium;
   padding: 5px 10px;
 }
 
@@ -57,11 +63,10 @@ button {
   color: $color-green;
 }
 button.medium {
-  font-size: medium;
   padding: 10px 25px;
 }
 button.large {
-  font-size: large;
+  font-size: $size-font-default;
   padding: 12px 35px;
 }
 button.transparent {
@@ -72,8 +77,8 @@ button.transparent {
 
 input[type="text"] {
   border: 1px solid $fill-darkgray;
-  line-height: 1.4;
-  width: 200px;
+  line-height: 1.3;
+  width: 260px;
 }
 
 /* layout */
@@ -107,6 +112,7 @@ section {
 }
 
 ul.navigation {
+  font-size: $size-font-medium;
   margin: 0;
   padding: 25px 0;
   list-style: none;
@@ -119,7 +125,7 @@ ul.navigation {
 .navigation li a {
   border-bottom: 2px solid transparent;
   display: inline-block;
-  height: 55px;
+  height: 57px;
   margin-bottom: -36px;
 }
 .navigation li a.active {
@@ -137,13 +143,14 @@ ul.navigation {
   background-color: rgba($fill-lightgreen, .95);
   color: $color-white;
   text-align: center;
-  padding: 50px 28% 0;
+  padding: 50px 20% 0;
   position: relative;
   min-height: 500px;
   overflow: hidden;
 }
 .Home__Header__Wrapper h1 {
   color: $color-white;
+  font-size: $size-font-xlarge;
 }
 .Home__Header__Content {
   position: relative;
@@ -151,6 +158,7 @@ ul.navigation {
 }
 .Home__Header__Nav {
   margin-top: 25px;
+  font-size: $size-font-medium;
 }
 .Home__Header__Nav a {
   color: $color-white;
@@ -158,6 +166,7 @@ ul.navigation {
 .Home__Header__Newsletter {
   background-color: $fill-darkgreen;
   color: $color-white;
+  font-size: $size-font-medium;
   text-align: center;
   padding: 15px 0;
   z-index: 100;
@@ -219,6 +228,7 @@ ul.navigation {
 .Footer__Newsletter {
   background-color: $fill-lightgray;
   border-top: 1px solid $fill-darkgray;
+  font-size: $size-font-medium;
   color: $color-orange;
   text-align: center;
   padding: 15px 0;
@@ -226,6 +236,7 @@ ul.navigation {
 .Footer__About {
   background-color: $fill-lightgray;
   border-top: 1px solid $fill-darkgray;
+  font-size: $size-font-small;
 }
 .Footer__About h3,
 .Footer__About h4 {
@@ -240,6 +251,7 @@ ul.navigation {
 }
 .Footer__About__Tickets h3 {
   color: $color-darkgray;
+  font-size: $size-font-medium;
   margin-bottom: 10px;
 }
 .Footer__Social {
@@ -267,6 +279,7 @@ ul.navigation {
 .Footer__Copyright {
   background-color: $fill-white;
   border-top: 1px solid $fill-darkgray;
+  font-size: $size-font-small;
   text-align: center;
   padding: 35px 0;
 }
@@ -282,13 +295,18 @@ ul.navigation {
   display: block;
   margin: 0 auto 15px;
 }
+.Avatar b {
+  font-size: $size-font-medium;
+}
 .Avatar em {
   color: $color-lightgray;
+  font-size: $size-font-small;
 }
 
 /* -- Legend -- */
 .Legend {
   color: $color-orange;
+  font-size: $size-font-medium;
   margin: 25px 0;
   text-align: center;
   position: relative;
@@ -298,7 +316,7 @@ ul.navigation {
   content: '';
   position: absolute;
   height: 1px;
-  top: 8px;
+  top: 10px;
   left: 0;
   right: 0;
 }
