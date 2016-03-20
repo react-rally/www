@@ -11,6 +11,7 @@ $fill-white: #FFFFFF;
 $fill-lightgray: #F4F4F4;
 $fill-darkgray: #DCDCDC;
 $fill-lightgreen: #00AD93;
+$fill-mediumgreen: #57B5AC;
 $fill-darkgreen: #008874;
 
 /* dimensions */
@@ -84,7 +85,7 @@ section {
   padding: 50px;
 }
 
-.col { display: inline-block; }
+.col { display: inline-block; vertical-align: top; }
 .col-1 { width: $width-column; }
 .col-2 { width: $width-column * 2; }
 .col-3 { width: $width-column * 3; }
@@ -117,6 +118,16 @@ section {
   right: 0;
 }
 
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+
 ul.navigation {
   margin: 0;
   padding: 25px 0;
@@ -145,7 +156,7 @@ ul.navigation {
   background-size: cover;
 }
 .Home__Header__Wrapper {
-  background-color: rgba($fill-lightgreen, .9);
+  background-color: rgba($fill-lightgreen, .95);
   color: $color-white;
   text-align: center;
   padding: 50px 28% 0;
@@ -187,6 +198,27 @@ ul.navigation {
 /* -- Sponsors -- */
 .Sponsors {
   text-align: center;
+}
+
+/* -- Venue -- */
+.Venue h1 {
+  text-align: center;
+}
+.Venue__Wrapper {
+  background: url(../img/RoseWagnerDetail.png) no-repeat;
+  background-size: cover;
+  margin: 0 -50px;
+}
+.Venue__Content {
+  background: rgba($fill-mediumgreen, .95);
+  color: $color-white;
+  padding: 50px;
+}
+.Venue__Content h2 {
+  color: $color-white;
+}
+.Venue__Hotel {
+  padding-top: 50px;
 }
 
 /* -- Header -- */
