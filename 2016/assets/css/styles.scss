@@ -8,6 +8,7 @@ $color-orange: #FF6D40;
 
 /* fill colors */
 $fill-white: #FFFFFF;
+$fill-orange: #FF6D40;
 $fill-lightgray: #F4F4F4;
 $fill-darkgray: #DCDCDC;
 $fill-lightgreen: #00AD93;
@@ -268,23 +269,16 @@ ul.navigation {
 .Footer__Social {
   position: relative;
 }
-.Footer__Social .icon {
-  background: $fill-white;
-  border: 1px solid $fill-darkgray;
-  border-radius: 21px;
+.Footer__Social .Icon {
   position: absolute;
-  padding: 8px;
-  width: 42px;
-  height: 42px;
   top: -21px;
   left: 50%;
   margin-left: -21px;
 }
-.Footer__Social .icon-twitter {
-  padding: 12px 10px;
+.Footer__Social .Icon--twitter {
   margin-left: -42px;
 }
-.Footer__Social .icon-github {
+.Footer__Social .Icon--github {
   margin-left: 21px;
 }
 .Footer__Copyright {
@@ -301,7 +295,7 @@ ul.navigation {
   margin: 25px 50px;
   text-align: center;
 }
-.Avatar img {
+.Avatar__Image {
   border-radius: 200px;
   display: block;
   margin: 0 auto 15px;
@@ -312,6 +306,16 @@ ul.navigation {
 .Avatar em {
   color: $color-lightgray;
   font-size: $size-font-small;
+}
+.Avatar__Social {
+  margin-top: 15px;
+  visibility: hidden;
+}
+.Avatar__Social .Icon {
+  border-width: 0;
+}
+.Avatar:hover .Avatar__Social {
+  visibility: visible;
 }
 
 /* -- Legend -- */
@@ -336,4 +340,21 @@ ul.navigation {
   display: inline-block;
   padding: 0 35px;
   position: relative;
+}
+
+/* -- Icon -- */
+.Icon {
+  background: $fill-white;
+  border: 1px solid $fill-darkgray;
+  border-radius: 21px;
+  display: inline-block;
+  padding: 8px;
+  width: 42px;
+  height: 42px;
+}
+.Icon:hover {
+  background: $fill-orange;
+}
+.Icon--twitter {
+  padding: 12px 10px;
 }

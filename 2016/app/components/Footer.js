@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import constants from 'helpers/constants'
 import Button from 'components/Button'
+import Icon from 'components/Icon'
 
 export default () => {
   return (
@@ -40,12 +41,8 @@ export default () => {
         </div>
       </section>
       <div className="Footer__Social">
-        <div className="icon icon-twitter">
-          <img src="assets/img/twitter.png"/>
-        </div>
-        <div className="icon icon-github">
-          <img src="assets/img/github.png"/>
-        </div>
+        <Icon href="https://twitter.com/ReactRally" src="assets/img/twitter.png" className="Icon--twitter"/>
+        <Icon href="https://github.com/react-rally" src="assets/img/github.png" className="Icon--github"/>
       </div>
       <div className="Footer__Copyright">
         &copy; 2016 Trace Events, LLC
