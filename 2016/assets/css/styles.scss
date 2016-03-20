@@ -41,11 +41,12 @@ h1, h2, h3, h4, h5, h6 {
 section h1 {
   color: $color-darkgray;
   font-size: xx-large;
+  margin-bottom: 50px;
 }
 
 /* forms */
 button, input[type="text"] {
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 5px 10px;
 }
 
@@ -129,7 +130,7 @@ ul.navigation {
 .navigation li a {
   border-bottom: 1px solid transparent;
   display: inline-block;
-  height: 53px;
+  height: 55px;
   margin-bottom: -36px;
 }
 .navigation li a.active {
