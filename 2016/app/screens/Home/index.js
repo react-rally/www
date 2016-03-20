@@ -1,5 +1,6 @@
 import React from 'react'
 import Avatar from 'components/Avatar'
+import Legend from 'components/Legend'
 
 export default () => {
   return (
@@ -15,8 +16,8 @@ export default () => {
         </p>
         <button className="medium">More about React Rally &raquo;</button>
       </div>
-      <div style={{textAlign: 'center'}}>
-        <div className="section-legend">Keynote Speakers</div>
+      <div className="align-center">
+        <Legend>Keynote Speakers</Legend>
         <Avatar name="Matt Zabriskie" title="Sr. Developer, Facebook"/>
         <Avatar name="Matt Zabriskie" title="Sr. Developer, Facebook"/>
         <Avatar name="Matt Zabriskie" title="Sr. Developer, Facebook"/>

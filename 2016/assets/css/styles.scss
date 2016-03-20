@@ -96,28 +96,6 @@ section {
 .col-8 { width: $width-column * 8; }
 
 /* classes */
-.section-legend {
-  color: $color-orange;
-  margin: 25px 0;
-  text-align: center;
-  position: relative;
-}
-.section-legend:before,
-.section-legend:after {
-  border-bottom: 1px solid $fill-darkgray;
-  content: '';
-  position: absolute;
-  height: 1px;
-  width: 40%;
-  top: 8px;
-}
-.section-legend:before {
-  left: 0;
-}
-.section-legend:after {
-  right: 0;
-}
-
 .align-left {
   text-align: left;
 }
@@ -306,4 +284,27 @@ ul.navigation {
 }
 .Avatar em {
   color: $color-lightgray;
+}
+
+/* -- Legend -- */
+.Legend {
+  color: $color-orange;
+  margin: 25px 0;
+  text-align: center;
+  position: relative;
+}
+.Legend > div:nth-of-type(1) {
+  border-bottom: 1px solid $fill-darkgray;
+  content: '';
+  position: absolute;
+  height: 1px;
+  top: 8px;
+  left: 0;
+  right: 0;
+}
+.Legend > div:nth-of-type(2) {
+  background-color: $fill-white;
+  display: inline-block;
+  padding: 0 35px;
+  position: relative;
 }
