@@ -19,27 +19,31 @@ export default () => {
         <button>Sign Up</button>
       </div>
       <section className="Footer__About">
-        <div className="col cols-4">
-          <h5>About React Rally</h5>
+        <div className="col col-4">
+          <h4>About React Rally</h4>
           <p>
             Facebook's ReactJS has taken client side development by storm.
             From single-page apps, to server rendering, to native mobile, to apps on your TV, ReactJS is everywhere.
             Come find out what makes it so incredible.
           </p>
-          <h5>Contact</h5>
+          <h4>Contact</h4>
           <p>
             Get in touch with us at <a href="mailto:team@reactrally.com">team@reactrally.com</a>.
           </p>
         </div>
-        <div className="col cols-2"></div>
-        <div className="col cols-2">
+        <div className="col col-2"></div>
+        <div className="Footer__About__Tickets col col-2">
           <h3>Don't lose your spot.</h3>
           <button className="medium">Register Now</button>
         </div>
       </section>
       <div className="Footer__Social">
-        Twitter
-        GitHub
+        <div className="icon icon-twitter">
+          <img src="assets/img/twitter.png"/>
+        </div>
+        <div className="icon icon-github">
+          <img src="assets/img/github.png"/>
+        </div>
       </div>
       <div className="Footer__Copyright">
         &copy; 2016 Trace Events, LLC

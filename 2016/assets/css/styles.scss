@@ -75,19 +75,23 @@ input[type="text"] {
 }
 
 /* layout */
+* {
+  box-sizing: border-box;
+}
+
 section {
   padding: 50px;
 }
 
 .col { display: inline-block; }
-.cols-1 { width: $width-column; }
-.cols-2 { width: $width-column * 2; }
-.cols-3 { width: $width-column * 3; }
-.cols-4 { width: $width-column * 4; }
-.cols-5 { width: $width-column * 5; }
-.cols-6 { width: $width-column * 6; }
-.cols-7 { width: $width-column * 7; }
-.cols-8 { width: $width-column * 8; }
+.col-1 { width: $width-column; }
+.col-2 { width: $width-column * 2; }
+.col-3 { width: $width-column * 3; }
+.col-4 { width: $width-column * 4; }
+.col-5 { width: $width-column * 5; }
+.col-6 { width: $width-column * 6; }
+.col-7 { width: $width-column * 7; }
+.col-8 { width: $width-column * 8; }
 
 /* classes */
 .section-legend {
@@ -201,7 +205,42 @@ ul.navigation {
   background-color: $fill-lightgray;
   border-top: 1px solid $fill-darkgray;
 }
+.Footer__About h3,
+.Footer__About h4 {
+  font-weight: normal;
+}
+.Footer__About p {
+  margin-top: 0;
+}
+.Footer__About__Tickets {
+  top: -35px;
+  position: relative;
+}
+.Footer__About__Tickets h3 {
+  color: $color-darkgray;
+  margin-bottom: 10px;
+}
 .Footer__Social {
+  position: relative;
+}
+.Footer__Social .icon {
+  background: $fill-white;
+  border: 1px solid $fill-darkgray;
+  border-radius: 21px;
+  position: absolute;
+  padding: 8px;
+  width: 42px;
+  height: 42px;
+  top: -21px;
+  left: 50%;
+  margin-left: -21px;
+}
+.Footer__Social .icon-twitter {
+  padding: 12px 10px;
+  margin-left: -42px;
+}
+.Footer__Social .icon-github {
+  margin-left: 21px;
 }
 .Footer__Copyright {
   background-color: $fill-white;
