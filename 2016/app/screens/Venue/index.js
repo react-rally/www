@@ -8,6 +8,7 @@ export default () => {
         <div className="Venue__Content">
           <div className="col col-4">
             <h2>Rose Wagner Performing Arts Center</h2>
+            <div className="Venue__Content__Address">138 West 300 South, Salt Lake City, UT 84101</div>
             <p>The Rose is a vibrant, active hub for emerging and established artists and arts organizations in Salt Lake City. This versatile venue houses three theaters as well as rehearsal and creation spaces for a host of performing arts companies.</p>
             <button className="medium transparent">Get Directions &raquo;</button>
           </div>

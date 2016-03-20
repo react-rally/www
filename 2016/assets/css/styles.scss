@@ -204,6 +204,14 @@ ul.navigation {
 .Venue__Content h2 {
   color: $color-white;
 }
+.Venue__Content__Address {
+  color: rgba($color-white, .75);
+  font-size: $size-font-medium;
+  margin-bottom: 50px;
+}
+.Venue__Content button {
+  margin-top: 25px;
+}
 .Venue__Hotel {
   padding-top: 50px;
 }
