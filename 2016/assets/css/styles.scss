@@ -1,6 +1,6 @@
 /* font colors */
 $color-primary: #4A4A4A;
-$color-lightgray: #BCBCBC;
+$color-lightgray: #777777;
 $color-darkgray: #444444;
 $color-white: #FFFFFF;
 $color-green: #00AD92;
@@ -69,7 +69,7 @@ button.transparent {
 }
 
 input[type="text"] {
-  border: 1px solid $color-lightgray;
+  border: 1px solid $fill-darkgray;
   line-height: 1.4;
   width: 200px;
 }
@@ -190,6 +190,9 @@ ul.navigation {
 }
 
 /* -- Footer -- */
+.Footer {
+  color: $color-lightgray;
+}
 .Footer__Nav {
   background-color: $fill-white;
   border-top: 1px solid $fill-darkgray;
@@ -259,4 +262,7 @@ ul.navigation {
   border-radius: 200px;
   display: block;
   margin-bottom: 15px;
+}
+.Avatar em {
+  color: $color-lightgray;
 }
