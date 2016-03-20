@@ -18,10 +18,8 @@ export default () => {
       </div>
       <div className="align-center">
         <Legend>Keynote Speakers</Legend>
-        <Avatar name="Matt Zabriskie" title="Sr. Developer, Facebook"/>
-        <Avatar name="Matt Zabriskie" title="Sr. Developer, Facebook"/>
-        <Avatar name="Matt Zabriskie" title="Sr. Developer, Facebook"/>
-        <Avatar name="Matt Zabriskie" title="Sr. Developer, Facebook"/>
+        <Avatar name="Ryan Florence" title="Co-founder, React Training" url="https://avatars0.githubusercontent.com/u/100200"/>
+        <Avatar name="Marcy Sutton" title="Sr. Front-End Engineer, Deque Systems" url="https://avatars0.githubusercontent.com/u/1045233"/>
       </div>
     </div>
   )
