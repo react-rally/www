@@ -15,7 +15,9 @@ export default () => {
             <Button href={constants.Links.VENUE_DIRECTIONS} className="medium transparent">Get Directions &raquo;</Button>
           </div>
           <div className="col col-4 align-right">
-            <img src="assets/img/RoseWagnerMap.png"/>
+            <a href={constants.Links.VENUE_DIRECTIONS} target="_blank">
+              <img src="assets/img/RoseWagnerMap.png"/>
+            </a>
           </div>
         </div>
       </div>
