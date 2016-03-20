@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
+import constants from 'helpers/constants'
+import Button from 'components/Button'
 
 export default () => {
   return (
@@ -34,7 +36,7 @@ export default () => {
         <div className="col col-2"></div>
         <div className="Footer__About__Tickets col col-2">
           <h3>Don't lose your spot.</h3>
-          <button className="medium">Register Now</button>
+          <Button href={constants.Links.TICKET_SALES} className="medium">Register Now</Button>
         </div>
       </section>
       <div className="Footer__Social">

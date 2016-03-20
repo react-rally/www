@@ -1,4 +1,5 @@
 import React from 'react'
+import constants from 'helpers/constants'
 
 export default () => {
   return (
@@ -17,7 +18,7 @@ export default () => {
       <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they'll be wearing branded t-shirts.</p>
       <p>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
       <p>We expect participants to follow these rules at conference and workshop venues and conference-related social events.</p>
-      <p>This Code of Conduct is borrowed from <a href="http://confcodeofconduct.com/" target="_blank">Conference Code of Conduct</a>.</p>
+      <p>This Code of Conduct is borrowed from <a href={constants.Links.CODE_OF_CONDUCT} target="_blank">Conference Code of Conduct</a>.</p>
     </div>
   )
 }

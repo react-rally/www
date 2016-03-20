@@ -51,25 +51,27 @@ section h1 {
 }
 
 /* forms */
-button, input[type="text"] {
+.Button, button, input[type="text"] {
   border-radius: 2px;
   font-size: $size-font-medium;
   padding: 5px 10px;
 }
 
-button {
+.Button, button {
   background-color: $fill-white;
   border: 1px solid $color-green;
   color: $color-green;
+  cursor: pointer;
+  display: inline-block;
 }
-button.medium {
+.Button.medium, button.medium {
   padding: 10px 25px;
 }
-button.large {
+.Button.large, button.large {
   font-size: $size-font-default;
   padding: 12px 35px;
 }
-button.transparent {
+.Button.transparent, button.transparent {
   background-color: transparent;
   border-color: $color-white;
   color: $color-white;
@@ -178,7 +180,7 @@ ul.navigation {
   bottom: -175px;
   z-index: 0;
 }
-.Home__Header button {
+.Home__Header .Button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 

@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router'
 import Avatar from 'components/Avatar'
+import Button from 'components/Button'
 import Legend from 'components/Legend'
 
 export default () => {
@@ -14,7 +16,7 @@ export default () => {
           Whether you have been using React since it was first announced, or are just getting started.
           React Rally has something for everyone!
         </p>
-        <button className="medium">More about React Rally &raquo;</button>
+        <Link to="/about" className="Button medium">More about React Rally &raquo;</Link>
       </div>
       <div className="align-center">
         <Legend>Keynote Speakers</Legend>

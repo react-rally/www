@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
+import constants from 'helpers/constants'
+import Button from 'components/Button'
 
 export default class Header extends Component {
   render() {
@@ -17,8 +19,8 @@ export default class Header extends Component {
                 Come find out what makes it so incredible.
               </p>
               <div>
-                <button className="large">Register Now</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                <button className="large transparent">Submit Proposal</button>
+                <Button href={constants.Links.TICKET_SALES} className="large">Register Now</Button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <Button href={constants.Links.PROPOSAL_FORM} className="large transparent">Submit Proposal</Button>
               </div>
               <ul className="Home__Header__Nav navigation">
                 <li><Link to="/speakers">Speakers</Link></li>
@@ -49,7 +51,7 @@ export default class Header extends Component {
               <li><Link activeClassName="active" to="/conduct">Conduct</Link></li>
               <li><Link activeClassName="active" to="/about">About</Link></li>
             </ul>
-            <button className="medium">Tickets</button>
+            <Button href={constants.Links.TICKET_SALES} className="medium">Tickets</Button>
           </div>
         </div>
       )}
