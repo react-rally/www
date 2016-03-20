@@ -299,6 +299,7 @@ ul.navigation {
   display: inline-block;
   margin: 25px 50px;
   text-align: center;
+  position: relative;
 }
 .Avatar__Image {
   border-radius: 200px;
@@ -314,13 +315,17 @@ ul.navigation {
 }
 .Avatar__Social {
   margin-top: 15px;
-  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: -43px;
+  margin-left: -42px;
+  display: none;
 }
 .Avatar__Social .Icon {
   border-width: 0;
 }
 .Avatar:hover .Avatar__Social {
-  visibility: visible;
+  display: block;
 }
 
 /* -- Legend -- */
