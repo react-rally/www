@@ -209,11 +209,12 @@ ul.navigation {
   font-size: $size-font-medium;
   margin-bottom: 50px;
 }
-.Venue__Content button {
-  margin-top: 25px;
-}
 .Venue__Hotel {
   padding-top: 50px;
+}
+.Venue__Content button,
+.Venue__Hotel button {
+  margin-top: 25px;
 }
 
 /* -- Header -- */
