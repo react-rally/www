@@ -2,7 +2,7 @@ import React from 'react'
 
 export default () => {
   return (
-    <div>
+    <div className="Conduct">
       <h1>Code of Conduct</h1>
       <p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.</p>
       <h3>Need Help?</h3>

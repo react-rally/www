@@ -2,7 +2,7 @@ import React from 'react'
 
 export default () => {
   return (
-    <div>
+    <div className="Speakers">
       <h1>Speakers</h1>
     </div>
   )
