@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import constants from 'helpers/constants'
 import Button from 'components/Button'
+import Newsletter from 'components/Newsletter'
 
 export default class Header extends Component {
   render() {
@@ -33,9 +34,7 @@ export default class Header extends Component {
             <img className="Home__Header__ReactLogo" src="assets/img/ReactLogo.svg"/>
           </div>
           <div className="Home__Header__Newsletter">
-            Subscribe to updates for React Rally&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text" placeholder="Email address..."/>&nbsp;&nbsp;
-            <button className="transparent">Sign Up</button>
+            <Newsletter/>
           </div>
         </div>
       ) : (

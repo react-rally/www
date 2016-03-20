@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import constants from 'helpers/constants'
 import Button from 'components/Button'
 import Icon from 'components/Icon'
+import Newsletter from 'components/Newsletter'
 
 export default () => {
   return (
@@ -17,9 +18,7 @@ export default () => {
         <li><Link to="/about">About</Link></li>
       </ul>
       <div className="Footer__Newsletter">
-        Subscribe to updates on React Rally&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" placeholder="Email address..."/>&nbsp;&nbsp;
-        <button>Sign Up</button>
+        <Newsletter/>
       </div>
       <section className="Footer__About">
         <div className="col col-4">

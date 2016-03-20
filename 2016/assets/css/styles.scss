@@ -52,7 +52,7 @@ section h1 {
 }
 
 /* forms */
-.Button, button, input[type="text"] {
+.Button, button, input[type="text"], input[type="email"] {
   border-radius: 2px;
   font-size: $size-font-medium;
   padding: 5px 10px;
@@ -78,7 +78,7 @@ section h1 {
   color: $color-white;
 }
 
-input[type="text"] {
+input[type="text"], input[type="email"] {
   border: 1px solid $fill-darkgray;
   line-height: 1.3;
   width: 260px;
