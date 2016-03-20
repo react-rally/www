@@ -114,6 +114,16 @@ section {
 .align-right {
   text-align: right;
 }
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
 
 ul.navigation {
   font-size: $size-font-medium;
@@ -136,7 +146,6 @@ ul.navigation {
   border-color: $color-orange;
   color: $color-darkgray;
 }
-
 
 /* -- Home -- */
 .Home__Header {
@@ -367,4 +376,129 @@ ul.navigation {
 }
 .Icon--twitter {
   padding: 12px 10px;
+}
+
+/* -- Newsletter -- */
+.Newsletter__Label {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+/* responsiveness */
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: $size-font-medium;
+  }
+
+  section h1 {
+    font-size: $size-font-default;
+  }
+
+  .col-1 { width: $width-column * 2; }
+  .col-2 { width: $width-column * 4; }
+  .col-3 { width: $width-column * 6; }
+  .col-4 { width: $width-column * 8; }
+  .col-5 { width: $width-column * 10; }
+  .col-6 { width: $width-column * 12; }
+  .col-7 { width: $width-column * 14; }
+  .col-8 { width: $width-column * 16; }
+
+  ul.navigation {
+    padding: 0;
+  }
+  .navigation li {
+    display: block;
+    border-bottom: 1px solid $fill-darkgray;
+    padding: 12px 0;
+  }
+  .navigation li:last-of-type {
+    border-bottom-width: 0;
+  }
+
+  .Home__Header__Wrapper {
+    padding: 50px;
+    padding-bottom: 0;
+  }
+  .Home__Header__Wrapper h1 {
+    font-size: $size-font-large;
+  }
+  .Home__Header__Content {
+    top: 0;
+  }
+  .Home__Header__Buttons {
+    margin-top: 25px;
+  }
+  .Home__Header__Buttons a {
+    width: 100%;
+  }
+  .Home__Header__Nav.navigation {
+    border-top: 1px solid $fill-darkgreen;
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin: 25px -50px 0;
+  }
+  .Home__Header__Nav.navigation li {
+    border-bottom: 1px solid $fill-darkgreen;
+  }
+
+  .Header--padded {
+    padding: 0;
+  }
+  .Header--padded .Button {
+    display: none;
+  }
+  .Header--padded .Header__Logo {
+    width: 100%;
+    display: block;
+  }
+  .Header--padded .Header__Nav__Wrapper {
+    width: 100%;
+  }
+  .Header--padded .Header__Nav {
+    background: $fill-lightgray;
+    display: block;
+  }
+  .Header--padded .Header__Nav a.active {
+    border-bottom-width: 0;
+    color: $color-green;
+  }
+  // .Header--padded .Header__Nav a.active:after {
+  //   content: '▼';
+  //   display: inline-block;
+  //   font-size: $size-font-small;
+  //   margin-left: 5px;
+  // }
+
+  .Newsletter input {
+    width: 200px;
+  }
+  .Newsletter__Label {
+    display: block;
+    margin: 0 0 12px;
+  }
+
+  .Footer__About__Tickets {
+    text-align: center;
+    width: 100%;
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+
+  .Venue__Content__Thumbnail {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .Avatar {
+    margin: 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Avatar {
+    margin: 25px 0;
+  }
 }

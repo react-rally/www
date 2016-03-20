@@ -19,7 +19,7 @@ export default class Header extends Component {
                 From single-page apps, to server rendering, to native mobile, to apps on your TV, ReactJS is everywhere.
                 Come find out what makes it so incredible.
               </p>
-              <div>
+              <div className="Home__Header__Buttons">
                 <Button href={constants.Links.TICKET_SALES} className="large">Register Now</Button>&nbsp;&nbsp;&nbsp;&nbsp;
                 <Button href={constants.Links.PROPOSAL_FORM} className="large transparent">Submit Proposal</Button>
               </div>
@@ -39,9 +39,9 @@ export default class Header extends Component {
         </div>
       ) : (
         <div>
-          <div className="col col-2">
+          <div className="Header__Logo col col-2">
           </div>
-          <div className="col col-6 align-right">
+          <div className="Header__Nav__Wrapper col col-6 align-right">
             <ul className="Header__Nav navigation">
               <li><Link activeClassName="active" to="/speakers">Speakers</Link></li>
               <li><Link activeClassName="active" to="/schedule">Schedule</Link></li>

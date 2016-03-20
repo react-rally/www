@@ -7,17 +7,17 @@ export default () => {
     <div className="Venue">
       <h1>React Rally 2016 will be held in the beautiful Rose Wagner Performing Arts Center within walking distance of great food and hotels.</h1>
       <div className="Venue__Wrapper">
-        <div className="Venue__Content">
-          <div className="col col-4">
+        <div className="Venue__Content clearfix">
+          <div className="Venue__Content__Thumbnail col col-4 float-right align-right">
+            <a href={constants.Links.VENUE_DIRECTIONS} target="_blank">
+              <img src="assets/img/RoseWagnerMap.png"/>
+            </a>
+          </div>
+          <div className="Venue__Content__Details col col-4 float-left">
             <h2>Rose Wagner Performing Arts Center</h2>
             <div className="Venue__Content__Address">138 West 300 South, Salt Lake City, UT 84101</div>
             <p>The Rose is a vibrant, active hub for emerging and established artists and arts organizations in Salt Lake City. This versatile venue houses three theaters as well as rehearsal and creation spaces for a host of performing arts companies.</p>
             <Button href={constants.Links.VENUE_DIRECTIONS} className="medium transparent">Get Directions &raquo;</Button>
-          </div>
-          <div className="col col-4 align-right">
-            <a href={constants.Links.VENUE_DIRECTIONS} target="_blank">
-              <img src="assets/img/RoseWagnerMap.png"/>
-            </a>
           </div>
         </div>
       </div>
