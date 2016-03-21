@@ -170,12 +170,10 @@ ul.navigation {
   top: 100px;
   z-index: 100;
 }
-.Home__Header__Nav {
+.Home__Header__Nav.navigation {
   margin-top: 25px;
   font-size: $size-font-medium;
-  position: absolute;
-  bottom: -143px;
-  left: 120px;
+  margin-top: 72px;
 }
 .Home__Header__Nav a {
   color: $color-white;
