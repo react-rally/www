@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+npm run build
+git add .
+git commit -m"Updating site"
+git push

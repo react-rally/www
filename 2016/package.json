@@ -6,7 +6,9 @@
   "scripts": {
     "test": "karma start --single-run",
     "start": "webpack-dev-server --inline --content-base ./ --history-api-fallback",
-    "build": "NODE_ENV=production webpack"
+    "build": "npm run imagemin && NODE_ENV=production webpack",
+    "imagemin": "./scripts/imagemin",
+    "deploy": "./scripts/deploy"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
+    "imagemin": "^4.0.0",
+    "imagemin-pngquant": "^4.2.2",
     "karma": "^0.13.22",
     "mocha": "^2.4.5",
     "node-sass": "^3.4.2",
