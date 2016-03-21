@@ -341,7 +341,7 @@ ul.navigation {
 .Legend {
   color: $color-orange;
   font-size: $size-font-medium;
-  margin: 25px 0;
+  margin: 50px 0 25px;
   text-align: center;
   position: relative;
 }
@@ -427,7 +427,7 @@ ul.navigation {
     top: 0;
   }
   .Home__Header__ReactLogo {
-    right: inherit;
+    right: -200px;
   }
   .Home__Header__Buttons {
     margin-top: 25px;
