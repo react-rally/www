@@ -40,8 +40,8 @@ export default () => {
         </div>
       </section>
       <div className="Footer__Social">
-        <Icon href="https://twitter.com/ReactRally" src="assets/img/twitter.png" className="Icon--twitter"/>
-        <Icon href="https://github.com/react-rally" src="assets/img/github.png" className="Icon--github"/>
+        <Icon href="https://twitter.com/ReactRally" src="assets/dist/img/twitter.png" className="Icon--twitter"/>
+        <Icon href="https://github.com/react-rally" src="assets/dist/img/github.png" className="Icon--github"/>
       </div>
       <div className="Footer__Copyright">
         &copy; 2016 Trace Events, LLC

@@ -32,7 +32,7 @@ export default class Header extends Component {
                 <li><Link to="/about">About</Link></li>
               </ul>
             </div>
-            <img className="Home__Header__ReactLogo" src="assets/img/ReactLogo.svg"/>
+            <img className="Home__Header__ReactLogo" src="assets/dist/img/ReactLogo.svg"/>
           </div>
           <div className="Home__Header__Newsletter">
             <Newsletter/>

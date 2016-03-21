@@ -10,7 +10,7 @@ export default () => {
         <div className="Venue__Content clearfix">
           <div className="Venue__Content__Thumbnail col col-4 float-right align-right">
             <a href={constants.Links.VENUE_DIRECTIONS} target="_blank">
-              <img src="assets/img/RoseWagnerMap.png"/>
+              <img src="assets/dist/img/RoseWagnerMap.png"/>
             </a>
           </div>
           <div className="Venue__Content__Details col col-4 float-left">
