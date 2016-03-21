@@ -308,6 +308,7 @@ ul.navigation {
   margin: 25px 50px;
   text-align: center;
   position: relative;
+  width: 225px;
 }
 .Avatar__Image {
   border-radius: 200px;
@@ -391,6 +392,11 @@ ul.navigation {
     font-size: $size-font-medium;
   }
 
+  section,
+  .Home__Header__Wrapper {
+    padding: 50px 35px;
+  }
+
   section h1 {
     font-size: $size-font-default;
   }
@@ -417,7 +423,6 @@ ul.navigation {
   }
 
   .Home__Header__Wrapper {
-    padding: 50px;
     padding-bottom: 0;
   }
   .Home__Header__Wrapper h1 {
@@ -475,9 +480,6 @@ ul.navigation {
   //   margin-left: 5px;
   // }
 
-  .Newsletter input {
-    width: 200px;
-  }
   .Newsletter__Label {
     display: block;
     margin: 0 0 12px;
