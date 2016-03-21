@@ -34,7 +34,7 @@ export default () => {
           </p>
         </div>
         <div className="col col-2"></div>
-        <div className="Footer__About__Tickets col col-2">
+        <div className="Footer__About__Tickets col col-2 align-right">
           <h3>Don't lose your spot.</h3>
           <Button href={constants.Links.TICKET_SALES} className="medium">Register Now</Button>
         </div>
