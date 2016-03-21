@@ -27,7 +27,7 @@ $size-font-small: 14px;
 body {
   background-color: $fill-white;
   color: $color-primary;
-  font-family: Helveica Neue, arial, sans-serif;
+  font-family: lato, sans-serif;
   font-size: $size-font-default;
   margin: 0;
 }
@@ -42,6 +42,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   color: $color-orange;
+  font-family: 'museo-slab', sans-serif;
   margin: 0;
 }
 
@@ -338,6 +339,7 @@ ul.navigation {
 /* -- Legend -- */
 .Legend {
   color: $color-orange;
+  font-family: 'museo-slab', sans-serif;
   font-size: $size-font-medium;
   margin: 50px 0 25px;
   text-align: center;
