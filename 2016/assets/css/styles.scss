@@ -447,9 +447,6 @@ ul.navigation {
     bottom: 0;
     margin: 25px -50px 0;
   }
-  .Home__Header__Nav.navigation li {
-    border-bottom: 1px solid $fill-darkgreen;
-  }
 
   .Header--padded {
     padding: 0;
@@ -468,16 +465,25 @@ ul.navigation {
     background: $fill-lightgray;
     display: block;
   }
-  .Header--padded .Header__Nav li {
-    border-bottom: 0 none;
+  .navigation li {
+    border-bottom-width: 0;
     padding: 0;
   }
-  .Header--padded .Header__Nav a {
+  .navigation li a {
     border-bottom: 1px solid $fill-darkgray;
-    display: none;
+    display: block;
     height: inherit;
     margin-bottom: 0;
     padding: 12px 0;
+  }
+  .navigation li:last-of-type a {
+    border-bottom: 0 none !important;
+  }
+  .Home__Header__Nav.navigation li a {
+    border-bottom-color: $fill-darkgreen;
+  }
+  .Header--padded .Header__Nav a {
+    display: none;
   }
   .Header--padded .Header__Nav a.active {
     border-bottom-width: 0;
@@ -495,9 +501,6 @@ ul.navigation {
   }
   .Header--padded .Header__Nav--active a.active {
     border-bottom: 1px solid $fill-darkgray;
-  }
-  .Header--padded .Header__Nav--active li:last-of-type a {
-    border-bottom: 0 none;
   }
   .Header--padded .Header__Nav--active a.active:after {
     display: none;
