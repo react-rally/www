@@ -240,6 +240,9 @@ ul.navigation {
 .Header__Nav {
   display: inline-block;
 }
+.Header__Logo {
+  padding-left: 50px;
+}
 
 /* -- Footer -- */
 .Footer {
@@ -457,6 +460,8 @@ ul.navigation {
   .Header--padded .Header__Logo {
     width: 100%;
     display: block;
+    text-align: center;
+    padding: 0;
   }
   .Header--padded .Header__Nav__Wrapper {
     width: 100%;

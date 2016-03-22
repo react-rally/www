@@ -51,6 +51,9 @@ export default class Header extends Component {
       ) : (
         <div>
           <div className="Header__Logo col col-2">
+            <Link to="/">
+              <img src="assets/dist/img/ReactLogoGreen.svg" width="70"/>
+            </Link>
           </div>
           <div className="Header__Nav__Wrapper col col-6 align-right">
             <ul className={navClassName} onClick={this.handleNavClick.bind(this)}>
