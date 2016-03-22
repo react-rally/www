@@ -5,8 +5,18 @@ import Button from 'components/Button'
 import Newsletter from 'components/Newsletter'
 
 export default class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {isNavActive: false}
+  }
+  
+  handleNavClick() {
+    this.setState({isNavActive: !this.state.isNavActive})
+  }
+
   render() {
     let isHomeScreen = this.context.router.isActive('/', true)
+    let navClassName = (this.state.isNavActive ? ' Header__Nav--active ' : '') + 'Header__Nav navigation';
     return (
       <header className={"Header" + (isHomeScreen ? "" : " Header--padded")}>
       {isHomeScreen ? (
@@ -43,7 +53,7 @@ export default class Header extends Component {
           <div className="Header__Logo col col-2">
           </div>
           <div className="Header__Nav__Wrapper col col-6 align-right">
-            <ul className="Header__Nav navigation">
+            <ul className={navClassName} onClick={this.handleNavClick.bind(this)}>
               <li><Link activeClassName="active" to="/speakers">Speakers</Link></li>
               <li><Link activeClassName="active" to="/schedule">Schedule</Link></li>
               <li><Link activeClassName="active" to="/venue">Venue</Link></li>

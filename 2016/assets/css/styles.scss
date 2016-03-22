@@ -140,7 +140,7 @@ ul.navigation {
 .navigation li a {
   border-bottom: 2px solid transparent;
   display: inline-block;
-  height: 57px;
+  height: 62px;
   margin-bottom: -36px;
 }
 .navigation li a.active {
@@ -468,16 +468,40 @@ ul.navigation {
     background: $fill-lightgray;
     display: block;
   }
+  .Header--padded .Header__Nav li {
+    border-bottom: 0 none;
+    padding: 0;
+  }
+  .Header--padded .Header__Nav a {
+    border-bottom: 1px solid $fill-darkgray;
+    display: none;
+    height: inherit;
+    margin-bottom: 0;
+    padding: 12px 0;
+  }
   .Header--padded .Header__Nav a.active {
     border-bottom-width: 0;
     color: $color-green;
+    display: block;
   }
-  // .Header--padded .Header__Nav a.active:after {
-  //   content: '▼';
-  //   display: inline-block;
-  //   font-size: $size-font-small;
-  //   margin-left: 5px;
-  // }
+  .Header--padded .Header__Nav a.active:after {
+    content: '▼';
+    display: inline-block;
+    font-size: $size-font-small;
+    margin-left: 5px;
+  }
+  .Header--padded .Header__Nav--active a {
+    display: block;
+  }
+  .Header--padded .Header__Nav--active a.active {
+    border-bottom: 1px solid $fill-darkgray;
+  }
+  .Header--padded .Header__Nav--active li:last-of-type a {
+    border-bottom: 0 none;
+  }
+  .Header--padded .Header__Nav--active a.active:after {
+    display: none;
+  }
 
   .Newsletter__Label {
     display: block;
