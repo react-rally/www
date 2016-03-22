@@ -375,7 +375,7 @@ ul.navigation {
   background: $fill-orange;
 }
 .Icon--twitter {
-  padding: 10px 9px;
+  padding: 8px 9px;
 }
 
 /* -- Newsletter -- */
@@ -499,6 +499,11 @@ ul.navigation {
   .Avatar {
     margin: 25px;
   }
+  
+  .Icon--twitter {
+    padding: 10px 9px;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
