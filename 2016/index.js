@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute } from 'react-router'
 import App from 'App'
 import About from 'screens/About'
 import Conduct from 'screens/Conduct'
@@ -13,7 +13,7 @@ import Venue from 'screens/Venue'
 import styles from './assets/css/styles.scss'
 
 ReactDOM.render((
-  <Router history={browserHistory}>
+  <Router>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="/about" component={About}/>
