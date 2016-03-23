@@ -6,7 +6,9 @@ export default () => {
   return (
     <div className="Proposals">
       <h1>The React Rally 2016 CFP is open until April 27th. If you're doing something interesting with React we'd love to hear about it!</h1>
-      <Button href={constants.Links.PROPOSAL_FORM}>Submit Proposal &raquo;</Button>
+      <div style={{textAlign: 'center'}}>
+        <Button className="medium" href={constants.Links.PROPOSAL_FORM}>Submit Proposal &raquo;</Button>
+      </div>
       <p>
         We want React Rally to showcase how the wider community is using React. We want stories about products or experiences that React made possible, stories about overcoming challenges with React, and ideas for solving problems that exist in React today. We are interested in hearing how you are pushing the limits of React, and how we can all use React to build better stuff. We want speakers of all experience levels and backgrounds, because React is for people of all experience levels and background.
       </p>

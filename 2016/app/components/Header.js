@@ -50,12 +50,12 @@ export default class Header extends Component {
         </div>
       ) : (
         <div>
-          <div className="Header__Logo col col-2">
+          <div className="Header__Logo col col-1">
             <Link to="/">
               <img src="assets/dist/img/ReactLogoGreen.svg" width="70"/>
             </Link>
           </div>
-          <div className="Header__Nav__Wrapper col col-6 align-right">
+          <div className="Header__Nav__Wrapper col col-7 align-right">
             <ul className={navClassName} onClick={this.handleNavClick.bind(this)}>
               <li><Link activeClassName="active" to="/speakers">Speakers</Link></li>
               <li><Link activeClassName="active" to="/schedule">Schedule</Link></li>

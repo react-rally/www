@@ -6,7 +6,7 @@ export default (props) => {
   return (
     <div>
       <Header/>
-      <section>
+      <section className="Content">
         {props.children}
       </section>
       <Footer/>
