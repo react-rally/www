@@ -387,16 +387,16 @@ ul.navigation {
 
 
 /* responsiveness */
-// @media only screen and (max-device-width: 800px) {
-//   @import 'responsive-800';
-// }
+@media only screen and (max-device-width: 800px) {
+  @import 'responsive-800';
+}
 @media only screen and (max-width: 800px) {
   @import 'responsive-800';
 }
 
-// @media only screen and (max-device-width: 500px) {
-//   @import 'responsive-500';
-// }
+@media only screen and (max-device-width: 500px) {
+  @import 'responsive-500';
+}
 @media only screen and (max-width: 500px) {
   @import 'responsive-500';
 }
