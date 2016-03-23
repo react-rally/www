@@ -202,6 +202,11 @@ ul.navigation {
   text-align: center;
 }
 
+/* -- Proposals -- */
+.Proposals h1 {
+  text-align: center;
+}
+
 /* -- Venue -- */
 .Venue h1 {
   text-align: center;
@@ -333,6 +338,7 @@ ul.navigation {
 }
 .Avatar__Social .Icon {
   border-width: 0;
+  padding: 9px;
 }
 .Avatar:hover .Avatar__Social {
   display: block;
