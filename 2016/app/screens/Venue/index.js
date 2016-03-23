@@ -22,9 +22,13 @@ export default () => {
         </div>
       </div>
       <div className="Venue__Hotel">
+        <h2>Hotel</h2>
+        <p>We are working on arranging a discount with a local hotel for attendees of the conference. Stay tuned for more details.</p>
+      {/*
         <h2>Hotel Monaco</h2>
         <p>We have arranged a discount with Hotel Monaco for attendees of the conference. This is an amazing four star hotel, available for just $139 per night. There are a limited number of rooms available, so book your room early.</p>
         <Button href={constants.Links.HOTEL_RESERVATION} className="medium">Book a Room &raquo;</Button>
+      */}
       </div>
     </div>
   )
