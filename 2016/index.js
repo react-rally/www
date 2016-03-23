@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, IndexRoute } from 'react-router'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import App from 'App'
 import About from 'screens/About'
 import Conduct from 'screens/Conduct'
@@ -10,10 +10,11 @@ import Schedule from 'screens/Schedule'
 import Speakers from 'screens/Speakers'
 import Sponsors from 'screens/Sponsors'
 import Venue from 'screens/Venue'
+import ga from 'helpers/googleAnalytics'
 import styles from './assets/css/styles.scss'
 
 ReactDOM.render((
-  <Router>
+  <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="/about" component={About}/>

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start --single-run",
-    "start": "webpack-dev-server --inline --content-base ./ --history-api-fallback",
+    "start": "webpack-dev-server --inline --content-base ./",
     "build": "npm run imagemin && NODE_ENV=production webpack",
     "imagemin": "./scripts/imagemin",
     "deploy": "./scripts/deploy"
