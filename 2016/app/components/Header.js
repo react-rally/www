@@ -9,7 +9,7 @@ export default class Header extends Component {
     super(props);
     this.state = {isNavActive: false}
   }
-  
+
   handleNavClick() {
     this.setState({isNavActive: !this.state.isNavActive})
   }
@@ -25,9 +25,9 @@ export default class Header extends Component {
             <div className="Home__Header__Content">
               <h1>August 25-26 in Salt Lake City, UT</h1>
               <p>
-                Facebook's ReactJS has taken client side development by storm.
-                From single-page apps, to server rendering, to native mobile, to apps on your TV, ReactJS is everywhere.
-                Come find out what makes it so incredible.
+                Facebook's React has taken client side development by storm.
+                From single-page apps, to server rendering, to native mobile, to apps on your TV, React is everywhere.
+                Come hear from the best and the brightest in the React community about what makes it so incredible.
               </p>
               <div className="Home__Header__Buttons">
                 <Button href={constants.Links.TICKET_SALES} className="large">Register Now</Button>&nbsp;&nbsp;&nbsp;&nbsp;
