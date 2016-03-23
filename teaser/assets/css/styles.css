@@ -32,7 +32,7 @@ body {
 #container {
   margin: 0 auto;
   position: relative;
-  width: 1440px;
+  width: 100%;
   height: 900px;
   overflow: hidden;
 }
@@ -41,10 +41,14 @@ body {
 #message {
   position: absolute;
   z-index: 1000;
-  width: 850px;
+  width: 100%;
   height: 500px;
+  margin-top: 60px;
 }
-
+#message .rally-logo img{
+  max-width: 800px;
+  padding: 20px 50px;
+}
 #title, #subtitle {
   font-family: 'true_crimesregular';
 }
@@ -190,11 +194,7 @@ body.firefox #mc_embed_signup button {
   padding: 5px 0 0 0;
 }
 
-#mc_embed_signup {
-  position: absolute;
-  top: 375px;
-  left: 225px;
-}
+
 #mc_embed_signup form {
   width: 421px;
 }
@@ -204,8 +204,10 @@ body.firefox #mc_embed_signup button {
   background: rgba(255, 255, 255, 0.2);
   font-size: large;
   padding: 15px;
-  width: 350px !important;
+  width: 350px ;
   height: 45px;
+  color: #fff;
+  letter-spacing: .6px
 }
 #mc_embed_signup input::-moz-placeholder {
   color: rgb(169, 169, 169);
@@ -220,7 +222,6 @@ body.firefox #mc_embed_signup button {
   margin: 0;
   padding: 2px 15px 3px;
   position: relative;
-  top: -1px;
 }
 
 #mc_embed_signup #mc_embed_signup_scroll div.mce_inline_error,
@@ -235,4 +236,53 @@ body.firefox #mc_embed_signup button {
 #mc_embed_signup #mce-responses #mce-success-response {
   font-weight: normal;
   text-shadow: rgb(17, 79, 0) 0 1px 0;
+}
+@media screen and (max-width:800px) {
+  #container {
+    text-align: center;
+    height: 100vh;
+  }
+  #message {
+    position: relative;
+    z-index: 1;
+  }
+  #message .rally-logo img{
+    width: 100vw;
+    padding: 10px 10px;
+  }
+  #description {
+    position: relative;
+    top: initial;
+    left: initial;
+    margin-top: 20px;
+  }
+  #description div{
+    font-size: 21px;
+    letter-spacing: .3px;
+    margin-bottom: 7px;
+  }
+  #mc_embed_signup input {
+    width: auto;
+  }
+  #mc_embed_signup form {
+    width: auto;
+  }
+  .float-left {
+    float: none;
+  }
+  .float-right {
+    float: none;
+  }
+  #img-robot {
+    left: calc(100% - 1099px);
+    opacity: .7;
+  }
+  #img-tentacle_right {
+    top: 475px;
+    left: -159px;
+    opacity: .7;
+  }
+  #img-tentacle_left {
+    display: none;
+  }
 }
