@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import constants from 'helpers/constants'
 import Button from 'components/Button'
+import Tickets from 'components/Tickets'
 import Newsletter from 'components/Newsletter'
 
 export default class Header extends Component {
@@ -30,7 +31,7 @@ export default class Header extends Component {
                 Come hear from the best and the brightest in the React community about what makes it so incredible.
               </p>
               <div className="Home__Header__Buttons">
-                <Button href={constants.Links.TICKET_SALES} className="large">Register Now</Button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <Tickets/>&nbsp;&nbsp;&nbsp;&nbsp;
                 <Button href={constants.Links.PROPOSAL_FORM} className="large transparent">Submit Proposal</Button>
               </div>
               <ul className="Home__Header__Nav navigation">
