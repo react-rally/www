@@ -397,6 +397,18 @@ ul.navigation {
   margin-right: 20px;
 }
 
+/* -- Tickets -- */
+.Tickets {
+  display: inline-block;
+}
+.Tickets__Countdown {
+  width: 200px;
+}
+.Tickets__Countdown__Timer {
+  color: $color-white;
+  font-family: courier;
+}
+
 
 /* responsiveness */
 @media only screen and (max-device-width: 800px) {
