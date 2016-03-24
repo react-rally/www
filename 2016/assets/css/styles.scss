@@ -400,8 +400,10 @@ ul.navigation {
 /* -- Tickets -- */
 .Tickets {
   display: inline-block;
+  margin: 0 auto;
 }
 .Tickets__Countdown {
+  display: inline-block;
   width: 200px;
 }
 .Tickets__Countdown__Timer {
