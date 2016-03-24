@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import moment from 'moment'
 import constants from 'helpers/constants'
 import Button from 'components/Button'
 
@@ -31,7 +30,7 @@ export default class Tickets extends Component {
     let diff
 
     if (!ticketsAvailable) {
-      diff = moment(TICKET_RELEASE).diff()
+      diff = TICKET_RELEASE - Date.now()
       setTimeout(this.forceUpdate.bind(this), 1000)
     }
 
