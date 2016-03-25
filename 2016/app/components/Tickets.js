@@ -2,10 +2,11 @@ import React, { Component } from 'react'
 import constants from 'helpers/constants'
 import Button from 'components/Button'
 
-const TICKET_RELEASE = Date.parse('2016-03-25T12:00:00-06:00');
+const TICKET_RELEASE = Date.parse('2016-04-01T12:00:00-06:00');
 
 function duration(timeInMillis) {
   let intervals = {
+    'd': 86400000,
     'h': 3600000,
     'm': 60000,
     's': 1000,
@@ -17,6 +18,7 @@ function duration(timeInMillis) {
     let unit = Math.floor(timeInMillis / v)
     timeInMillis %= v
 
+    if (sb.length === 0 && unit === 0) return;
     if (sb.length > 0) sb += ':'
     if (String(unit).length === 1) unit = '0' + unit
     sb += unit + k

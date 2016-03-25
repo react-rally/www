@@ -404,7 +404,7 @@ ul.navigation {
 }
 .Tickets__Countdown {
   display: inline-block;
-  width: 200px;
+  min-width: 200px;
 }
 .Tickets__Countdown__Timer {
   color: $color-white;
