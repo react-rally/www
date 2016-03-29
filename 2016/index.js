@@ -16,6 +16,16 @@ import styles from './assets/css/styles.scss'
 
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
 
+const NotFound = () => {
+  return (
+    <div>
+      <h1>404 Not Found</h1>
+      <p>The page that you are looking for could not be found.</p>
+      <p>While you're here, why not <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">watch a video</a> of our favorite talk from last year?</p>
+    </div>
+  )
+}
+
 ReactDOM.render((
   <Router history={appHistory}>
     <Route path="/" component={App}>
@@ -26,6 +36,7 @@ ReactDOM.render((
       <Route path="/speakers" component={Proposals}/>
       <Route path="/sponsors" component={Sponsors}/>
       <Route path="/venue" component={Venue}/>
+      <Route path="*" component={NotFound}/>
     </Route>
   </Router>
 ), document.getElementById('container'))
