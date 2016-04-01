@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import constants from 'helpers/constants'
 import Button from 'components/Button'
 
-const TICKET_RELEASE = Date.parse('2016-04-01T12:00:00-06:00');
+const TICKET_RELEASE = Date.parse('2016-04-15T12:00:00-06:00');
 
 function duration(timeInMillis) {
   let intervals = {
@@ -42,7 +42,7 @@ export default class Tickets extends Component {
         <Button href={constants.Links.TICKET_SALES} className="large">Register Now</Button>
       ) : (
         <div className="Tickets__Countdown">
-          <small>Early Bird Tickets</small>
+          <small>Tickets on sale soon</small>
           <h2 className="Tickets__Countdown__Timer">{duration(diff)}</h2>
         </div>
       )}
