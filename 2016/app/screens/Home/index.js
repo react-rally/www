@@ -29,6 +29,13 @@ export default () => {
           twitter="https://twitter.com/marcysutton"
           github="https://github.com/marcysutton"
         />
+        <Avatar
+          name="Sarah Drasner"
+          title="Senior UX Engineer, Trulia"
+          url="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/bio-pic.jpg"
+          twitter="https://twitter.com/sarah_edo"
+          github="https://github.com/sdras"
+        />
       </div>
     </div>
   )
