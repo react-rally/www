@@ -36,6 +36,13 @@ export default () => {
           twitter="https://twitter.com/sarah_edo"
           github="https://github.com/sdras"
         />
+        <Avatar
+          name="Paul O’Shannessy"
+          title="React Core Team, Facebook"
+          url="https://avatars0.githubusercontent.com/u/8445?v=3&s=460"
+          twitter="https://twitter.com/zpao"
+          github="https://github.com/zpao"
+        />
       </div>
     </div>
   )
