@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
 npm run build
+cp bundle.js ../
 git add .
-git commit -m"Updating site"
+git commit -m "Updating site"
 git push
