@@ -43,6 +43,13 @@ export default () => {
           twitter="https://twitter.com/zpao"
           github="https://github.com/zpao"
         />
+        <Avatar
+          name="Joseph Savona"
+          title="Relay & GraphQL Core Team, Facebook"
+          url="https://avatars2.githubusercontent.com/u/6425824?v=3&s=460"
+          twitter="https://twitter.com/en_JS"
+          github="https://github.com/josephsavona"
+        />
       </div>
     </div>
   )
