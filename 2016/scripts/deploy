@@ -3,5 +3,6 @@
 npm run build
 cp bundle.js ../
 git add .
+git add ../bundle.js
 git commit -m "Updating site"
 git push
