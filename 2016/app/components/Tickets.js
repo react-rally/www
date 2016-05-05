@@ -39,7 +39,7 @@ export default class Tickets extends Component {
     return (
       <div className="Tickets">
       {ticketsAvailable ? (
-        <Button href={constants.Links.TICKET_SALES} className="large">Register Now</Button>
+        <Button href={constants.Links.TICKET_SALES} className="large">Buy Tickets</Button>
       ) : (
         <div className="Tickets__Countdown">
           <small>Tickets on sale soon</small>
