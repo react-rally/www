@@ -32,8 +32,8 @@ ReactDOM.render((
       <IndexRoute component={Home}/>
       <Route path="/about" component={About}/>
       <Route path="/conduct" component={Conduct}/>
-      <Route path="/schedule" component={Proposals}/>
-      <Route path="/speakers" component={Proposals}/>
+      <Route path="/schedule" component={Schedule}/>
+      <Route path="/speakers" component={Speakers}/>
       <Route path="/sponsors" component={Sponsors}/>
       <Route path="/venue" component={Venue}/>
       <Route path="*" component={NotFound}/>
