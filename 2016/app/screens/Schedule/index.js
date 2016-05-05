@@ -5,7 +5,7 @@ export default () => {
     <div className="Schedule">
       <h1>Schedule</h1>
       <p>Coming soon!</p>
-      <p>We are evaluating proposals now and will post the schedule by May 14th.</p>
+      <p>We are evaluating proposals now and will post the schedule soon.</p>
     </div>
   )
 }
