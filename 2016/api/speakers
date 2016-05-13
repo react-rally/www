@@ -1,0 +1,142 @@
+{
+  "ryanflorence": {
+    "name": "Ryan Florence",
+    "title": "Co-founder, React Training",
+    "avatar": "https://avatars0.githubusercontent.com/u/100200?v=3&s=400",
+    "twitter": "ryanflorence",
+    "github": "ryanflorence"
+  },
+  "marcysutton": {
+    "name": "Marcy Sutton",
+    "title": "Sr. Front-End Engineer, Deque Systems",
+    "avatar": "https://avatars0.githubusercontent.com/u/1045233?v=3&s=400",
+    "twitter": "marcysutton",
+    "github": "marcysutton"
+  },
+  "sarah_edo": {
+    "name": "Sarah Drasner",
+    "title": "Manager, UX Design & Engineering, Trulia",
+    "avatar": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/bio-pic.jpg",
+    "twitter": "sarah_edo",
+    "github": "sdras"
+  },
+  "zpao": {
+    "name": "Paul O'Shannessy",
+    "title": "React Core Team, Facebook",
+    "avatar": "https://avatars0.githubusercontent.com/u/8445?v=3&s=400",
+    "twitter": "zpao",
+    "github": "zpao"
+  },
+  "en_JS": {
+    "name": "Joseph Savona",
+    "title": "Relay & GraphQL Core Team, Facebook",
+    "avatar": "https://avatars2.githubusercontent.com/u/6425824?v=3&s=400",
+    "twitter": "en_JS",
+    "github": "josephsavona"
+  },
+  "jlongster": {
+    "name": "James Long",
+    "title": "Firefox DevTools, Mozilla",
+    "avatar": "https://avatars1.githubusercontent.com/u/17031?v=3&s=400",
+    "twitter": "jlongster",
+    "github": "jlongster"
+  },
+  "drboolean": {
+    "name": "Brian Lonsdorf",
+    "title": "",
+    "avatar": "https://avatars2.githubusercontent.com/u/28562?v=3&s=400",
+    "twitter": "drboolean",
+    "github": "drboolean"
+  },
+  "k88hudson": {
+    "name": "Kate Hudson",
+    "title": "Firefox Engineering, Mozilla",
+    "avatar": "https://avatars0.githubusercontent.com/u/1455535?v=3&s=400",
+    "twitter": "k88hudson",
+    "github": "k88hudson"
+  },
+  "kevinold": {
+    "name": "Kevin Old",
+    "title": "Full-stack developer, Coupa",
+    "avatar": "https://avatars1.githubusercontent.com/u/21967?v=3&s=400",
+    "twitter": "kevinold",
+    "github": "kevinold"
+  },
+  "mglukhovsky": {
+    "name": "Mike Glukhovsky",
+    "title": "Co-founder, RethinkDB",
+    "avatar": "https://avatars1.githubusercontent.com/u/91193?v=3&s=400",
+    "twitter": "mglukhovsky",
+    "github": "mglukhovsky"
+  },
+  "jemyoung": {
+    "name": "Jem Young",
+    "title": "Senior Software Engineer, Netflix",
+    "avatar": "https://avatars1.githubusercontent.com/u/984983?v=3&s=400",
+    "twitter": "jemyoung",
+    "github": "young"
+  },
+  "LukasFittl": {
+    "name": "Lukas Fittl",
+    "title": "",
+    "avatar": "https://scontent-sjc2-1.xx.fbcdn.net/t31.0-8/12819276_10208510926160914_600982505828933950_o.jpg",
+    "twitter": "LukasFittl",
+    "github": "lfittl"
+  },
+  "raquelxmoss": {
+    "name": "Raquel Moss",
+    "title": "",
+    "avatar": "https://avatars3.githubusercontent.com/u/7959274?v=3&s=400",
+    "twitter": "raquelxmoss",
+    "github": "raquelxmoss"
+  },
+  "thejameskyle": {
+    "name": "James Kyle",
+    "title": "Probably Ben Lesh's son",
+    "avatar": "https://avatars1.githubusercontent.com/u/952783?v=3&s=400",
+    "twitter": "thejameskyle",
+    "github": "thejameskyle"
+  },
+  "benlesh": {
+    "name": "Ben Lesh",
+    "title": "Senior UI Engineer, Netflix",
+    "avatar": "http://i.imgur.com/jfv9elj.png",
+    "twitter": "benlesh",
+    "github": "blesh"
+  },
+  "devonbl": {
+    "name": "Devon Lindsey",
+    "title": "Senior Frontend Engineer, Apple",
+    "avatar": "https://pbs.twimg.com/profile_images/602288777319460866/QEZUObls.jpg",
+    "twitter": "devonbl",
+    "github": "devonbl"
+  },
+  "nparashuram": {
+    "name": "Parashuram",
+    "title": "",
+    "avatar": "http://nparashuram.com/me.png",
+    "twitter": "nparashuram",
+    "github": "axemclion"
+  },
+  "jaredforsyth": {
+    "name": "Jared Forsyth",
+    "title": "Mobile developer, Khan Academy",
+    "avatar": "https://avatars0.githubusercontent.com/u/112170?v=3&s=400",
+    "twitter": "jaredforsyth",
+    "github": "jaredly"
+  },
+  "munchybunch": {
+    "name": "Joshua Ma",
+    "title": "",
+    "avatar": "https://main.bnchcdn.com/static/img/about/josh.jpg?v=2",
+    "twitter": "munchybunch",
+    "github": "joshma"
+  },
+  "drewconley13": {
+    "name": "Drew Conley",
+    "title": "",
+    "avatar": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/drewconley-crop.jpg",
+    "twitter": "drewconley13",
+    "github": "drewconley"
+  }
+}
