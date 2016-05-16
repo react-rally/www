@@ -9,8 +9,8 @@ export default (props) => {
       <b>{props.name}</b><br/>
       <em>{props.title}</em>
       <div className="Avatar__Social">
-        <Icon href={props.twitter} src="assets/dist/img/twitter.png" className="Icon--twitter"/>
-        <Icon href={props.github} src="assets/dist/img/github.png" className="Icon--github"/>
+        <Icon href={`https://twitter.com/${props.twitter}`} type="twitter"/>
+        <Icon href={`https://github.com/${props.github}`} type="github"/>
       </div>
     </div>
   )

@@ -69,12 +69,12 @@
     "twitter": "mglukhovsky",
     "github": "mglukhovsky"
   },
-  "jemyoung": {
-    "name": "Jem Young",
-    "title": "Senior Software Engineer, Netflix",
-    "avatar": "https://avatars1.githubusercontent.com/u/984983?v=3&s=400",
-    "twitter": "jemyoung",
-    "github": "young"
+  "saifelse": {
+    "name": "Saif Hakim",
+    "title": "",
+    "avatar": "http://benchling.engineering/content/images/2016/02/saif-1.jpg",
+    "twitter": "saifelse",
+    "github": "saifelse"
   },
   "LukasFittl": {
     "name": "Lukas Fittl",
@@ -125,12 +125,12 @@
     "twitter": "jaredforsyth",
     "github": "jaredly"
   },
-  "munchybunch": {
-    "name": "Joshua Ma",
+  "t_spicydonuts": {
+    "name": "Michael Trotter",
     "title": "",
-    "avatar": "https://main.bnchcdn.com/static/img/about/josh.jpg?v=2",
-    "twitter": "munchybunch",
-    "github": "joshma"
+    "avatar": "https://avatars1.githubusercontent.com/u/715921?v=3&s=400",
+    "twitter": "t_spicydonuts",
+    "github": "spicydonuts"
   },
   "drewconley13": {
     "name": "Drew Conley",

@@ -335,21 +335,20 @@ ul.navigation {
   margin: 0 auto 15px;
 }
 .Avatar b {
+  display: inline-block;
   font-size: $size-font-medium;
 }
 .Avatar em {
   color: $color-lightgray;
+  display: inline-block;
   font-size: $size-font-small;
+  height: 45px;
 }
 .Avatar__Social {
   visibility: hidden;
 }
 .Avatar__Social .Icon {
   border-width: 0;
-  padding: 9px;
-}
-.Avatar__Social .Icon--twitter {
-  padding: 11px 10px;
 }
 .Avatar:hover .Avatar__Social {
   visibility: visible;
@@ -385,16 +384,16 @@ ul.navigation {
   background: $fill-white;
   border: 1px solid $fill-darkgray;
   border-radius: 21px;
+  color: $color-lightgray;
   display: inline-block;
-  padding: 8px;
+  font-size: 28px;
   width: 42px;
   height: 42px;
+  text-align: center;
 }
 .Icon:hover {
   background: $fill-orange;
-}
-.Icon--twitter {
-  padding: 8px 9px;
+  color: $color-white;
 }
 
 /* -- Newsletter -- */
