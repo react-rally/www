@@ -14,15 +14,15 @@ export default () => {
           name="Matt Zabriskie"
           title="Co-organizer"
           avatar="https://avatars2.githubusercontent.com/u/199035"
-          twitter="https://twitter.com/mzabriskie"
-          github="https://github.com/mzabriskie"
+          twitter="mzabriskie"
+          github="mzabriskie"
         />
         <Person
           name="Jamison Dance"
           title="Co-organizer"
           avatar="https://avatars0.githubusercontent.com/u/72027"
-          twitter="https://twitter.com/jergason"
-          github="https://github.com/jergason"
+          twitter="jergason"
+          github="jergason"
         />
       </div>
     </div>
