@@ -1,6 +1,6 @@
 import React from 'react'
 import Legend from 'components/Legend'
-import Avatar from 'components/Avatar'
+import Person from 'components/Person'
 import SpeakerData from '../../../api/speakers'
 
 export default () => {
@@ -8,10 +8,7 @@ export default () => {
     <div className="Speakers">
       <h1>Speakers</h1>
       <div className="align-center">
-        {Object.keys(SpeakerData).map(key => {
-          let speaker = SpeakerData[key]
-          return <Avatar {...speaker} url={speaker.avatar} key={key}/>
-        })}
+        {Object.keys(SpeakerData).map(key => <Person {...SpeakerData[key]} key={key}/>)}
       </div>
     </div>
   )

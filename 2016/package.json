@@ -17,6 +17,7 @@
   "author": "Matt Zabriskie",
   "license": "MIT",
   "dependencies": {
+    "classnames": "^2.2.5",
     "history": "^2.0.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",

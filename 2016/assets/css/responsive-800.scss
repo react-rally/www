@@ -142,10 +142,28 @@ ul.navigation {
   margin-bottom: 50px;
 }
 
-.Avatar {
+.Person {
   display: inline-block;
   margin: 25px;
 }
-.Avatar__Social {
+.Person__Social {
   visibility: visible;
+}
+
+.Schedule__Menu {
+  margin: 0 -35px;
+}
+.Schedule__Session time,
+.Schedule__Session__WhoWhat {
+  display: block;
+  margin: 0;
+  padding: 0 !important;
+}
+.Schedule__Session__Description {
+  margin: 0 !important;
+}
+.Schedule__Session .Avatar {
+  position: absolute;
+  top: 25px;
+  right: 0;
 }
