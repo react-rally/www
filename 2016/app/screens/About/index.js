@@ -1,7 +1,7 @@
 import React from 'react'
 import About from 'components/About'
-import Avatar from 'components/Avatar'
 import Legend from 'components/Legend'
+import Person from 'components/Person'
 
 export default () => {
   return (
@@ -10,19 +10,19 @@ export default () => {
       <About />
       <div className="align-center">
         <Legend>Organizers</Legend>
-        <Avatar
+        <Person
           name="Matt Zabriskie"
           title="Co-organizer"
-          url="https://avatars2.githubusercontent.com/u/199035"
-          twitter="https://twitter.com/mzabriskie"
-          github="https://github.com/mzabriskie"
+          avatar="https://avatars2.githubusercontent.com/u/199035"
+          twitter="mzabriskie"
+          github="mzabriskie"
         />
-        <Avatar
+        <Person
           name="Jamison Dance"
           title="Co-organizer"
-          url="https://avatars0.githubusercontent.com/u/72027"
-          twitter="https://twitter.com/jergason"
-          github="https://github.com/jergason"
+          avatar="https://avatars0.githubusercontent.com/u/72027"
+          twitter="jergason"
+          github="jergason"
         />
       </div>
     </div>

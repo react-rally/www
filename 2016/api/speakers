@@ -4,35 +4,40 @@
     "title": "Co-founder, React Training",
     "avatar": "https://avatars0.githubusercontent.com/u/100200?v=3&s=400",
     "twitter": "ryanflorence",
-    "github": "ryanflorence"
+    "github": "ryanflorence",
+    "keynote": true
   },
   "marcysutton": {
     "name": "Marcy Sutton",
     "title": "Sr. Front-End Engineer, Deque Systems",
     "avatar": "https://avatars0.githubusercontent.com/u/1045233?v=3&s=400",
     "twitter": "marcysutton",
-    "github": "marcysutton"
+    "github": "marcysutton",
+    "keynote": true
   },
   "sarah_edo": {
     "name": "Sarah Drasner",
     "title": "Manager, UX Design & Engineering, Trulia",
     "avatar": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/bio-pic.jpg",
     "twitter": "sarah_edo",
-    "github": "sdras"
+    "github": "sdras",
+    "keynote": true
   },
   "zpao": {
     "name": "Paul O'Shannessy",
     "title": "React Core Team, Facebook",
     "avatar": "https://avatars0.githubusercontent.com/u/8445?v=3&s=400",
     "twitter": "zpao",
-    "github": "zpao"
+    "github": "zpao",
+    "keynote": true
   },
   "en_JS": {
     "name": "Joseph Savona",
     "title": "Relay & GraphQL Core Team, Facebook",
     "avatar": "https://avatars2.githubusercontent.com/u/6425824?v=3&s=400",
     "twitter": "en_JS",
-    "github": "josephsavona"
+    "github": "josephsavona",
+    "keynote": true
   },
   "jlongster": {
     "name": "James Long",

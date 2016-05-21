@@ -1,0 +1,175 @@
+{
+  "dayOne": [
+    {
+      "time": "7:00 am",
+      "title": "Registration"
+    },
+    {
+      "time": "7:30 am",
+      "title": "Breakfast"
+    },
+    {
+      "time": "9:00 am",
+      "title": "",
+      "speaker": "sarah_edo",
+      "description": ""
+    },
+    {
+      "time": "9:30 am",
+      "title": "",
+      "speaker": "en_JS",
+      "description": ""
+    },
+    {
+      "time": "10:00 am",
+      "title": "Break"
+    },
+    {
+      "time": "10:30 am",
+      "title": "Debugging Your Debugger",
+      "speaker": "jlongster",
+      "description": "Come sit around the fire and listen to the tale of rebuilding the Firefox JavaScript Debugger with React and Redux. We’ll tell you the horrors, the glorious triumphs, and lessons learned while building a very complex UI with these technologies. Take a swig of our tales and wipe away the enduring fatigue as you see how this is all actually worth it.\n\nYou will also get a sneak peek into our ultra-secretive new JavaScript debugger frontend (it’s on github), and see what we think a modern debugger should be."
+    },
+    {
+      "time": "11:00 am",
+      "title": "Oh Composable World!",
+      "speaker": "drboolean",
+      "description": "The biggest sources of code complexity are state & control flow. Loops, conditionals, try/catch blocks, callbacks, & mutable variable assignment is one way to ensure such complexity. By contrast, if we have a composable set of pieces that plug together, we can “dot chain” a single expression for which our data flows through. We’ll examine techniques from functional programming, borrow some moves from OO, and write blocks of dead-simple to understand code."
+    },
+    {
+      "time": "11:30 am",
+      "title": "Deploying GraphQL in a Serverless Context",
+      "speaker": "kevinold",
+      "description": "GraphQL's flexibility has made it an intriguing and necessary choice for frontend developers. These developers seem to understand the benefits of using GraphQL before their backend counterparts. Most concerns from backend developers are around the GraphQL structure and deployment. What if you could deploy GraphQL without the need to deploy and manage entire servers? In this talk we'll explore using GraphQL in a serverless context with AWS Lambda, using the Serverless framework. We'll look at the pros and cons of deploying GraphQL in such an architecture."
+    },
+    {
+      "time": "12:00 pm",
+      "title": "Lunch"
+    },
+    {
+      "time": "2:00 pm",
+      "title": "All the terrible things I did the first time I made a complex React app",
+      "speaker": "raquelxmoss",
+      "description": "Several months ago I found myself in an odd situation. Having never looked at a Javascript framework before, I was tasked with creating a production app for a client, in React, in six weeks. I was the only developer on the project.\n\nThis talk details the terrifying and varied mistakes that I made while developing this app, what I learned throughout it, and how this awful process sparked within me a curiosity and passion for Functional Reactive programming in Javascript."
+    },
+    {
+      "time": "2:30 pm",
+      "title": "Writing better multi-process hybrid apps with React and Redux",
+      "speaker": "k88hudson",
+      "description": "If you’ve ever written a mobile app, browser add-on, or Electron app with a web-based front-end, you’ve probably struggled with keeping your UI layer in communication with the rest of your app. How do you integrate message passing, propagate user interactions to the right part of the system, and keep data and state in sync?\n\nI’ll show you some strategies we’re experimenting with in Firefox using React and Redux to keep our multi-process code more maintainable, reliable, and easy to work with."
+    },
+    {
+      "time": "3:00 pm",
+      "title": "Break"
+    },
+    {
+      "time": "4:00 pm",
+      "title": "Scaling React to Accelerate Life Science Research",
+      "speaker": "saifelse",
+      "description": "Benchling builds tools that allow scientists to design large-scale DNA, embed rich spreadsheets, document captured imagery, and more. We use React heavily to build tools that work with complex data, and in doing so we've hit all sorts of limits in browser performance and compatibility (and filed a few browser bugs). We'll go over the kinds of challenges you face when your app gets large, and the tools we've built to address them."
+    },
+    {
+      "time": "4:30 pm",
+      "title": "PureScript & Pux -- a safer, more expressive way to React",
+      "speaker": "t_spicydonuts",
+      "description": "You've heard of Elm and it sounds super cool, but you can't rewrite from scratch and you don't want to give up the innovation of the React community! What if you could get Elm's benefits one file at a time while still utilizing your existing or 3rd party React components? What if that alternative also supported hot reloading, component styling, and smart editor plugins? What if it was simultaneously a simpler and more powerful language, letting you easily drop into familiar JavaScript while also supporting crazy powerful abstraction and typing features?? Welcome to PureScript (& Pux)!"
+    },
+    {
+      "time": "5:00 pm",
+      "title": "RRR matey! - React, RethinkDB, and Raspberry Pi",
+      "speaker": "mglukhovsky",
+      "description": "React is the hotness when it comes to efficient and reactive UI in the browser. RethinkDB is the hotness when it comes to pushing live data. Lastly, Raspberry Pi is the smallest and cheapest computing device for doing awesome IoT things. So what happens when we combine all three? A motion detection-activated security camera with an automagically updating UI! The RRR combo gives us a great way to put together a homebrewed hardware ideas with minimum code. React is an efficient interface for IoT projects and even more so when the feed is a RethinkDB changefeed."
+    },
+    {
+      "time": "6:30 pm",
+      "title": "Party"
+    }
+  ],
+  "dayTwo": [
+    {
+      "time": "7:00 am",
+      "title": "Registration"
+    },
+    {
+      "time": "7:30 am",
+      "title": "Breakfast"
+    },
+    {
+      "time": "9:00 am",
+      "title": "",
+      "speaker": "marcysutton",
+      "description": ""
+    },
+    {
+      "time": "9:30 am",
+      "title": "",
+      "speaker": "zpao",
+      "description": ""
+    },
+    {
+      "time": "10:00 am",
+      "title": "Break"
+    },
+    {
+      "time": "10:30 am",
+      "title": "From Zero to Binary Search Tree",
+      "speaker": "thejameskyle",
+      "description": "We don't have a whole lot of data structures here in JavaScript world, but there's a whole world of super useful data structures out there. In this talk we're going to learn all about the fundamental data structures. Hash Tables, Arrays, Stacks, Queues, Linked Lists, and Binary Search Trees, we won't just learn them, we're going to build them. When we're done you'll be impressing all your friends with your mad structured data skills."
+    },
+    {
+      "time": "11:00 am",
+      "title": "Async Redux Actions With RxJS",
+      "speaker": "benlesh",
+      "description": "What is RxJS? What are observables? How does RxJS compare to Redux? Have these questions answered and find out why Netflix loves reactive programming with Rx so much. You'll learn the basics of RxJS 5 observables and how they're used. We'll explore how Netflix uses RxJS 5, Redux and React together, by example."
+    },
+    {
+      "time": "11:30 am",
+      "title": "Rise of the Web Workers",
+      "speaker": "nparashuram",
+      "description": "React is fast, really fast, thanks to its virtual DOM. However, React does perform a lot of expensive computations on the main UI thread.\n\nThe only semblance of a separate thread is a web worker - a feature from the HTML5 hype-era; often used to perform artificial image manipulations in fancy demos. \n\nIn this talk, we will look at ways create a web worker based renderer for React, and analytically compare its performance to a normal react operation. We will also explore the limitations of this approach and see how we can use this in our existing applications."
+    },
+    {
+      "time": "12:00 pm",
+      "title": "Lunch"
+    },
+    {
+      "time": "2:00 pm",
+      "title": "React and Give Back",
+      "speaker": "devonbl",
+      "description": "Your guide to philanthropy through software"
+    },
+    {
+      "time": "2:30 pm",
+      "title": "The Danger Crew: Lessons learned from building an RPG in React",
+      "speaker": "drewconley13",
+      "description": "Have you ever dreamed of creating video games? Do you dream of developing worlds, characters, and stories instead? Did you choose the wrong path by becoming a web developer? Nonsense, my friend. React is not only great for UI - it’s great for making video games, too!\n\nLet’s explore the nitty gritty details of programming a turn-based RPG in React. We’ll look at level creation, battle mechanics, and character intelligence. It’ll work in the browser on your desktop and your mobile phone. You may become empowered to make your own games, or bring any other non-traditional React project to life."
+    },
+    {
+      "time": "3:00 pm",
+      "title": "Break"
+    },
+    {
+      "time": "4:00 pm",
+      "title": "Real World React Debugging",
+      "speaker": "jaredforsyth",
+      "description": "Writing fresh code is always more fun than debugging that old stuff you wrote last week, but sometimes you just have to bite the bullet.\n\n- Learn how to use the React Devtools effectively to fix bugs, fight crime, and bring home the bacon.\n- Learn best-practices for writing maintainable React components.\n- Hear about the tools we use at Khan Academy that assist us in our quest for the ultimate development experience."
+    },
+    {
+      "time": "4:30 pm",
+      "title": "Powering React-based Dashboards using GraphQL and PostgreSQL",
+      "speaker": "LukasFittl",
+      "description": "GraphQL is in everyone's mind right now - but often times people have a hard time actually setting up a server that can speak it easily, and adapts as your backend changes.\n\nIn this talk I'll introduce an easy approach how to automatically build GraphQL-based APIs on top of a PostgreSQL database, as well as work through an example of how we can use GraphQL in React effectively.\n\nI will demonstrate this using a dashboard I've built based on these technologies, and explain details using code samples from that dashboard application."
+    },
+    {
+      "time": "5:00 pm",
+      "title": "",
+      "speaker": "ryanflorence",
+      "description": ""
+    },
+    {
+      "time": "6:30 pm",
+      "title": "Party"
+    }
+  ]
+}
+

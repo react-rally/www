@@ -242,6 +242,71 @@ ul.navigation {
   margin-top: 25px;
 }
 
+/* -- Schedule -- */
+.Schedule__Menu {
+  border: 1px solid $fill-mediumgreen;
+  border-left-width: 0;
+  border-right-width: 0;
+  padding: 0;
+}
+.Schedule__Menu__Item {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 50%;
+}
+.Schedule__Menu__Item--active {
+  background: $fill-mediumgreen;
+  color: $color-white;
+}
+
+.Schedule__Session {
+  border-bottom: 1px solid $fill-darkgray;
+  padding: 25px;
+  position: relative;
+}
+.Schedule__Session:last-of-type {
+  border-bottom: 0 none;
+}
+.Schedule__Session time {
+  color: $color-lightgray;
+  display: inline-block;
+  vertical-align: top;
+  width: 125px;
+}
+.Schedule__Session--speaker time {
+  margin-top: 15px;
+}
+.Schedule__Session__WhoWhat {
+  display: inline-block;
+  font-weight: bold;
+  vertical-align: top;
+  width: 100px;
+}
+.Schedule__Session--speaker .Schedule__Session__WhoWhat {
+  padding-bottom: 15px;
+}
+.Schedule__Session--description .Schedule__Session__WhoWhat {
+  padding-bottom: 0;
+}
+.Schedule__Session--speaker .Schedule__Session__Description {
+  margin-left: 225px;
+  margin-top: -60px;
+}
+.Schedule__Session__Description em {
+  color: $color-orange;
+  font-style: normal;
+  font-size: $size-font-medium;
+}
+.Schedule__Session__Description h3 {
+  color: $color-darkgray;
+}
+.Schedule__Session__Description p {
+  font-size: $size-font-small;
+  margin: 10px 0;
+}
+
 /* -- Content -- */
 .Content {
   font-size: $size-font-medium;
@@ -321,36 +386,36 @@ ul.navigation {
   padding: 35px 0;
 }
 
-/* -- Avatar -- */
-.Avatar {
+/* -- Person -- */
+.Person {
   display: inline-block;
   margin: 25px 50px;
   text-align: center;
   position: relative;
   width: 225px;
 }
-.Avatar__Image {
+.Person .Avatar {
   border-radius: 200px;
   display: block;
   margin: 0 auto 15px;
 }
-.Avatar b {
+.Person b {
   display: inline-block;
   font-size: $size-font-medium;
 }
-.Avatar em {
+.Person em {
   color: $color-lightgray;
   display: inline-block;
   font-size: $size-font-small;
   height: 45px;
 }
-.Avatar__Social {
+.Person__Social {
   visibility: hidden;
 }
-.Avatar__Social .Icon {
+.Person__Social .Icon {
   border-width: 0;
 }
-.Avatar:hover .Avatar__Social {
+.Person:hover .Person__Social {
   visibility: visible;
 }
 
