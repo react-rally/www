@@ -1,0 +1,65 @@
+{
+  "Premier": [
+    {
+      "name": "Egghead",
+      "url": "https://egghead.io/",
+      "image": "assets/dist/img/sponsors/egghead.svg",
+      "style": {
+        "width": "500px"
+      }
+    }
+  ],
+  "Platinum": [
+    {
+      "name": "Rangle.io",
+      "url": "http://rangle.io/",
+      "image": "assets/dist/img/sponsors/rangle.png"
+    },
+    {
+      "name": "WalmartLabs",
+      "url": "http://www.walmartlabs.com/",
+      "image": "assets/dist/img/sponsors/walmart.png"
+    }
+  ],
+  "Gold": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/careers",
+      "image": "assets/dist/img/sponsors/facebook.png"
+    },
+    {
+      "name": "Instructure",
+      "url": "https://www.instructure.com/careers/",
+      "image": "assets/dist/img/sponsors/instructure.png"
+    }
+  ],
+  "Silver": [
+    {
+      "name": "Kuali",
+      "url": "https://www.kuali.co/",
+      "image": "assets/dist/img/sponsors/kuali.png"
+    }
+  ],
+  "Supporters": [
+    {
+      "name": "Netflix",
+      "url": "",
+      "image": "assets/dist/img/sponsors/netflix.png"
+    },
+    {
+      "name": "Mozilla",
+      "url": "",
+      "image": "assets/dist/img/sponsors/mozilla.png"
+    },
+    {
+      "name": "Deque",
+      "url": "",
+      "image": "assets/dist/img/sponsors/deque.png"
+    },
+    {
+      "name": "React Training",
+      "url": "",
+      "image": "assets/dist/img/sponsors/react-training.png"
+    }
+  ]
+}
