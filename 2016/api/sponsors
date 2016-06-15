@@ -1,7 +1,7 @@
 {
   "Premier": [
     {
-      "name": "Egghead",
+      "name": "Egghead.io",
       "url": "https://egghead.io/",
       "image": "assets/dist/img/sponsors/egghead.svg",
       "style": {
@@ -42,23 +42,28 @@
   ],
   "Supporters": [
     {
+      "name": "Salesforce",
+      "url": "http://www.salesforce.com/company/careers/",
+      "image": "assets/dist/img/sponsors/salesforce.png"
+    },
+    {
       "name": "Netflix",
-      "url": "",
+      "url": "https://jobs.netflix.com/",
       "image": "assets/dist/img/sponsors/netflix.png"
     },
     {
-      "name": "Mozilla",
-      "url": "",
-      "image": "assets/dist/img/sponsors/mozilla.png"
-    },
-    {
       "name": "Deque",
-      "url": "",
+      "url": "http://www.deque.com/",
       "image": "assets/dist/img/sponsors/deque.png"
     },
     {
+      "name": "Mozilla",
+      "url": "https://careers.mozilla.org/",
+      "image": "assets/dist/img/sponsors/mozilla.png"
+    },
+    {
       "name": "React Training",
-      "url": "",
+      "url": "http://reactjs-training.com/",
       "image": "assets/dist/img/sponsors/react-training.png"
     }
   ]
