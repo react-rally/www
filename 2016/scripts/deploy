@@ -2,8 +2,8 @@
 
 npm run build
 cp bundle.js ../
+mkdir -p ../assets/dist
 cp -rf assets/dist ../assets/dist
-git add .
-git add ../bundle.js
+git add ../
 git commit -m "Updating site"
 git push
