@@ -1,9 +1,18 @@
 #!/bin/bash -e
 
+# generate bundle
 npm run build
+
+# copy files
 cp bundle.js ../
+cp index.html ../
+cp 404.html ../
+
+# copy assets
 mkdir -p ../assets/dist
 cp -rf assets/dist ../assets/dist
+
+# update github
 git add ../
 git commit -m "Updating site"
 git push
