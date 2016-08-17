@@ -1,14 +1,24 @@
 import React from 'react'
 import cx from 'classnames'
+import moment from 'moment'
 import Avatar from 'components/Avatar'
 import ScheduleData from '../../../api/schedule'
 import SpeakerData from '../../../api/speakers'
 
+const DAY_ONE = new Date(2016, 7, 25)
+const DAY_TWO = new Date(2016, 7, 26)
+
+function isToday(date) {
+  return new Date().toISOString().split('T')[0] === date.toISOString().split('T')[0]
+}
+
 export default class extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {
-      selectedDay: 'dayOne'
+      // Default showing day two schedule if day two is today
+      selectedDay: isToday(DAY_TWO) ? 'dayTwo' : 'dayOne'
     }
   }
 
@@ -22,7 +32,7 @@ export default class extends React.Component {
             'Schedule__Menu__Item',
             {'Schedule__Menu__Item--active': this.state.selectedDay === 'dayOne'}
           )}>
-            Thursday, August 25
+            {moment(DAY_ONE).format('dddd, MMMM D')}
         </a>
         <a
           href="javascript://"
@@ -31,7 +41,7 @@ export default class extends React.Component {
             'Schedule__Menu__Item',
             {'Schedule__Menu__Item--active': this.state.selectedDay === 'dayTwo'}
           )}>
-            Friday, August 26
+            {moment(DAY_TWO).format('dddd, MMMM D')}
         </a>
       </menu>
     )
