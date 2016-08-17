@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, IndexRoute, browserHistory, useRouterHistory } from 'react-router'
-import { createHashHistory } from 'history'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import App from 'App'
 import About from 'screens/About'
 import Conduct from 'screens/Conduct'
@@ -13,9 +12,6 @@ import Sponsors from 'screens/Sponsors'
 import Venue from 'screens/Venue'
 import ga from 'helpers/googleAnalytics'
 import styles from './assets/css/styles.scss'
-
-const historyFlag = sessionStorage.historyFlag
-const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
 
 const NotFound = () => {
   return (
@@ -29,8 +25,6 @@ const NotFound = () => {
 
 // Fix history
 ;(function () {
-  if (!historyFlag) return
-  
   const hash = location.hash
   const redirect = sessionStorage.redirect
   delete sessionStorage.redirect
@@ -47,7 +41,7 @@ const NotFound = () => {
 
 ReactDOM.render((
   <Router
-    history={historyFlag ? browserHistory : appHistory}
+    history={browserHistory}
     onUpdate={() => { window.scrollTo(0, 0) }}
   >
     <Route path="/" component={App}>
