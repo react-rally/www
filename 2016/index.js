@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, IndexRoute, useRouterHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory, useRouterHistory } from 'react-router'
 import { createHashHistory } from 'history'
 import App from 'App'
 import About from 'screens/About'
@@ -14,6 +14,7 @@ import Venue from 'screens/Venue'
 import ga from 'helpers/googleAnalytics'
 import styles from './assets/css/styles.scss'
 
+const historyFlag = sessionStorage.historyFlag
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
 
 const NotFound = () => {
@@ -26,8 +27,26 @@ const NotFound = () => {
   )
 }
 
+// Fix history
+;(function () {
+  if (!historyFlag) return
+  
+  const hash = location.hash
+  const redirect = sessionStorage.redirect
+  delete sessionStorage.redirect
+
+  // Fix history for redirect coming from gh-pages 404.html
+  if (redirect && redirect !== location.href) {
+    history.replaceState(null, null, redirect)
+  }
+  // Fix history for legacy hash history URLs
+  else if (hash.trim().length !== 0) {
+    history.replaceState(null, null, hash.replace('#', ''))
+  }
+})()
+
 ReactDOM.render((
-  <Router history={appHistory}>
+  <Router history={historyFlag ? browserHistory : appHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="/about" component={About}/>
