@@ -9,7 +9,7 @@ export default () => {
     <div className="Sponsors">
       <h1>Thank you to our fine sponsors. Want to help support React Rally? We'd love to talk with you.</h1>
       <Button href={constants.Links.SPONSOR_PROSPECTUS} className="medium">Download Prospectus</Button>
-      {Object.keys(SponsorData).map(level => {
+      {Object.keys(SponsorData).filter(level => SponsorData[level].length > 0).map(level => {
         return (
           <div key={level}>
             <Legend>{level}</Legend>
