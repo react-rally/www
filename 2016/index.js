@@ -46,7 +46,10 @@ const NotFound = () => {
 })()
 
 ReactDOM.render((
-  <Router history={historyFlag ? browserHistory : appHistory}>
+  <Router
+    history={historyFlag ? browserHistory : appHistory}
+    onUpdate={() => { window.scrollTo(0, 0) }}
+  >
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="/about" component={About}/>
