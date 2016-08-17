@@ -19,6 +19,11 @@
       "name": "WalmartLabs",
       "url": "http://www.walmartlabs.com/",
       "image": "assets/dist/img/sponsors/walmart.png"
+    },
+    {
+      "name": "Jane",
+      "url": "https://jane.com/careers",
+      "image": "assets/dist/img/sponsors/jane.png"
     }
   ],
   "Gold": [
@@ -31,9 +36,24 @@
       "name": "Instructure",
       "url": "https://www.instructure.com/careers/",
       "image": "assets/dist/img/sponsors/instructure.png"
+    },
+    {
+      "name": "Progress",
+      "url": "https://www.progress.com/",
+      "image": "assets/dist/img/sponsors/progress.png"
     }
   ],
   "Silver": [
+    {
+      "name": "Mozilla",
+      "url": "https://www.mozilla.org/",
+      "image": "assets/dist/img/sponsors/mozilla.png"
+    },
+    {
+      "name": "The Front Side",
+      "url": "http://frontside.io/",
+      "image": "assets/dist/img/sponsors/frontside.png"
+    }
   ],
   "Supporters": [
     {
@@ -50,11 +70,6 @@
       "name": "Deque",
       "url": "http://www.deque.com/",
       "image": "assets/dist/img/sponsors/deque.png"
-    },
-    {
-      "name": "Mozilla",
-      "url": "https://careers.mozilla.org/",
-      "image": "assets/dist/img/sponsors/mozilla.png"
     },
     {
       "name": "React Training",
