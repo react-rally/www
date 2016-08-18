@@ -21,6 +21,6 @@ mkdir ../assets
 cp -rf assets/dist ../assets
 
 # update github
-# git add ../
-# git commit -m "Updating site"
-# git push
+git add ../
+git commit -m "Updating site"
+git push
