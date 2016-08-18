@@ -44,7 +44,7 @@ export default () => {
         <Icon href="https://github.com/react-rally" type="github"/>
       </div>
       <div className="Footer__Copyright">
-        &copy; 2016 <a href="http://www.traceevents.io" target="_blank">Trace Events, LLC</a>
+        &copy; {new Date().getFullYear()} <a href="http://www.traceevents.io" target="_blank">Trace Events, LLC</a>
       </div>
     </div>
   )
