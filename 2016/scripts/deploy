@@ -9,8 +9,9 @@ cp index.html ../
 cp 404.html ../
 
 # copy assets
-mkdir -p ../assets/dist
-cp -rf assets/dist ../assets/dist
+rm -rf ../assets
+mkdir ../assets
+cp -rf assets/dist ../assets
 
 # update github
 git add ../
