@@ -1,7 +1,14 @@
 #!/bin/bash -e
 
+# delete old bundle images
+IMGRX="/[a-z0-9]{32}.png"
+find ../ -type f -maxdepth 2 | egrep $IMGRX | xargs rm
+
 # generate bundle
 npm run build
+
+# copy new bundle images
+find . -type f -maxdepth 1 | egrep $IMGRX | xargs -I{} cp {} ../
 
 # copy files
 cp bundle.js ../
@@ -13,10 +20,7 @@ rm -rf ../assets
 mkdir ../assets
 cp -rf assets/dist ../assets
 
-# copy bundle images
-find . -type f -maxdepth 1 | egrep "/[a-z0-9]{32}.png" | xargs -I{} cp {} ../
-
 # update github
-git add ../
-git commit -m "Updating site"
-git push
+# git add ../
+# git commit -m "Updating site"
+# git push
