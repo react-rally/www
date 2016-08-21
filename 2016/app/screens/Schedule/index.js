@@ -117,6 +117,14 @@ export default class extends React.Component {
   handleMenuItemClick(selectedDay) {
     this.setState({
       selectedDay
+    }, () => {
+      let el = document.querySelector('.Schedule')
+      if (el && typeof el.scrollIntoView === 'function') {
+        el.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth'
+        })
+      }
     })
   }
 }
