@@ -2,35 +2,22 @@ import React from 'react'
 import cx from 'classnames'
 import moment from 'moment'
 import Avatar from 'components/Avatar'
+import constants from 'helpers/constants'
+import DateUtils, { MountainTime } from 'helpers/DateUtils'
 import ScheduleData from '../../../api/schedule'
 import SpeakerData from '../../../api/speakers'
 
-const DAY_ONE = new Date(2016, 7, 25)
-const DAY_TWO = new Date(2016, 7, 26)
-const SECONDS = 1000
-const MINUTES = SECONDS * 60
-const HOURS = MINUTES * 60
-const MT_OFFSET = 360 * MINUTES
+const CONF_DAY_ONE_DATE = new Date(Date.parse(constants.Dates.CONF_DAY_ONE))
+const CONF_DAY_TWO_DATE = new Date(Date.parse(constants.Dates.CONF_DAY_TWO))
 
-// Get a Date adjusted to Mountain Time
-function getToday() {
-  let tzOffset = new Date().getTimezoneOffset() * MINUTES
-  return new Date((Date.now() + tzOffset) - MT_OFFSET)
-}
-
-function isToday(date) {
-  return getToday().toDateString() === date.toDateString()
-}
-
-function isWithinRange(date, start, end) {
-  let currentTime = getToday().getTime()
+function isNowWithinTimeRange(date, start, end) {
   let startTime = new Date(Date.parse(`${date.toDateString()} ${start}`)).getTime()
   let endTime = (end ?
                  new Date(Date.parse(`${date.toDateString()} ${end}`)) :
-                 new Date(startTime + (3 * HOURS))
+                 new Date(startTime + (3 * DateUtils.HOURS))
                 ).getTime()
 
-  return currentTime > startTime && currentTime < endTime
+  return MountainTime.isNowBetweenTime(startTime, endTime)
 }
 
 export default class extends React.Component {
@@ -39,14 +26,12 @@ export default class extends React.Component {
 
     this.state = {
       // Default showing day two schedule if day two is today
-      selectedDay: isToday(DAY_TWO) ? 'dayTwo' : 'dayOne'
+      selectedDay: MountainTime.isDateToday(CONF_DAY_TWO_DATE) ? 'dayTwo' : 'dayOne'
     }
   }
 
   componentDidMount() {
-    this.timer = setInterval(() => {
-      this.forceUpdate()
-    }, 1 * MINUTES)
+    this.timer = setInterval(this.forceUpdate.bind(this), 1 * DateUtils.MINUTES)
   }
 
   componentWillUnmount() {
@@ -64,7 +49,7 @@ export default class extends React.Component {
             'Schedule__Menu__Item',
             {'Schedule__Menu__Item--active': this.state.selectedDay === 'dayOne'}
           )}>
-            {moment(DAY_ONE).format('dddd, MMMM D')}
+            {moment(CONF_DAY_ONE_DATE).format('dddd, MMMM D')}
         </a>
         <a
           href="javascript://"
@@ -73,14 +58,14 @@ export default class extends React.Component {
             'Schedule__Menu__Item',
             {'Schedule__Menu__Item--active': this.state.selectedDay === 'dayTwo'}
           )}>
-            {moment(DAY_TWO).format('dddd, MMMM D')}
+            {moment(CONF_DAY_TWO_DATE).format('dddd, MMMM D')}
         </a>
       </menu>
     )
   }
 
   render() {
-    let selectedDay = this.state.selectedDay === 'dayOne' ? DAY_ONE : DAY_TWO
+    let selectedDay = this.state.selectedDay === 'dayOne' ? CONF_DAY_ONE_DATE : CONF_DAY_TWO_DATE
     let schedule = ScheduleData[this.state.selectedDay]
 
     return (
@@ -89,7 +74,7 @@ export default class extends React.Component {
         {schedule.map((session, i) => {
           let speaker = session.speaker ? SpeakerData[session.speaker] : null;
           let sessionEnd = schedule[i + 1] ? schedule[i + 1].time : null
-          let isActive = isToday(selectedDay) && isWithinRange(selectedDay, session.time, sessionEnd)
+          let isActive = MountainTime.isDateToday(selectedDay) && isNowWithinTimeRange(selectedDay, session.time, sessionEnd)
           return (
             <div
               className={cx(

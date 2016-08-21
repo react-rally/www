@@ -9,3 +9,11 @@ constants.Links = {
   HOTEL_RESERVATION: 'http://bookings.ihotelier.com/bookings.jsp?groupID=1629467&hotelID=4650',
   SPONSOR_PROSPECTUS: 'docs/sponsor.pdf'
 }
+
+constants.Dates = {
+  CFP_OPEN: '2016-03-28T00:00:00-06:00',
+  CFP_CLOSE: '2016-04-28T00:00:00-06:00',
+  TICKET_RELEASE: '2016-04-15T12:00:00-06:00',
+  CONF_DAY_ONE: '2016-08-25T00:00:00-06:00',
+  CONF_DAY_TWO: '2016-08-26T00:00:00-06:00'
+}
