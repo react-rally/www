@@ -119,7 +119,10 @@ export default class extends React.Component {
       selectedDay
     }, () => {
       let el = document.querySelector('.Schedule')
-      if (el && typeof el.scrollIntoView === 'function') {
+      let rect = el.getBoundingClientRect()
+
+      if (rect.top < 0 &&
+          el && typeof el.scrollIntoView === 'function') {
         el.scrollIntoView({
           block: 'start',
           behavior: 'smooth'
