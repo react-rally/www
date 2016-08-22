@@ -70,46 +70,55 @@ export default class extends React.Component {
 
     return (
       <div className="Schedule">
-        {this.renderMenu()}
-        {schedule.map((session, i) => {
-          let speaker = session.speaker ? SpeakerData[session.speaker] : null;
-          let sessionEnd = schedule[i + 1] ? schedule[i + 1].time : null
-          let isActive = MountainTime.isDateToday(selectedDay) && isNowWithinTimeRange(selectedDay, session.time, sessionEnd)
-          return (
-            <div
-              className={cx(
-                'Schedule__Session',
-                {
-                  'Schedule__Session--active': isActive,
-                  'Schedule__Session--speaker': speaker,
-                  'Schedule__Session--description': session.description
-                }
-              )}
-              key={i}
-            >
-              <time>{session.time}</time>
-              <div className="Schedule__Session__WhoWhat">
-                {speaker ? (
-                  <Avatar
-                    url={speaker.avatar}
-                    size={55}
-                  />
-                ) : session.title}
-              </div>
-              <div className="Schedule__Session__Description">
-                {speaker ? (
-                  <div>
-                    <em>{speaker.name}</em>
-                    <h3>{session.title}</h3>
-                    <p dangerouslySetInnerHTML={{__html: session.description.replace(/\n/g, '<br/>')}}/>
+        {schedule.length > 0 ? (
+          <div>
+            {this.renderMenu()}
+            {schedule.map((session, i) => {
+              let speaker = session.speaker ? SpeakerData[session.speaker] : null;
+              let sessionEnd = schedule[i + 1] ? schedule[i + 1].time : null
+              let isActive = MountainTime.isDateToday(selectedDay) && isNowWithinTimeRange(selectedDay, session.time, sessionEnd)
+              return (
+                <div
+                  className={cx(
+                    'Schedule__Session',
+                    {
+                      'Schedule__Session--active': isActive,
+                      'Schedule__Session--speaker': speaker,
+                      'Schedule__Session--description': session.description
+                    }
+                  )}
+                  key={i}
+                >
+                  <time>{session.time}</time>
+                  <div className="Schedule__Session__WhoWhat">
+                    {speaker ? (
+                      <Avatar
+                        url={speaker.avatar}
+                        size={55}
+                      />
+                    ) : session.title}
                   </div>
-                ) : null
-                }
-              </div>
-            </div>
-          )
-        })}
-        {this.renderMenu()}
+                  <div className="Schedule__Session__Description">
+                    {speaker ? (
+                      <div>
+                        <em>{speaker.name}</em>
+                        <h3>{session.title}</h3>
+                        <p dangerouslySetInnerHTML={{__html: session.description.replace(/\n/g, '<br/>')}}/>
+                      </div>
+                    ) : null
+                    }
+                  </div>
+                </div>
+              )
+            })}
+            {this.renderMenu()}
+          </div>
+        ) : (
+          <div>
+            <h1>Schedule</h1>
+            <p>We will post the schedule once all proposals have been submitted and reviewed. Stay tuned!</p>
+          </div>
+        )}
       </div>
     )
   }
