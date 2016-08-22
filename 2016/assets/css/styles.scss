@@ -242,6 +242,11 @@ ul.navigation {
 .Venue__Hotel {
   padding-top: 50px;
 }
+.Venue__Hotel__Address {
+  color: rgba($color-primary, .75);
+  font-size: $size-font-medium;
+  margin-bottom: 25px;
+}
 .Venue__Content button,
 .Venue__Hotel button {
   margin-top: 25px;
