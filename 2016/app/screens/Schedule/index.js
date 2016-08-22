@@ -7,8 +7,8 @@ import DateUtils, { MountainTime } from 'helpers/DateUtils'
 import ScheduleData from '../../../api/schedule'
 import SpeakerData from '../../../api/speakers'
 
-const CONF_DAY_ONE_DATE = new Date(Date.parse(constants.Dates.CONF_DAY_ONE))
-const CONF_DAY_TWO_DATE = new Date(Date.parse(constants.Dates.CONF_DAY_TWO))
+const CONF_DAY_ONE_DATE = MountainTime.createDate(Date.parse(constants.Dates.CONF_DAY_ONE))
+const CONF_DAY_TWO_DATE = MountainTime.createDate(Date.parse(constants.Dates.CONF_DAY_TWO))
 
 function isNowWithinTimeRange(date, start, end) {
   let startTime = new Date(Date.parse(`${date.toDateString()} ${start}`)).getTime()
