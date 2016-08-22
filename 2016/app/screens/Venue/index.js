@@ -23,8 +23,10 @@ export default () => {
       </div>
       <div className="Venue__Hotel">
         <h2>Little America</h2>
+        <div className="Venue__Hotel__Address">500 South Main Street, Salt Lake City, UT 84101</div>
         <p>We have arranged a discount with Little America for attendees of the conference. This is a historic, upscale, four star hotel available for just $170 per night. This discounted rate is only available until July 24th and there are a limited number of rooms available, so book your room early.</p>
-        <Button href={constants.Links.HOTEL_RESERVATION} className="medium">Book a Room &raquo;</Button>
+        <Button href={constants.Links.HOTEL_RESERVATION} className="medium">Book a Room &raquo;</Button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <Button href={constants.Links.HOTEL_DIRECTIONS} className="medium">Get Directions &raquo;</Button>
       </div>
     </div>
   )
