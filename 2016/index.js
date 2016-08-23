@@ -10,6 +10,7 @@ import Schedule from 'screens/Schedule'
 import Speakers from 'screens/Speakers'
 import Sponsors from 'screens/Sponsors'
 import Venue from 'screens/Venue'
+import constants from 'helpers/constants'
 import ga from 'helpers/googleAnalytics'
 import styles from './assets/css/styles.scss'
 
@@ -21,6 +22,14 @@ const NotFound = () => {
       <p>While you're here, why not <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">watch a video</a> of our favorite talk from last year?</p>
     </div>
   )
+}
+
+const ExternalRedirect = (url) => {
+  window.location = url
+}
+
+function unEmbedYoutube(url) {
+  return url.replace('www.youtube.com/embed', 'youtu.be')
 }
 
 // Fix history
@@ -52,6 +61,7 @@ ReactDOM.render((
       <Route path="/speakers" component={Speakers}/>
       <Route path="/sponsors" component={Sponsors}/>
       <Route path="/venue" component={Venue}/>
+      <Route path="/stream" component={ExternalRedirect.bind(null, unEmbedYoutube(constants.Links.LIVE_STREAM))}/>
       <Route path="*" component={NotFound}/>
     </Route>
   </Router>
