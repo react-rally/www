@@ -52,7 +52,9 @@
     {
       "name": "The Front Side",
       "url": "http://frontside.io/",
-      "image": "assets/dist/img/sponsors/frontside.png"
+      "image": "assets/dist/img/sponsors/frontside.png",
+      "style": {"maxWidth": 150}
+
     }
   ],
   "Supporters": [

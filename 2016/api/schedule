@@ -162,7 +162,7 @@
     },
     {
       "time": "5:00 pm",
-      "title": "",
+      "title": "<Rethinker stop={false}/>",
       "speaker": "ryanflorence",
       "description": ""
     },
