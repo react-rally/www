@@ -8,7 +8,10 @@ constants.Links = {
   VENUE_DIRECTIONS: 'https://www.google.com/maps/dir//138+West+300+South,+Salt+Lake+City,+UT+84101/@40.7631303,-111.8964432,18.29z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8752f5052002298f:0xf13b0bec7c31c1ab!2m2!1d-111.8955862!2d40.7631063',
   HOTEL_RESERVATION: 'http://bookings.ihotelier.com/bookings.jsp?groupID=1629467&hotelID=4650',
   HOTEL_DIRECTIONS: 'https://www.google.com/maps/dir//500+South+Main+Street,+Salt+Lake+City,+UT+84101/@40.7573935,-111.8947835,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x8752f510c9a96fd3:0xa6803ff714f0482d!2m2!1d-111.8925948!2d40.7573935',
-  LIVE_STREAM: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+  LIVE_STREAM_PLACEHOLDER: 'https://youtu.be/EfBWZYPnBxE',
+  LIVE_STREAM_DAY_ONE: 'https://youtu.be/Fk--XUEorvc',
+  LIVE_STREAM_DAY_TWO: 'https://youtu.be/nI0cQ-2YR1I',
+  YOUTUBE_CHANNEL: 'https://www.youtube.com/playlist?list=PLUD4kD-wL_zYSfU3tIYsb4WqfFQzO_EjQ',
   SPONSOR_PROSPECTUS: 'docs/sponsor.pdf'
 }
 
