@@ -7,7 +7,7 @@ export default () => {
 
   return (
     <div className="Stream">
-      <h2>Live Stream</h2>
+      <h1>Live Stream</h1>
       <iframe
         className="Stream__Embedded"
         width="560"
