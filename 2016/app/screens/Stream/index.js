@@ -16,6 +16,9 @@ export default () => {
         frameborder="0"
         alowfulscreen
       ></iframe>
+      <p className="Stream__Note">
+        <em>Live stream is being done over conference WiFi. Please bear with us if it's not flawless.</em>
+      </p>
     </div>
   )
 }
