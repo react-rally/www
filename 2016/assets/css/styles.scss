@@ -23,6 +23,7 @@ $size-font-large: 28px;
 $size-font-default: 20px;
 $size-font-medium: 18px;
 $size-font-small: 14px;
+$size-font-xsmall: 12px;
 
 /* typography */
 body {
@@ -217,6 +218,7 @@ ul.navigation {
 }
 .Stream__Note {
   color: $color-lightgray;
+  font-size: $size-font-xsmall;
 }
 
 /* -- Proposals -- */
