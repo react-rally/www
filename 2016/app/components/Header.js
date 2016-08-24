@@ -24,7 +24,10 @@ export default class Header extends Component {
 
   render() {
     let isHomeScreen = this.context.router.isActive('/', true)
-    let isCFPOpen = MountainTime.isNowBetweenTime(Date.parse(constants.Dates.CFP_OPEN), Date.parse(constants.Dates.CFP_CLOSE))
+    let isCFPOpen = MountainTime.isNowBetweenTime(
+                      Date.parse(constants.Dates.CFP_OPEN),
+                      Date.parse(constants.Dates.CFP_CLOSE)
+                    )
 
     return (
       <header className={"Header" + (isHomeScreen ? "" : " Header--padded")}>
@@ -39,6 +42,8 @@ export default class Header extends Component {
                 Come hear from the best and the brightest in the React community about what makes it so incredible.
               </p>
               <div className="Home__Header__Buttons">
+                <Link to="/stream" className="Button large">Watch Live Stream</Link>
+              {/*
                 <Tickets/>&nbsp;&nbsp;&nbsp;&nbsp;
               {isCFPOpen && (
                 <span>
@@ -47,6 +52,7 @@ export default class Header extends Component {
                 </span>
               )}
                 <Button href={constants.Links.HOTEL_RESERVATION} className="large transparent">Book Hotel</Button>
+              */}
               </div>
               <ul className="Home__Header__Nav navigation">
                 <li><Link to="/speakers">Speakers</Link></li>

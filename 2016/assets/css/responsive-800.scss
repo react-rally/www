@@ -145,6 +145,12 @@ ul.navigation {
   text-align: center;
   margin-bottom: 50px;
 }
+.Venue .Button {
+  margin-bottom: 20px;
+}
+.Venue .Button:last-of-type {
+  margin-bottom: 0;
+}
 
 .Person {
   display: inline-block;
