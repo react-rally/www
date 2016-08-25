@@ -81,8 +81,9 @@
       "description": "React is the hotness when it comes to efficient and reactive UI in the browser. RethinkDB is the hotness when it comes to pushing live data. Lastly, Raspberry Pi is the smallest and cheapest computing device for doing awesome IoT things. So what happens when we combine all three? A motion detection-activated security camera with an automagically updating UI! The RRR combo gives us a great way to put together a homebrewed hardware ideas with minimum code. React is an efficient interface for IoT projects and even more so when the feed is a RethinkDB changefeed."
     },
     {
-      "time": "6:30 pm",
-      "title": "Party"
+      "time": "7:30 pm",
+      "title": "Party",
+      "description": "Meet at Rose Wagner for milkshakes and board games or Keys on Main for karaoke."
     }
   ],
   "dayTwo": [
@@ -168,7 +169,8 @@
     },
     {
       "time": "6:30 pm",
-      "title": "Party"
+      "title": "Party",
+      "description": "Meet at the Gallivan Center for dinner, desert, live music, and lawn games."
     }
   ]
 }
