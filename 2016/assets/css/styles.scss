@@ -319,8 +319,14 @@ ul.navigation {
 .Schedule__Session--description .Schedule__Session__WhoWhat {
   padding-bottom: 0;
 }
-.Schedule__Session--speaker .Schedule__Session__Description {
+.Schedule__Session--speaker .Schedule__Session__Description,
+.Schedule__Session--description .Schedule__Session__Description {
   margin-left: 225px;
+}
+.Schedule__Session--description .Schedule__Session__Description {
+  margin-top: -30px;
+}
+.Schedule__Session--speaker .Schedule__Session__Description {
   margin-top: -60px;
 }
 .Schedule__Session__Description em {
