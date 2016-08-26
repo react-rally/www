@@ -9,6 +9,7 @@ $color-orange: #FF6D40;
 /* fill colors */
 $fill-white: #FFFFFF;
 $fill-orange: #FF6D40;
+$fill-lightyellow: #FFFFAF;
 $fill-lightgray: #F4F4F4;
 $fill-darkgray: #DCDCDC;
 $fill-lightgreen: #00AD93;
@@ -266,9 +267,12 @@ ul.navigation {
 }
 
 .Schedule__Session {
+  background: $fill-white;
   border-bottom: 1px solid $fill-darkgray;
   padding: 25px;
   position: relative;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
 }
 .Schedule__Session:last-of-type {
   border-bottom: 0 none;
@@ -278,6 +282,9 @@ ul.navigation {
   display: inline-block;
   vertical-align: top;
   width: 125px;
+}
+.Schedule__Session--active {
+  background: $fill-lightyellow;
 }
 .Schedule__Session--speaker time {
   margin-top: 15px;
