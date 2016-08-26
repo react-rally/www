@@ -28,6 +28,12 @@ export default () => {
         <Button href={constants.Links.HOTEL_RESERVATION} className="medium">Book a Room &raquo;</Button>&nbsp;&nbsp;&nbsp;&nbsp;
         <Button href={constants.Links.HOTEL_DIRECTIONS} className="medium">Get Directions &raquo;</Button>
       </div>
+      <div className="Venue__Party">
+        <h2>Gallivan Center</h2>
+        <div className="Venue__Party__Address">239 South Main Street, Salt Lake City, UT 84101</div>
+        <p>Join us after the conference on Friday for dinner, desert, lawn games, and live music.</p>
+        <Button href={constants.Links.PARTY_DIRECTIONS} className="medium">Get Directions &raquo;</Button>
+      </div>
     </div>
   )
 }
