@@ -252,10 +252,12 @@ ul.navigation {
   font-size: $size-font-medium;
   margin-bottom: 50px;
 }
-.Venue__Hotel {
+.Venue__Hotel,
+.Venue__Party {
   padding-top: 50px;
 }
-.Venue__Hotel__Address {
+.Venue__Hotel__Address,
+.Venue__Party__Address {
   color: rgba($color-primary, .75);
   font-size: $size-font-medium;
   margin-bottom: 25px;
