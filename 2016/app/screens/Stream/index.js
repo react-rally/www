@@ -13,7 +13,7 @@ export default () => {
         width="560"
         height="315"
         src={url}
-        frameborder="0"
+        frameBorder="0"
         alowfulscreen
       ></iframe>
     </div>
