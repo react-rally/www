@@ -10,7 +10,7 @@ import Newsletter from 'components/Newsletter'
 
 const CONF_DAY_ONE_DATE = MountainTime.createDate(Date.parse(constants.Dates.CONF_DAY_ONE))
 const CONF_DAY_TWO_DATE = MountainTime.createDate(Date.parse(constants.Dates.CONF_DAY_TWO))
-const CONF_DATES_DISPLAY = moment(CONF_DAY_ONE_DATE).format('MMMM D') + '-' + moment(CONF_DAY_TWO_DATE).format('D')
+const CONF_DATES_DISPLAY = moment(CONF_DAY_ONE_DATE).format('MMMM D') + '-' + moment(CONF_DAY_TWO_DATE).format('D 2017')
 
 export default class Header extends Component {
   constructor(props) {
