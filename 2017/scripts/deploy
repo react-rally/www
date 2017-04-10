@@ -22,8 +22,7 @@ cp -rf assets/dist ../assets
 
 # copy docs
 rm -rf ../docs
-mkdir ../docs
-cp -rf docs ../docs
+cp -rf docs ../
 
 # update github
 git add ../
