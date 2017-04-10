@@ -13,8 +13,7 @@ constants.Links = {
   LIVE_STREAM_DAY_TWO: '',
   LIVE_STREAM_OVER: 'https://youtu.be/T1XgFsitnQw',
   YOUTUBE_CHANNEL: 'https://www.youtube.com/playlist?list=PLUD4kD-wL_zYSfU3tIYsb4WqfFQzO_EjQ',
-  SPONSOR_PROSPECTUS: 'mailto:team@reactrally.com?subject=Sponsor%20Prospectus'
-  // SPONSOR_PROSPECTUS: 'docs/sponsor.pdf'
+  SPONSOR_PROSPECTUS: 'docs/sponsor.pdf'
 }
 
 constants.Dates = {
