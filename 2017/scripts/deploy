@@ -20,6 +20,11 @@ rm -rf ../assets
 mkdir ../assets
 cp -rf assets/dist ../assets
 
+# copy docs
+rm -rf ../docs
+mkdir ../docs
+cp -rf docs ../docs
+
 # update github
 git add ../
 git commit -m "Updating site"
