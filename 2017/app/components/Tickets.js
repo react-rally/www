@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
 import constants from 'helpers/constants'
-import DateUtils, { MountainTime } from 'helpers/DateUtils'
+import DateUtils from 'helpers/DateUtils'
 import Button from 'components/Button'
+import moment from 'moment'
 
-const TICKET_RELEASE_TIME = Date.parse(constants.Dates.TICKET_RELEASE)
+const TICKET_RELEASE_TIME = moment.utc(constants.Dates.TICKET_RELEASE)
 
 export default class Tickets extends Component {
   render() {
-    let ticketsAvailable = MountainTime.isNowAfterTime(TICKET_RELEASE_TIME)
+    let ticketsAvailable = moment.utc().isSameOrAfter(TICKET_RELEASE_TIME)
     let diff
 
     if (!ticketsAvailable) {
-      diff = TICKET_RELEASE_TIME - MountainTime.getTime()
+      diff = TICKET_RELEASE_TIME.diff(moment.utc())
       setTimeout(this.forceUpdate.bind(this), 1000)
     }
 

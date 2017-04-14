@@ -1,18 +1,16 @@
 import constants from 'helpers/constants'
-import DateUtils, { MountainTime } from 'helpers/DateUtils'
+import moment from 'moment';
+
+const isNowBetween = (one, two) => moment.utc().isBetween(moment.utc(one), moment.utc(two));
 
 function getLiveStreamURL() {
   let url
 
-  if (MountainTime.isNowBeforeTime(Date.parse(constants.Dates.CONF_DAY_ONE))) {
+  if (moment.utc().isBefore(moment.utc(constants.Dates.CONF_DAY_ONE))) {
     url = constants.Links.LIVE_STREAM_PLACEHOLDER
-  } else if (MountainTime.isNowBetweenTime(
-              Date.parse(constants.Dates.CONF_DAY_ONE),
-              Date.parse(constants.Dates.CONF_DAY_TWO))) {
+  } else if (isNowBetween(constants.Dates.CONF_DAY_ONE, constants.Dates.CONF_DAY_TWO)) {
     url = constants.Links.LIVE_STREAM_DAY_ONE
-  } else if (MountainTime.isNowBetweenTime(
-              Date.parse(constants.Dates.CONF_DAY_TWO),
-              Date.parse(constants.Dates.CONF_DAY_TWO) + (DateUtils.DAYS * 1))) {
+  } else if (isNowBetween(constants.Dates.CONF_DAY_TWO, moment.utc(constants.Dates.CONF_DAY_TWO).add(1, 'd'))) {
     url = constants.Links.LIVE_STREAM_DAY_TWO
   } else {
     url = constants.Links.LIVE_STREAM_OVER
