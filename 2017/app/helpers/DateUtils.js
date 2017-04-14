@@ -4,19 +4,17 @@ class DateUtils {
   }
 
   createDate(...args) {
-    let date = new Date(...args)
-    let tzOffset = date.getTimezoneOffset() * DateUtils.MINUTES
-    return new Date((date.getTime() + tzOffset) - (this.tzOffset * DateUtils.MINUTES))
+    return new Date(...args)
   }
 
   getTime() {
     return this.createDate().getTime()
   }
-  
+
   isDateToday(date) {
     return this.createDate().toDateString() === date.toDateString()
   }
-  
+
   isNowAfterTime(time) {
     return this.getTime() >= time
   }

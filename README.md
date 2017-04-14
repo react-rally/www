@@ -3,8 +3,8 @@
 ```bash
 git clone git@github.com:react-rally/www.git react-rally
 cd react-rally
-npm install
 cd [YEAR]
+npm install
 npm start
 open http://127.0.0.1:8080
 ```
