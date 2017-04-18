@@ -3,14 +3,11 @@ import cx from 'classnames'
 import { Link } from 'react-router'
 import moment from 'moment'
 import constants from 'helpers/constants'
-import { MountainTime } from 'helpers/DateUtils'
 import Button from 'components/Button'
 import Tickets from 'components/Tickets'
 import Newsletter from 'components/Newsletter'
 
-const CONF_DAY_ONE_DATE = MountainTime.createDate(Date.parse(constants.Dates.CONF_DAY_ONE))
-const CONF_DAY_TWO_DATE = MountainTime.createDate(Date.parse(constants.Dates.CONF_DAY_TWO))
-const CONF_DATES_DISPLAY = moment(CONF_DAY_ONE_DATE).format('MMMM D') + '-' + moment(CONF_DAY_TWO_DATE).format('D 2017')
+const CONF_DATES_DISPLAY = moment.utc(constants.Dates.CONF_DAY_ONE).format('MMMM D') + '-' + moment.utc(constants.Dates.CONF_DAY_TWO).format('D YYYY')
 
 export default class Header extends Component {
   constructor(props) {
@@ -24,11 +21,11 @@ export default class Header extends Component {
 
   render() {
     const isHomeScreen = this.context.router.isActive('/', true)
-    const isConferenceLive = MountainTime.isNowAfterTime(Date.parse(constants.Dates.CONF_DAY_ONE))
-    const isCFPOpen = MountainTime.isNowBetweenTime(
-                      Date.parse(constants.Dates.CFP_OPEN),
-                      Date.parse(constants.Dates.CFP_CLOSE)
-                    )
+    const isConferenceLive = moment.utc().isSameOrAfter(moment.utc(constants.Dates.CONF_DAY_ONE))
+    const isCFPOpen = moment.utc().isBetween(
+      moment.utc(constants.Dates.CFP_OPEN),
+      moment.utc(constants.Dates.CFP_CLOSE)
+    )
 
     return (
       <header className={"Header" + (isHomeScreen ? "" : " Header--padded")}>
