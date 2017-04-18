@@ -1,2 +1,34 @@
 {
+  "iam_preethi": {
+    "name": "Preethi Kasireddy",
+    "title": "Co-founder & Lead Eng at Sapien",
+    "avatar": "assets/dist/img/speakers/iam_preethi.jpg",
+    "twitter": "iam_preethi",
+    "github": "iam-peekay",
+    "featured": true
+  },
+  "sxywu": {
+    "name": "Shirley Wu",
+    "title": "Co-organizer d3.unconf() & Freelancer",
+    "avatar": "assets/dist/img/speakers/sxywu.jpg",
+    "twitter": "sxywu",
+    "github": "sxywu",
+    "featured": true
+  },
+  "czaplic": {
+    "name": "Evan Czaplicki",
+    "title": "Designer/developer of Elm",
+    "avatar": "assets/dist/img/speakers/czaplic.jpg",
+    "twitter": "czaplic",
+    "github": "evancz",
+    "featured": true
+  },
+  "mjackson": {
+    "name": "Michael Jackson",
+    "title": "Co-founder React Training",
+    "avatar": "assets/dist/img/speakers/mjackson.jpg",
+    "twitter": "mjackson",
+    "github": "mjackson",
+    "featured": true
+  }
 }

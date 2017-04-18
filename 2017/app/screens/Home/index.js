@@ -24,18 +24,18 @@ export default () => {
       <div className="Home__Dates">
         <h2>Upcoming Dates</h2>
         <ul>
-          <li><strong>CFP Opens</strong> {moment(CFP_OPEN_DATE).format('[12:00am MDT], MMMM DD, YYYY')}</li>
-          <li><strong>CFP Closes</strong> {moment(CFP_CLOSE_DATE).format('[11:59pm MDT], MMMM DD, YYYY')}</li>
-          <li><strong>Early Bird Tickets - Round One</strong> {moment(TICKETS_DATE).format('[12:00pm MDT], MMMM DD, YYYY')} ($300)</li>
+          <li><del><strong>CFP Opens</strong> {moment(CFP_OPEN_DATE).format('[12:00am MDT], MMMM DD, YYYY')}</del></li>
+          <li><del><strong>CFP Closes</strong> {moment(CFP_CLOSE_DATE).format('[11:59pm MDT], MMMM DD, YYYY')}</del></li>
+          <li><del><strong>Early Bird Tickets - Round One</strong> {moment(TICKETS_DATE).format('[12:00pm MDT], MMMM DD, YYYY')} ($300)</del></li>
           <li><strong>Early Bird Tickets - Round Two</strong> {moment(TICKETS_DATE).add(7, 'days').format('[12:00pm MDT], MMMM DD, YYYY')} ($350)</li>
           <li><strong>Standard Tickets</strong> {moment(TICKETS_DATE).add(14, 'days').format('[12:00pm MDT], MMMM DD, YYYY')} ($400)</li>
         </ul>
       </div>
     {Object.keys(SpeakerData).length > 0 ? (
       <div className="align-center">
-        <Legend>Keynote Speakers</Legend>
+        <Legend>Featured Speakers</Legend>
         {Object.keys(SpeakerData).map(key => {
-          return SpeakerData[key].keynote ? <Person {...SpeakerData[key]} key={key}/> : null
+          return SpeakerData[key].featured ? <Person {...SpeakerData[key]} key={key}/> : null
         })}
       </div>
     ) : null}
