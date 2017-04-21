@@ -21,9 +21,9 @@ export default () => {
         <ul>
           <li><del><strong>CFP Opens</strong> {moment.utc(constants.Dates.CFP_OPEN).format('[12:00am MDT], MMMM DD, YYYY')}</del></li>
           <li><del><strong>CFP Closes</strong> {moment.utc(constants.Dates.CFP_CLOSE).format('[11:59pm MDT], MMMM DD, YYYY')}</del></li>
-          <li><del><strong>Early Bird Tickets - Round One</strong> {moment.utc(constants.Dates.TICKET_RELEASE).format('[12:00pm MDT], MMMM DD, YYYY')} ($300)</del></li>
-          <li><strong>Early Bird Tickets - Round Two</strong> {moment.utc(constants.Dates.TICKET_RELEASE).add(7, 'days').format('[12:00pm MDT], MMMM DD, YYYY')} ($350)</li>
-          <li><strong>Standard Tickets</strong> {moment.utc(constants.Dates.TICKET_RELEASE).add(14, 'days').format('[12:00pm MDT], MMMM DD, YYYY')} ($400)</li>
+          <li><del><strong>Early Bird Tickets - Round One</strong> {moment.utc(constants.Dates.TICKET_RELEASE).subtract(7, 'days').format('[12:00pm MDT], MMMM DD, YYYY')} ($300)</del></li>
+          <li><strong>Early Bird Tickets - Round Two</strong> {moment.utc(constants.Dates.TICKET_RELEASE).format('[12:00pm MDT], MMMM DD, YYYY')} ($350)</li>
+          <li><strong>Standard Tickets</strong> {moment.utc(constants.Dates.TICKET_RELEASE).add(7, 'days').format('[12:00pm MDT], MMMM DD, YYYY')} ($400)</li>
         </ul>
       </div>
     {Object.keys(SpeakerData).length > 0 ? (
