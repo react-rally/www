@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import moment from 'moment'
 import constants from 'helpers/constants'
+import shuffle from 'helpers/shuffle'
 import About from 'components/About'
 import Button from 'components/Button'
 import Legend from 'components/Legend'
@@ -29,7 +30,7 @@ export default () => {
     {Object.keys(SpeakerData).length > 0 ? (
       <div className="align-center">
         <Legend>Featured Speakers</Legend>
-        {Object.keys(SpeakerData).map(key => {
+        {shuffle(Object.keys(SpeakerData)).map(key => {
           return SpeakerData[key].featured ? <Person {...SpeakerData[key]} key={key}/> : null
         })}
       </div>
