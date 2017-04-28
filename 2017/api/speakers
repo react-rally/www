@@ -30,5 +30,117 @@
     "twitter": "mjackson",
     "github": "mjackson",
     "featured": true
+  },
+  "devonbl": {
+    "name": "Devon Lindsey",
+    "title": "Software Engineer at  & React evangelist",
+    "avatar": "assets/dist/img/speakers/devonbl.jpg",
+    "twitter": "devonbl",
+    "github": "devonbl"
+  },
+  "linclark": {
+    "name": "Lin Clark",
+    "title": "Software Engineer at Mozilla",
+    "avatar": "assets/dist/img/speakers/linclark.jpg",
+    "twitter": "linclark",
+    "github": "linclark"
+  },
+  "chantastic": {
+    "name": "Michael Chan",
+    "title": "Designer at Planning Center",
+    "avatar": "assets/dist/img/speakers/chantastic.jpg",
+    "twitter": "chantastic",
+    "github": "chantastic"
+  },
+  "davidkpiano": {
+    "name": "David Khourshid",
+    "title": "Glimpse team at Microsoft",
+    "avatar": "assets/dist/img/speakers/davidkpiano.jpg",
+    "twitter": "davidkpiano",
+    "github": "davidkpiano"
+  },
+  "BonnieMilianB": {
+    "name": "Bonnie Milián",
+    "title": "CS Engineering Student at Galileo University",
+    "avatar": "assets/dist/img/speakers/BonnieMilianB.jpg",
+    "twitter": "BonnieMilianB",
+    "github": "BonnieMilian"
+  },
+  "daajust": {
+    "name": "Justice Mba",
+    "title": "Front End Engineer at VConnect",
+    "avatar": "assets/dist/img/speakers/daajust.jpg",
+    "twitter": "daajust",
+    "github": "dajust"
+  },
+  "iPancreas": {
+    "name": "Jana Beck",
+    "title": "Software Engineer at Tidepool",
+    "avatar": "assets/dist/img/speakers/iPancreas.jpg",
+    "twitter": "iPancreas",
+    "github": "jebeck"
+  },
+  "zackargyle": {
+    "name": "Zack Argyle",
+    "title": "Senior Software Engineer at Pinterest",
+    "avatar": "assets/dist/img/speakers/zackargyle.jpg",
+    "twitter": "zackargyle",
+    "github": "zackargyle"
+  },
+  "benmvp": {
+    "name": "Ben Ilegbodu",
+    "title": "Frontend Platform Lead at Eventbrite",
+    "avatar": "assets/dist/img/speakers/benmvp.jpg",
+    "twitter": "benmvp",
+    "github": "benmvp"
+  },
+  "TheLarkInn": {
+    "name": "Sean Larkin",
+    "title": "Software Engineer at Mutual of Omaha & Webpack Core Team",
+    "avatar": "assets/dist/img/speakers/TheLarkInn.jpg",
+    "twitter": "TheLarkInn",
+    "github": "TheLarkInn"
+  },
+  "mxstbr": {
+    "name": "Max Stoiber",
+    "title": "Co-founder of Space Program Inc & Co-organizer of React Vienna",
+    "avatar": "assets/dist/img/speakers/mxstbr.jpg",
+    "twitter": "mxstbr",
+    "github": "mxstbr"
+  },
+  "cmatheson": {
+    "name": "Cameron Matheson",
+    "title": "Code Monkey",
+    "avatar": "assets/dist/img/speakers/cmatheson.jpg",
+    "twitter": "cmatheson",
+    "github": "cmatheson"
+  },
+  "sugargreenbean": {
+    "name": "Jennifer Van",
+    "title": "Rugby player, bartender, bus driver, and artist turned web developer",
+    "avatar": "assets/dist/img/speakers/sugargreenbean.jpg",
+    "twitter": "sugargreenbean",
+    "github": "sugargreenbean"
+  },
+  "carakuei": {
+    "name": "Cara Kuei",
+    "title": "Front End Engineer at NFL",
+    "avatar": "assets/dist/img/speakers/carakuei.jpg",
+    "twitter": "carakuei",
+    "github": "carakuei"
+  },
+  "left_pad": {
+    "name": "Henry Zhu",
+    "title": "JavaScript at Behance/Adobe",
+    "avatar": "assets/dist/img/speakers/left_pad.jpg",
+    "twitter": "left_pad",
+    "github": "hzoo"
+  },
+  "necolas": {
+    "name": "Nicolas Gallagher",
+    "title": "Technical Lead at Twitter",
+    "avatar": "assets/dist/img/speakers/necolas.jpg",
+    "twitter": "necolas",
+    "github": "necolas"
   }
 }
