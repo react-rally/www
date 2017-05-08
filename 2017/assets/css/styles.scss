@@ -62,6 +62,13 @@ section h1 {
   padding: 5px 10px;
 }
 
+.Button[disabled], button[disabled] {
+  background-color: $fill-lightgray;
+  border-color: $fill-darkgray;
+  color: $color-lightgray;
+  text-shadow: 1px 1px 0 $fill-white;
+}
+
 .Button, button {
   background-color: $fill-white;
   border: 1px solid $color-green;
@@ -529,6 +536,32 @@ ul.navigation {
   font-family: courier;
 }
 
+/* -- Card -- */
+.Card {
+  border: 1px solid $fill-darkgray;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 20px;
+  width: 250px;
+}
+
+.TicketCard {
+  h3 {
+    color: inherit;
+    height: 50px;
+  }
+
+  h2 {
+    color: $color-green;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+
+  p {
+    height: 200px;
+  }
+}
 
 /* responsiveness */
 @media only screen and (max-device-width: 800px) {
