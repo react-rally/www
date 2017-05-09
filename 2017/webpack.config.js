@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'production') {
         NODE_ENV: JSON.stringify('production')
       }
     })
-  )
+  );
   plugins.push(
     new webpack.optimize.UglifyJsPlugin()
   );
