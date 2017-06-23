@@ -1,7 +1,184 @@
 {
   "dayOne": [
+    {
+      "time": "7:00 am",
+      "title": "Registration"
+    },
+    {
+      "time": "7:30 am",
+      "title": "Breakfast"
+    },
+    {
+      "time": "9:00 am",
+      "title": "",
+      "speaker": "mjackson",
+      "description": ""
+    },
+    {
+      "time": "9:30 am",
+      "title": "",
+      "speaker": "sxywu",
+      "description": ""
+    },
+    {
+      "time": "10:00 am",
+      "title": "Break"
+    },
+    {
+      "time": "10:30 am",
+      "title": "A hand wave of React for all your Internet of Thangs",
+      "speaker": "devonbl",
+      "description": "I have an NFC implant in my hand and a household full of Internet of Things technologies. I'm building out a device that allows me to wave my hand over an RFID reader outside my home and set my entire house to my personal settings before I enter."
+    },
+    {
+      "time": "11:00 am",
+      "title": "Back to React: The Story of Two Apps",
+      "speaker": "chantastic",
+      "description": "You have two teams, making two apps. The first made something that demands very few updates and doesn't require specialized knowledge. But the codebase is huge. The second is a bespoke, Hacker News masterpiece. But it demands regular rewrites and requires constant re-education.\nWhich do you chose?\nMaybe you already chose a path. Your fingers are bleeding from all the typing or you're in the middle of re-write #3.\nHow do you get off that path?\nLet's talk about getting back to React, the overlooked APIs and uncommon patterns that make you a happier and healthier React developer."
+    },
+    {
+      "time": "11:30 am",
+      "title": "What WebAssembly means for React",
+      "speaker": "linclark",
+      "description": "There’s a big push to improve React’s perceived performance. And WebAssembly is fast. Could WebAssembly be part of the solution? In this talk, code cartoonist Lin Clark will look at what WebAssembly could mean for React’s performance, and how the new Fiber architecture makes that even more of a possibility."
+    },
+    {
+      "time": "12:00 pm",
+      "title": "Lunch"
+    },
+    {
+      "time": "2:00 pm",
+      "title": "Layperson's guide to React Fiber",
+      "speaker": "benmvp",
+      "description": "Fiber was introduced in version 16 of React. It is a ground-up rewrite of the React scheduler, typically mis-referred to as the \"Virtual DOM.\" The Fiber-based scheduler supports \"cooperative scheduling\" and allows for other output renderers besides the browser DOM. In this session geared towards those familiar with React, let’s learn about what React Fiber is and why it exists through the lens of how it will impact your React development and the performance of your apps at runtime."
+    },
+    {
+      "time": "2:30 pm",
+      "title": "ReacTex: using React Native and Neural Networks to recognize handwritten equations",
+      "speaker": "BonnieMilianB",
+      "description": "In this talk, we’ll examine the details of a project that recognizes handwritten equations and generate the result in LaTeX format. Through the project, we’ll learn how to give the first steps into learning AI, through sharing my own experience we’ll review the challenges, excitement, suspense, frustration and hype around it. We’ll discuss some basic neural networks concepts that serve as starting point, how any of us, either beginner or seasoned developer, can get into AI and how can React help us in this journey."
+    },
+    {
+      "time": "3:00 pm",
+      "title": "Break"
+    },
+    {
+      "time": "4:00 pm",
+      "title": "Twitter Lite, React Native, and Progressive Web Apps",
+      "speaker": "necolas",
+      "description": "React Native and PWAs like Twitter Lite are blurring the lines between web and native apps. PWAs now offer native-like capabilities via the web. And the React Native components and APIs are a great platform for React UI development. But what if you could create PWAs with React Native? Twitter Lite is an experiment in doing just that. Find out how React Native for Web is implemented and used in Twitter Lite."
+    },
+    {
+      "time": "4:30 pm",
+      "title": "React-ing htmlFor=empathy",
+      "speaker": "iPancreas",
+      "description": "Imagine that you’re locked-in, unable to communicate except by blinking a single functional eye. Your only method of communication is to watch (and listen) as a helper reads through a list of all the letters of the alphabet. When you want to select a letter, you blink. Can you imagine this? Can we do more than imagine it? On the modern web, we can! Using React and WebGazer.js (an open-source eye-tracking library for the web), we can approximate this communication technique, the method that Jean-Dominique Bauby used to compose his best-selling memoir The Diving Bell and the Butterfly."
+    },
+    {
+      "time": "5:00 pm",
+      "title": "Redux + ServiceWorker = Offline React",
+      "speaker": "zackargyle",
+      "description": "Service workers can give us instant page loads and the ability to browse with little or no internet connection. This talk includes a Service Worker primer and steps for enabling offline browsing in a React app."
+    },
+
+    {
+      "time": "6:00 pm",
+      "title": "Dinner",
+      "description": "Meet up with conference attendees sharing similar taste in cuisine at pre-arranged restaurants for dinner (self pay)."
+    },
+    {
+      "time": "8:00 pm",
+      "title": "Party",
+      "description": "Meet at Sheraton Ballroom for milkshakes and board games or Sheraton Bar for karaoke."
+    }
   ],
   "dayTwo": [
+    {
+      "time": "7:00 am",
+      "title": "Registration"
+    },
+    {
+      "time": "7:30 am",
+      "title": "Breakfast"
+    },
+    {
+      "time": "9:00 am",
+      "title": "",
+      "speaker": "iam_preethi",
+      "description": ""
+    },
+    {
+      "time": "9:30 am",
+      "title": "",
+      "speaker": "czaplic",
+      "description": ""
+    },
+    {
+      "time": "10:00 am",
+      "title": "Break"
+    },
+    {
+      "time": "10:30 am",
+      "title": "So how does Babel even work? Let's create the JSX transform to find out!",
+      "speaker": "left_pad",
+      "description": "Although Babel is used to write ES6+ and JSX to disregard native browser support, it may sometimes feel like magic. Learn how it works as a compiler and come away understanding more how the JSX plugin is implemented!"
+    },
+    {
+      "time": "11:00 am",
+      "title": "Scaling My First Enterprise React App! 🐙",
+      "speaker": "sugargreenbean",
+      "description": "You want me to build a to-do app? Got it. Tic-tac-toe app? Check-er-oo. Now you want me to build a web app that ingests 7TB of data per day for hundreds of people? Uhhhh...Unfortunately, the vast majority of example web apps available do not address the common stumbling blocks of building larger, more complex web applications. Come and learn about some of the mistakes I made along the way and solutions for scaling an enterprise React web app. 🍕 🌈 🦄"
+    },
+    {
+      "time": "11:30 am",
+      "title": "Everything is a plugin!! Mastering webpack from the inside out",
+      "speaker": "TheLarkInn",
+      "description": "webpack is a JavaScript module bundler that has taken the world by storm. As a webpack maintainer, I set out to ensure that we provided great documentation for first-time users. However, there is still much to be written about tapping into some of webpack’s most powerful features: custom plugins.\nWe will take a walk through the webpack source all the way down to its powerful AST parser. Along the way, we will learn about the anatomy of a webpack plugin, how webpack uses this system internally, and then implement a few plugins ourselves!!"
+    },
+    {
+      "time": "12:00 pm",
+      "title": "Lunch"
+    },
+    {
+      "time": "2:00 pm",
+      "title": "GraphQL IRL",
+      "speaker": "cmatheson",
+      "description": "Have you been wanting to add GraphQL to your app, but you're not sure how to make it work in your legacy codebase? So was I! Let's discuss different approaches to adding a GraphQL API to existing apps without making your database explode. Sometimes the natural implementation of GraphQL resolvers can be inefficient so we'll talk about how to avoid that too."
+    },
+    {
+      "time": "2:30 pm",
+      "title": "Demystifying setState()",
+      "speaker": "daajust",
+      "description": "Many React developers bump into bugs because of using setState() incorrectly. In fact, some dreadfully avoid setState(). In particular, its asynchronous nature and batching often confuse React developers. In this talk, I will explore common setState() misunderstandings and pitfalls, explain why exactly setState() needs to be asynchronous, how to use it correctly, the powerful patterns buried in setState(), and what it means for the future of React in Fiber."
+    },
+    {
+      "time": "3:00 pm",
+      "title": "Break"
+    },
+    {
+      "time": "4:00 pm",
+      "title": "Infinitely Better UIs with Finite Automata",
+      "speaker": "davidkpiano",
+      "description": "Automa-what? Have you ever had complicated user flows in your React app that were difficult to manage? Of course you have -- most UI developers write code that resembles deterministic finite automata (or \"state machines\"), without even knowing it. Knowing how these concepts work is critical to robust applications, which is why we'll explore some innovative techniques for formalizing state machines for maximum testability and visibility, with the help of D3 and TypeScript/Flow. This gentle intro to an otherwise confusing comp-sci topic will take your React user interfaces to the next level."
+
+    },
+    {
+      "time": "4:30 pm",
+      "title": "Start a conversation between browser windows",
+      "speaker": "carakuei",
+      "description": "You may know about postMessage(), you definitely have heard about React. Did you know that the two can work really well together? You can combine React's state management with postMessage()'s data delivery to synchronize and manage the ui state of your application across multiple browsers and frames. Let me show you how to use the two to enhance your user's experience."
+    },
+    {
+      "time": "5:00 pm",
+      "title": "Styling component-based systems",
+      "speaker": "mxstbr",
+      "description": "React popularized a new way of building user interfaces – components. By splitting our app into small, digestible parts the system as a whole becomes a lot easier to understand.\nWhat if we took the best of JavaScript and the best of CSS, and combined them together to create the ultimate solution for styling component-based systems? Glen Maddern (CSS Modules co-creator) and I sat down and starting thinking about styling in this new paradigm."
+    },
+    {
+      "time": "6:30 pm",
+      "title": "Party",
+      "description": "Meet at the Gallivan Center for dinner, desert, live music, and lawn games."
+    }
   ]
 }
 
