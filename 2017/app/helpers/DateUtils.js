@@ -1,32 +1,4 @@
-class DateUtils {
-  constructor(tzOffset = 0) {
-    this.tzOffset = tzOffset
-  }
-
-  createDate(...args) {
-    return new Date(...args)
-  }
-
-  getTime() {
-    return this.createDate().getTime()
-  }
-
-  isDateToday(date) {
-    return this.createDate().toDateString() === date.toDateString()
-  }
-
-  isNowAfterTime(time) {
-    return this.getTime() >= time
-  }
-
-  isNowBeforeTime(time) {
-    return this.getTime() <= time
-  }
-
-  isNowBetweenTime(startTime, endTime) {
-    return this.isNowAfterTime(startTime) && this.isNowBeforeTime(endTime)
-  }
-}
+const DateUtils = {}
 
 DateUtils.SECONDS = 1000
 DateUtils.MINUTES = DateUtils.SECONDS * 60
@@ -55,21 +27,4 @@ DateUtils.duration = (timeInMillis) => {
   return sb
 }
 
-let DEFAULT_INSTANCE = null
-DateUtils.getInstance = (tzOffset) => {
-  let instance
-  if (typeof tzOffset === 'number') {
-    instance = new DateUtils(tzOffset)
-  } else {
-    if (!DEFAULT_INSTANCE) {
-      DEFAULT_INSTANCE = new DateUtils()
-    }
-    instance = DEFAULT_INSTANCE
-  }
-  return instance
-}
-
-const MountainTime = DateUtils.getInstance(360)
-
 export default DateUtils
-export { MountainTime }

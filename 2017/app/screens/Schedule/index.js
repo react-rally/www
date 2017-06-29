@@ -3,21 +3,40 @@ import cx from 'classnames'
 import moment from 'moment'
 import Avatar from 'components/Avatar'
 import constants from 'helpers/constants'
-import DateUtils, { MountainTime } from 'helpers/DateUtils'
+import DateUtils from 'helpers/DateUtils'
 import ScheduleData from '../../../api/schedule'
 import SpeakerData from '../../../api/speakers'
 
-const CONF_DAY_ONE_DATE = MountainTime.createDate(Date.parse(constants.Dates.CONF_DAY_ONE))
-const CONF_DAY_TWO_DATE = MountainTime.createDate(Date.parse(constants.Dates.CONF_DAY_TWO))
+const CONF_DAY_ONE_DATE = moment.utc(constants.Dates.CONF_DAY_ONE)
+const CONF_DAY_TWO_DATE = moment.utc(constants.Dates.CONF_DAY_TWO)
 
-function isNowWithinTimeRange(date, start, end) {
-  let startTime = new Date(Date.parse(`${date.toDateString()} ${start}`)).getTime()
-  let endTime = (end ?
-                 new Date(Date.parse(`${date.toDateString()} ${end}`)) :
-                 new Date(startTime + (3 * DateUtils.HOURS))
-                ).getTime()
+function parseTimeString (str) {
+  let time = 0
+  let [ hour, extra ] = str.split(':')
+  let [ min, period ] = extra.split(' ')
 
-  return MountainTime.isNowBetweenTime(startTime, endTime)
+  time = parseInt(hour, 10)
+  time += parseInt(min, 10) === 30 ? 0.5 : 0
+
+  if (period.toLowerCase() === 'pm') {
+    time += 12
+  }
+
+  return time
+}
+
+function isNowWithinTimeRange(date, startTime, endTime) {
+  // TODO this is buggy due to Mt Time for start/endTime vs UTC
+  // Prolly just need to figure out correct offset ¯\_(ツ)_/¯
+  return false
+
+  const OFFSET = 6
+  let start = moment.utc(date).hour(parseTimeString(startTime) + OFFSET)
+  let end = endTime ?
+              moment.utc(date).hour(parseTimeString(endTime) + OFFSET) :
+              moment.utc(start).hour(3 + OFFSET)
+
+  return moment.utc().isBetween(start, end)
 }
 
 export default class extends React.Component {
@@ -26,7 +45,8 @@ export default class extends React.Component {
 
     this.state = {
       // Default showing day two schedule if day two is today
-      selectedDay: MountainTime.isDateToday(CONF_DAY_TWO_DATE) ? 'dayTwo' : 'dayOne'
+      // TODO this isn't working since switching to moment
+      selectedDay: moment.utc().isSame(CONF_DAY_TWO_DATE, 'day') ? 'dayTwo' : 'dayOne'
     }
   }
 
@@ -49,7 +69,7 @@ export default class extends React.Component {
             'Schedule__Menu__Item',
             {'Schedule__Menu__Item--active': this.state.selectedDay === 'dayOne'}
           )}>
-            {moment(CONF_DAY_ONE_DATE).format('dddd, MMMM D')}
+            {CONF_DAY_ONE_DATE.format('dddd, MMMM D')}
         </a>
         <a
           href="javascript://"
@@ -58,7 +78,7 @@ export default class extends React.Component {
             'Schedule__Menu__Item',
             {'Schedule__Menu__Item--active': this.state.selectedDay === 'dayTwo'}
           )}>
-            {moment(CONF_DAY_TWO_DATE).format('dddd, MMMM D')}
+            {CONF_DAY_TWO_DATE.format('dddd, MMMM D')}
         </a>
       </menu>
     )
@@ -76,7 +96,7 @@ export default class extends React.Component {
             {schedule.map((session, i) => {
               let speaker = session.speaker ? SpeakerData[session.speaker] : null;
               let sessionEnd = schedule[i + 1] ? schedule[i + 1].time : null
-              let isActive = MountainTime.isDateToday(selectedDay) && isNowWithinTimeRange(selectedDay, session.time, sessionEnd)
+              let isActive = moment.utc().isSame(selectedDay, 'day') && isNowWithinTimeRange(selectedDay, session.time, sessionEnd)
               return (
                 <div
                   className={cx(
