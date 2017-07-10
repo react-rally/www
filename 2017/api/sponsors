@@ -1,9 +1,42 @@
 {
   "Premier": [
+    {
+      "name": "Egghead.io",
+      "url": "https://egghead.io/browse/frameworks/react",
+      "image": "assets/dist/img/sponsors/egghead.svg",
+      "style": {
+        "width": "500px"
+      }
+    }
   ],
   "Platinum": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/careers",
+      "image": "assets/dist/img/sponsors/facebook.png"
+    },
+    {
+      "name": "webform.com",
+      "url": "https://webform.com/",
+      "image": "assets/dist/img/sponsors/webform.png"
+    },
+    {
+      "name": "WordPress.com",
+      "url": "https://wordpress.com",
+      "image": "assets/dist/img/sponsors/wordpress.png"
+    }
   ],
   "Gold": [
+    {
+      "name": "Instructure",
+      "url": "https://www.instructure.com/careers/",
+      "image": "assets/dist/img/sponsors/instructure.png"
+    },
+    {
+      "name": "BugSnag",
+      "url": "https://www.bugsnag.com/platforms/react-error-reporting/?utm_source=&utm_medium=conference&utm_content=logo&utm_campaign=reactrally-17&utm_term=",
+      "image": "assets/dist/img/sponsors/bugsnag.png"
+    }
   ],
   "Silver": [
   ],
