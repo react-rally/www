@@ -28,13 +28,13 @@ function parseTimeString (str) {
 function isNowWithinTimeRange(date, startTime, endTime) {
   // TODO this is buggy due to Mt Time for start/endTime vs UTC
   // Prolly just need to figure out correct offset ¯\_(ツ)_/¯
-  return false
+  // return false
 
   const OFFSET = 6
-  let start = moment.utc(date).hour(parseTimeString(startTime) + OFFSET)
+  let start = moment.utc(date).hour(parseTimeString(startTime) - OFFSET)
   let end = endTime ?
-              moment.utc(date).hour(parseTimeString(endTime) + OFFSET) :
-              moment.utc(start).hour(3 + OFFSET)
+              moment.utc(date).hour(parseTimeString(endTime) - OFFSET) :
+              moment.utc(start).hour(3 - OFFSET)
 
   return moment.utc().isBetween(start, end)
 }
