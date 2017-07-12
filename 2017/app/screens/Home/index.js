@@ -26,7 +26,8 @@ const Tickets = [
   {
     name: 'Standard',
     price: 400,
-    description: 'The real deal. One ticket to React Rally.'
+    description: 'The real deal. One ticket to React Rally.',
+    soldOut: true
   },
   {
     name: 'Significant Other Activity Ticket',
