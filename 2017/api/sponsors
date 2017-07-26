@@ -16,14 +16,14 @@
       "image": "assets/dist/img/sponsors/facebook.png"
     },
     {
-      "name": "webform.com",
-      "url": "https://webform.com/",
-      "image": "assets/dist/img/sponsors/webform.png"
-    },
-    {
       "name": "WordPress.com",
       "url": "https://wordpress.com",
       "image": "assets/dist/img/sponsors/wordpress.png"
+    },
+    {
+      "name": "Webflow",
+      "url": "https://webflow.com/",
+      "image": "assets/dist/img/sponsors/webflow.png"
     }
   ],
   "Gold": [
