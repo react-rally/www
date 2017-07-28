@@ -36,6 +36,11 @@
       "name": "BugSnag",
       "url": "https://www.bugsnag.com/platforms/react-error-reporting/?utm_source=&utm_medium=conference&utm_content=logo&utm_campaign=reactrally-17&utm_term=",
       "image": "assets/dist/img/sponsors/bugsnag.png"
+    },
+    {
+      "name": "Jane",
+      "url": "http://www.jane.com/careers",
+      "image": "assets/dist/img/sponsors/jane.png"
     }
   ],
   "Silver": [
