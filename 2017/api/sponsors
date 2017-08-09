@@ -28,6 +28,11 @@
   ],
   "Gold": [
     {
+      "name": "Netlify",
+      "url": "https://www.netlify.com/",
+      "image": "assets/dist/img/sponsors/netlify.png"
+    },
+    {
       "name": "Instructure",
       "url": "https://www.instructure.com/careers/",
       "image": "assets/dist/img/sponsors/instructure.png"
