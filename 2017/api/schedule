@@ -170,9 +170,8 @@
     },
     {
       "time": "5:00 pm",
-      "title": "Styling component-based systems",
-      "speaker": "mxstbr",
-      "description": "React popularized a new way of building user interfaces – components. By splitting our app into small, digestible parts the system as a whole becomes a lot easier to understand.\nWhat if we took the best of JavaScript and the best of CSS, and combined them together to create the ultimate solution for styling component-based systems? Glen Maddern (CSS Modules co-creator) and I sat down and starting thinking about styling in this new paradigm."
+      "title": "I want you to contribute to open source",
+      "speaker": "mxstbr"
     },
     {
       "time": "6:30 pm",
