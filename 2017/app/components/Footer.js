@@ -42,6 +42,7 @@ export default () => {
       <div className="Footer__Social">
         <Icon href="https://twitter.com/ReactRally" type="twitter"/>
         <Icon href="https://github.com/react-rally" type="github"/>
+        <Icon href="https://instagram.com/reactrally" type="instagram"/>
       </div>
       <div className="Footer__Copyright">
         &copy; {new Date().getFullYear()} <a href="http://www.traceevents.io" target="_blank">Trace Events, LLC</a>
