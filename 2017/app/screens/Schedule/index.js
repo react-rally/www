@@ -127,7 +127,7 @@ export default class extends React.Component {
                       <div>
                         <em>{speaker.name}</em>
                         <h3>{session.title}</h3>
-                        <p dangerouslySetInnerHTML={{__html: session.description.replace(/\n/g, '<br/>')}}/>
+                        <p dangerouslySetInnerHTML={{__html: (session.description || '').replace(/\n/g, '<br/>')}}/>
                       </div>
                     ) : (
                       <div>
