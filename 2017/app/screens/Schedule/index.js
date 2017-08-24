@@ -102,7 +102,7 @@ export default class extends React.Component {
                   className={cx(
                     'Schedule__Session',
                     {
-                      'Schedule__Session--active': isActive,
+                      'Schedule__Session--active': false,
                       'Schedule__Session--speaker': speaker,
                       'Schedule__Session--description': session.description
                     }
