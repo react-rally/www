@@ -1,30 +1,39 @@
 #!/bin/bash -e
 
 # delete old bundle images
+echo "deleting old bundle"
 IMGRX="/[a-z0-9]{32}.png"
 find ../ -type f -maxdepth 2 | egrep $IMGRX | xargs rm
 
 # generate bundle
+echo "generating bundle"
 npm run build
 
 # copy new bundle images
+echo "copying new bundle"
 find . -type f -maxdepth 1 | egrep $IMGRX | xargs -I{} cp {} ../
 
 # copy files
+echo "copying files"
 cp bundle.js ../
 cp index.html ../
 cp 404.html ../
 
 # copy assets
+echo "copying assets"
 rm -rf ../assets
 mkdir ../assets
 cp -rf assets/dist ../assets
 
 # copy docs
+echo "copying docs"
 rm -rf ../docs
 cp -rf docs ../
 
 # update github
+echo "updating github"
 git add ../
 git commit -m "Updating site"
 git push
+
+echo "done"
