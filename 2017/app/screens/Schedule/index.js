@@ -18,7 +18,7 @@ function parseTimeString (str) {
   time = parseInt(hour, 10)
   time += parseInt(min, 10) === 30 ? 0.5 : 0
 
-  if (period.toLowerCase() === 'pm') {
+  if (period.toLowerCase() === 'pm' && time !== 12) {
     time += 12
   }
 
@@ -26,15 +26,19 @@ function parseTimeString (str) {
 }
 
 function isNowWithinTimeRange(date, startTime, endTime) {
-  // TODO this is buggy due to Mt Time for start/endTime vs UTC
-  // Prolly just need to figure out correct offset ¯\_(ツ)_/¯
-  // return false
+  const OFFSET = -6
 
-  const OFFSET = 6
-  let start = moment.utc(date).hour(parseTimeString(startTime) - OFFSET)
+  let startParsed = parseTimeString(startTime)
+  let startHour = Math.floor(startParsed)
+  let startMinute = Math.round(startParsed) > startHour ? 30 : 0
+  let endParsed = endTime ? parseTimeString(endTime) : null
+  let endHour = endParsed && Math.floor(endParsed)
+  let endMinute = endParsed && Math.round(endParsed) > endHour ? 30 : 0
+
+  let start = moment.utc(date).hour(startHour - OFFSET).minute(startMinute)
   let end = endTime ?
-              moment.utc(date).hour(parseTimeString(endTime) - OFFSET) :
-              moment.utc(start).hour(3 - OFFSET)
+              moment.utc(date).hour(endHour - OFFSET).minute(endMinute) :
+              moment.utc(start).hour(startHour + 3 - OFFSET)
 
   return moment.utc().isBetween(start, end)
 }
@@ -102,7 +106,7 @@ export default class extends React.Component {
                   className={cx(
                     'Schedule__Session',
                     {
-                      'Schedule__Session--active': false,
+                      'Schedule__Session--active': isActive,
                       'Schedule__Session--speaker': speaker,
                       'Schedule__Session--description': session.description
                     }
