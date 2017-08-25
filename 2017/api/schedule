@@ -119,9 +119,9 @@
     },
     {
       "time": "10:30 am",
-      "title": "So how does Babel even work? Let's create the JSX transform to find out!",
+      "title": "So how does Babel even work?",
       "speaker": "left_pad",
-      "description": "Although Babel is used to write ES6+ and JSX to disregard native browser support, it may sometimes feel like magic. Learn how it works as a compiler and come away understanding more how the JSX plugin is implemented!"
+      "description": ""
     },
     {
       "time": "11:00 am",
