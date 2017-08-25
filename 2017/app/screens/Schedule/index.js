@@ -26,7 +26,7 @@ function parseTimeString (str) {
 }
 
 function isNowWithinTimeRange(date, startTime, endTime) {
-  const OFFSET = -6
+  const OFFSET = 6
 
   let startParsed = parseTimeString(startTime)
   let startHour = Math.floor(startParsed)
@@ -35,10 +35,10 @@ function isNowWithinTimeRange(date, startTime, endTime) {
   let endHour = endParsed && Math.floor(endParsed)
   let endMinute = endParsed && Math.round(endParsed) > endHour ? 30 : 0
 
-  let start = moment.utc(date).hour(startHour - OFFSET).minute(startMinute)
+  let start = moment.utc(date).hour(startHour + OFFSET).minute(startMinute)
   let end = endTime ?
-              moment.utc(date).hour(endHour - OFFSET).minute(endMinute) :
-              moment.utc(start).hour(startHour + 3 - OFFSET)
+              moment.utc(date).hour(endHour + OFFSET).minute(endMinute) :
+              moment.utc(start).hour(startHour + 3 + OFFSET)
 
   return moment.utc().isBetween(start, end)
 }
