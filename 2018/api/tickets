@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Early Bird - Round One",
+    "price": 400,
+    "description": "Early bird tickets for React Rally! 20% off because we love early bird ticket buyers.",
+    "soldOut": false
+  },
+  {
+    "name": "Early Bird - Round Two",
+    "price": 450,
+    "description": "One last chance to grab a React Rally ticket at a discounted price.",
+    "soldOut": false
+  },
+  {
+    "name": "Standard",
+    "price": 500,
+    "description": "The real deal. One ticket to React Rally.",
+    "soldOut": false
+  },
+  {
+    "name": "Significant Other Activity Ticket",
+    "price": 20,
+    "description": "Activities will be held both August 16 and August 17 in the evening after the conference. Purchase this ticket and bring your significant other along for the fun."
+  },
+  {
+    "name": "Charitable Donation",
+    "price": "-",
+    "description": "All proceeds from this ticket will be donated to Black Girls Code. This won't grant you entrance to the conference, but it will help you feel good."
+  }
+]
