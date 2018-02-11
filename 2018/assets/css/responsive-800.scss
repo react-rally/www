@@ -1,0 +1,179 @@
+/* Responsive styles for max-width 800px */
+body {
+  font-size: $size-font-medium;
+}
+
+section,
+.Home__Header__Wrapper {
+  padding: 50px 35px;
+}
+
+section h1 {
+  font-size: $size-font-default;
+}
+
+input[type="text"], input[type="email"] {
+  width: 200px;
+}
+
+.col-1 { width: $width-column * 2; }
+.col-2 { width: $width-column * 4; }
+.col-3 { width: $width-column * 6; }
+.col-4 { width: $width-column * 8; }
+.col-5 { width: $width-column * 10; }
+.col-6 { width: $width-column * 12; }
+.col-7 { width: $width-column * 14; }
+.col-8 { width: $width-column * 16; }
+
+ul.navigation {
+  padding: 0;
+}
+.navigation li {
+  display: block;
+  border-bottom: 1px solid $fill-darkgray;
+  padding: 12px 0;
+}
+.navigation li:last-of-type {
+  border-bottom-width: 0;
+}
+
+.Home__Header__Wrapper {
+  padding-bottom: 0;
+}
+.Home__Header__Wrapper h1 {
+  font-size: $size-font-large;
+}
+.Home__Header__Content {
+  top: 0;
+}
+.Home__Header__ReactLogo {
+  right: -200px;
+}
+.Home__Header__Buttons {
+  margin-top: 25px;
+}
+.Home__Header__Buttons a,
+.Home__Header__Buttons .Tickets {
+  width: 100%;
+}
+.Home__Header__Nav.navigation {
+  border-top: 1px solid $fill-darkgreen;
+  display: block;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  margin: 25px -50px 0;
+}
+
+.Header--padded {
+  padding: 0;
+}
+.Header--padded .Button {
+  display: none;
+}
+.Header--padded .Header__Logo {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0;
+}
+.Header--padded .Header__Nav__Wrapper {
+  width: 100%;
+}
+.Header--padded .Header__Nav {
+  background: $fill-lightgray;
+  display: block;
+}
+.navigation li {
+  border-bottom-width: 0;
+  padding: 0;
+}
+.navigation li a {
+  border-bottom: 1px solid $fill-darkgray;
+  display: block;
+  height: inherit;
+  margin-bottom: 0;
+  padding: 12px 0;
+}
+.navigation li:last-of-type a {
+  border-bottom: 0 none !important;
+}
+.Home__Header__Nav.navigation li a {
+  border-bottom-color: $fill-darkgreen;
+}
+.Header--padded .Header__Nav a {
+  display: none;
+}
+.Header--padded .Header__Nav a.active {
+  border-bottom-width: 0;
+  color: $color-green;
+  display: block;
+}
+.Header--padded .Header__Nav a.active:after {
+  content: '▼';
+  display: inline-block;
+  font-size: $size-font-small;
+  margin-left: 5px;
+}
+.Header--padded .Header__Nav--active a {
+  display: block;
+}
+.Header--padded .Header__Nav--active a.active {
+  border-bottom: 1px solid $fill-darkgray;
+}
+.Header--padded .Header__Nav--active a.active:after {
+  display: none;
+}
+
+.Newsletter__Label {
+  display: block;
+  margin: 0 0 12px;
+}
+
+.Footer__About__Tickets {
+  text-align: center;
+  width: 100%;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+.Footer__About__Tickets .Button {
+  margin-right: 0;
+}
+
+
+.Venue__Content__Thumbnail {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.Venue .Button {
+  margin-bottom: 20px;
+}
+.Venue .Button:last-of-type {
+  margin-bottom: 0;
+}
+
+.Person {
+  display: inline-block;
+  margin: 25px;
+}
+.Person__Social {
+  visibility: visible;
+}
+
+.Schedule {
+  margin: 0 -35px;
+}
+.Schedule__Session time,
+.Schedule__Session__WhoWhat {
+  display: block;
+  margin: 0;
+  padding: 0 !important;
+}
+.Schedule__Session__Description {
+  margin: 0 !important;
+}
+.Schedule__Session .Avatar {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}

@@ -1,0 +1,583 @@
+/* font colors */
+$color-primary: #4A4A4A;
+$color-lightgray: #777777;
+$color-darkgray: #444444;
+$color-white: #FFFFFF;
+$color-green: #00AD92;
+$color-orange: #FF6D40;
+
+/* fill colors */
+$fill-white: #FFFFFF;
+$fill-orange: #FF6D40;
+$fill-lightyellow: #FFFFAF;
+$fill-lightgray: #F4F4F4;
+$fill-darkgray: #DCDCDC;
+$fill-lightgreen: #00AD93;
+$fill-mediumgreen: #57B5AC;
+$fill-darkgreen: #008874;
+
+/* dimensions */
+$width-column: 12%;
+$size-font-xlarge: 40px;
+$size-font-large: 28px;
+$size-font-default: 20px;
+$size-font-medium: 18px;
+$size-font-small: 14px;
+$size-font-xsmall: 12px;
+
+/* typography */
+body {
+  background-color: $fill-white;
+  color: $color-primary;
+  font-family: lato, sans-serif;
+  font-size: $size-font-default;
+  margin: 0;
+}
+
+a {
+  color: $color-green;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-orange;
+  font-family: 'museo-slab', sans-serif;
+  margin: 0;
+}
+
+section h1 {
+  color: $color-darkgray;
+  font-size: $size-font-xlarge;
+  margin-bottom: 50px;
+}
+
+/* forms */
+.Button, button, input[type="text"], input[type="email"] {
+  border-radius: 2px;
+  font-family: lato, sans-serif;
+  font-size: $size-font-medium;
+  padding: 5px 10px;
+}
+
+.Button[disabled], button[disabled] {
+  background-color: $fill-lightgray;
+  border-color: $fill-darkgray;
+  color: $color-lightgray;
+  text-shadow: 1px 1px 0 $fill-white;
+}
+
+.Button, button {
+  background-color: $fill-white;
+  border: 1px solid $color-green;
+  color: $color-green;
+  cursor: pointer;
+  display: inline-block;
+}
+.Button.medium, button.medium {
+  padding: 10px 25px;
+}
+.Button.large, button.large {
+  font-size: $size-font-default;
+  padding: 12px 35px;
+}
+.Home__Header__Newsletter button,
+.Button.transparent, button.transparent {
+  background-color: transparent;
+  border-color: $color-white;
+  color: $color-white;
+}
+
+input[type="text"], input[type="email"] {
+  border: 1px solid $fill-darkgray;
+  line-height: 1.6;
+  width: 260px;
+}
+
+/* layout */
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 50px;
+}
+
+.col { display: inline-block; vertical-align: top; }
+.col-1 { width: $width-column; }
+.col-2 { width: $width-column * 2; }
+.col-3 { width: $width-column * 3; }
+.col-4 { width: $width-column * 4; }
+.col-5 { width: $width-column * 5; }
+.col-6 { width: $width-column * 6; }
+.col-7 { width: $width-column * 7; }
+.col-8 { width: $width-column * 8; }
+
+/* classes */
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+ul.navigation {
+  font-size: $size-font-medium;
+  margin: 0;
+  padding: 25px 0;
+  list-style: none;
+  text-align: center;
+}
+.navigation li {
+  display: inline-block;
+  padding: 0 25px;
+}
+.navigation li a {
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  height: 62px;
+  margin-bottom: -36px;
+}
+.navigation li a.active {
+  border-color: $color-orange;
+  color: $color-darkgray;
+}
+
+/* -- Home -- */
+.Home__Header {
+  background: url(../dist/img/SaltLakeCity.png) no-repeat;
+  background-size: cover;
+}
+.Home__Header__Wrapper {
+  background-color: rgba($fill-lightgreen, .95);
+  color: $color-white;
+  text-align: center;
+  padding: 50px 20% 0;
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+}
+.Home__Header__Wrapper h1 {
+  color: $color-white;
+  font-size: $size-font-xlarge;
+}
+.Home__Header__Content {
+  position: relative;
+  top: 75px;
+  z-index: 100;
+}
+.Home__Header__Nav.navigation {
+  font-size: $size-font-medium;
+  margin-top: 71px;
+}
+.Home__Header__Nav a {
+  color: $color-white;
+}
+.Home__Header__Newsletter {
+  background-color: $fill-darkgreen;
+  color: $color-white;
+  font-size: $size-font-medium;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 100;
+}
+.Home__Header__ReactLogo {
+  opacity: 0.1;
+  position: absolute;
+  right: 100px;
+  bottom: -175px;
+  z-index: 0;
+}
+.Home__Header .Button {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+.Home__Dates {
+  margin-top: 50px;
+}
+
+/* -- Sponsors -- */
+.Sponsors {
+  text-align: center;
+}
+.Sponsors img {
+  margin: 25px;
+  vertical-align: middle;
+}
+
+/* -- Stream -- */
+.Stream {
+  text-align: center;
+}
+.Stream__Embedded {
+  border: 0;
+}
+.Stream__Note {
+  color: $color-lightgray;
+  font-size: $size-font-xsmall;
+}
+
+/* -- Proposals -- */
+.Proposals h1 {
+  text-align: center;
+}
+.Proposals .Button {
+  display: inline-block;
+  margin: 25px 0;
+}
+
+/* -- Venue -- */
+.Venue h1 {
+  text-align: center;
+}
+.Venue__Wrapper {
+  background: url(../dist/img/SaltLakeCitySkyline.png) no-repeat;
+  background-size: cover;
+  margin: 0 -50px;
+}
+.Venue__Content {
+  background: rgba($fill-mediumgreen, .95);
+  color: $color-white;
+  padding: 50px;
+}
+.Venue__Content h2 {
+  color: $color-white;
+}
+.Venue__Content__Address {
+  color: rgba($color-white, .75);
+  font-size: $size-font-medium;
+  margin-bottom: 50px;
+}
+.Venue__Hotel,
+.Venue__Party {
+  padding-top: 50px;
+}
+.Venue__Hotel__Address,
+.Venue__Party__Address {
+  color: rgba($color-primary, .75);
+  font-size: $size-font-medium;
+  margin-bottom: 25px;
+}
+.Venue__Content button,
+.Venue__Hotel button {
+  margin-top: 25px;
+}
+
+.Venue__Content__Thumbnail img {
+  border-radius: 318px;
+  border: 5px solid white;
+}
+
+/* -- Schedule -- */
+.Schedule__Menu {
+  border: 1px solid $fill-mediumgreen;
+  border-left-width: 0;
+  border-right-width: 0;
+  padding: 0;
+}
+.Schedule__Menu__Item {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 50%;
+}
+.Schedule__Menu__Item--active {
+  background: $fill-mediumgreen;
+  color: $color-white;
+}
+
+.Schedule__Session {
+  background: $fill-white;
+  border-bottom: 1px solid $fill-darkgray;
+  padding: 25px;
+  position: relative;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+}
+.Schedule__Session:last-of-type {
+  border-bottom: 0 none;
+}
+.Schedule__Session time {
+  color: $color-lightgray;
+  display: inline-block;
+  vertical-align: top;
+  width: 125px;
+}
+.Schedule__Session--active {
+  background: $fill-lightyellow;
+}
+.Schedule__Session--speaker time {
+  margin-top: 15px;
+}
+.Schedule__Session__WhoWhat {
+  display: inline-block;
+  font-weight: bold;
+  vertical-align: top;
+  width: 100px;
+}
+.Schedule__Session--speaker .Schedule__Session__WhoWhat {
+  padding-bottom: 15px;
+}
+.Schedule__Session--description .Schedule__Session__WhoWhat {
+  padding-bottom: 0;
+}
+.Schedule__Session--speaker .Schedule__Session__Description,
+.Schedule__Session--description .Schedule__Session__Description {
+  margin-left: 225px;
+}
+.Schedule__Session--description .Schedule__Session__Description {
+  margin-top: -30px;
+}
+.Schedule__Session--speaker .Schedule__Session__Description {
+  margin-top: -60px;
+}
+.Schedule__Session__Description em {
+  color: $color-orange;
+  font-style: normal;
+  font-size: $size-font-medium;
+}
+.Schedule__Session__Description h3 {
+  color: $color-darkgray;
+}
+.Schedule__Session__Description p {
+  font-size: $size-font-small;
+  margin: 10px 0;
+}
+
+/* -- Content -- */
+.Content {
+  font-size: $size-font-medium;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* -- Header -- */
+.Header--padded {
+  border-bottom: 1px solid $fill-darkgray;
+  padding: 10px 0;
+}
+.Header__Nav {
+  display: inline-block;
+}
+.Header__Logo {
+  padding-left: 50px;
+}
+
+/* -- Footer -- */
+.Footer {
+  color: $color-lightgray;
+}
+.Footer__Nav {
+  background-color: $fill-white;
+  border-top: 1px solid $fill-darkgray;
+}
+.Footer__Newsletter {
+  background-color: $fill-lightgray;
+  border-top: 1px solid $fill-darkgray;
+  font-size: $size-font-medium;
+  color: $color-orange;
+  text-align: center;
+  padding: 15px 0;
+}
+.Footer__About {
+  background-color: $fill-lightgray;
+  border-top: 1px solid $fill-darkgray;
+  font-size: $size-font-small;
+}
+.Footer__About h3,
+.Footer__About h4 {
+  font-weight: normal;
+}
+.Footer__About p {
+  margin-top: 0;
+}
+.Footer__About__Tickets {
+  top: 35px;
+  position: relative;
+}
+.Footer__About__Tickets h3 {
+  color: $color-darkgray;
+  font-size: $size-font-medium;
+  margin-bottom: 10px;
+}
+.Footer__About__Tickets .Button {
+  margin-right: 16px;
+}
+.Footer__Social {
+  position: relative;
+}
+.Footer__Social .Icon {
+  position: absolute;
+  top: -21px;
+  left: 50%;
+  margin-left: -21px;
+}
+.Footer__Social .Icon--twitter {
+  margin-left: -82px;
+}
+.Footer__Social .Icon--github {
+  margin-left: -21px;
+}
+.Footer__Social .Icon--instagram {
+  margin-left: 42px;
+}
+.Footer__Copyright {
+  background-color: $fill-white;
+  border-top: 1px solid $fill-darkgray;
+  font-size: $size-font-small;
+  text-align: center;
+  padding: 35px 0;
+}
+
+/* -- Person -- */
+.Person {
+  display: inline-block;
+  margin: 25px 50px;
+  text-align: center;
+  position: relative;
+  width: 225px;
+}
+.Person .Avatar {
+  border-radius: 200px;
+  display: block;
+  margin: 0 auto 15px;
+}
+.Person b {
+  display: inline-block;
+  font-size: $size-font-medium;
+}
+.Person em {
+  color: $color-lightgray;
+  display: inline-block;
+  font-size: $size-font-small;
+  height: 45px;
+}
+.Person__Social {
+  visibility: hidden;
+}
+.Person__Social .Icon {
+  border-width: 0;
+}
+.Person:hover .Person__Social {
+  visibility: visible;
+}
+
+/* -- Legend -- */
+.Legend {
+  color: $color-orange;
+  font-family: 'museo-slab', sans-serif;
+  font-size: $size-font-medium;
+  margin: 50px 0 25px;
+  text-align: center;
+  position: relative;
+}
+.Legend > div:nth-of-type(1) {
+  border-bottom: 1px solid $fill-darkgray;
+  content: '';
+  position: absolute;
+  height: 1px;
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+.Legend > div:nth-of-type(2) {
+  background-color: $fill-white;
+  display: inline-block;
+  padding: 0 35px;
+  position: relative;
+}
+
+/* -- Icon -- */
+.Icon {
+  background: $fill-white;
+  border: 1px solid $fill-darkgray;
+  border-radius: 21px;
+  color: $color-lightgray;
+  display: inline-block;
+  font-size: 28px;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+}
+.Icon:hover {
+  background: $fill-orange;
+  color: $color-white;
+}
+
+/* -- Newsletter -- */
+.Newsletter__Label {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* -- Tickets -- */
+.Tickets {
+  display: inline-block;
+  margin: 0 auto;
+}
+.Tickets__Countdown {
+  display: inline-block;
+  min-width: 200px;
+}
+.Tickets__Countdown__Timer {
+  color: $color-white;
+  font-family: courier;
+}
+
+/* -- Card -- */
+.Card {
+  border: 1px solid $fill-darkgray;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 20px;
+  width: 250px;
+}
+
+.TicketCard {
+  h3 {
+    color: inherit;
+    height: 50px;
+  }
+
+  h2 {
+    color: $color-green;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+
+  p {
+    font-size: $size-font-small;
+    height: 125px;
+  }
+}
+
+/* responsiveness */
+@media only screen and (max-device-width: 800px) {
+  @import 'responsive-800';
+}
+@media only screen and (max-width: 800px) {
+  @import 'responsive-800';
+}
+
+@media only screen and (max-device-width: 500px) {
+  @import 'responsive-500';
+}
+@media only screen and (max-width: 500px) {
+  @import 'responsive-500';
+}
