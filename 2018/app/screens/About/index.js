@@ -24,11 +24,18 @@ export default () => {
           twitter="jergason"
           github="jergason"
         />
+        <br />
         <Person
           name="Sunny Leggett"
           title="Event manager"
           avatar="https://media.licdn.com/media/p/5/005/093/384/2722c94.jpg"
           twitter="sunny4days"
+        />
+        <Person
+          name="Shyloh Belnap"
+          title="Event manager"
+          avatar="https://pbs.twimg.com/profile_images/859536726292922368/HTVnE9tc_400x400.jpg"
+          twitter="shylohb"
         />
       </div>
     </div>
