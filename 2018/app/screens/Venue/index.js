@@ -5,7 +5,7 @@ import Button from 'components/Button'
 export default () => {
   return (
     <div className="Venue">
-      <h1>React Rally 2017 will be held at the Sheraton Hotel located in the heart of downtown Salt Lake City.</h1>
+      <h1>React Rally 2018 will be held at the Sheraton Hotel located in the heart of downtown Salt Lake City.</h1>
       <div className="Venue__Wrapper">
         <div className="Venue__Content clearfix">
           <div className="Venue__Content__Thumbnail col col-4 float-right align-right">
