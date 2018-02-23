@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 import constants from 'helpers/constants'
 import Button from 'components/Button'
 
@@ -17,11 +18,9 @@ export default () => {
             <h2>Sheraton Salt Lake City Hotel</h2>
             <div className="Venue__Content__Address">150 West 500 South, Salt Lake City, UT, 84101</div>
             <p>Sheraton Salt Lake City Hotel is a world class hotel located in the heart of the downtown business and entertainment district.</p>
-            {/*
-            <p>We have arranged a group discount with Sheraton Salt Lake City for attendees of React Rally. Rooms are available for $159 per night. This discounted rate is only available until July 23rd and there are a limited number of rooms available, so book your room early.</p>
+            <p>We have arranged a group discount with Sheraton Salt Lake City for attendees of React Rally. Rooms are available for ${constants.Prices.HOTEL_RATE} per night. This discounted rate is only available until {moment.utc(constants.Dates.HOTEL_DISCOUNT).format('MMMM Do')} and there are a limited number of rooms available, so book your room early.</p>
             <Button href={constants.Links.HOTEL_RESERVATION} className="medium">Book a Room &raquo;</Button>&nbsp;&nbsp;&nbsp;&nbsp;
             <Button href={constants.Links.VENUE_DIRECTIONS} className="medium transparent">Get Directions &raquo;</Button>
-            */}
           </div>
         </div>
       </div>
