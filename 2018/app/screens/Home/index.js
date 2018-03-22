@@ -25,9 +25,12 @@ export default () => {
     {Object.keys(SpeakerData).length > 0 ? (
       <div className="align-center">
         <Legend>Featured Speakers</Legend>
-        {shuffle(Object.keys(SpeakerData)).map(key => {
-          return SpeakerData[key].featured ? <Person {...SpeakerData[key]} key={key}/> : null
-        })}
+        {shuffle(Object.keys(SpeakerData))
+          .filter(key => SpeakerData[key].featured)
+          .map(key => {
+            return <Person {...SpeakerData[key]} key={key}/>
+          })
+        }
       </div>
     ) : null}
 
