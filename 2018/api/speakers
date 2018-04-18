@@ -30,5 +30,117 @@
     "twitter": "ken_wheeler",
     "github": "kenwheeler",
     "featured": true
+  },
+  "mybluewristband": {
+    "name": "Jennifer Wong",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/mybluewristband.jpg",
+    "twitter": "mybluewristband",
+    "github": "jennz0r"
+  },
+  "eveporcello": {
+    "name": "Eve Porcello",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/eveporcello.jpg",
+    "twitter": "eveporcello",
+    "github": "eveporcello"
+  },
+  "featherart": {
+    "name": "Feather",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/featherart.jpg",
+    "twitter": "featherart",
+    "github": "featherart"
+  },
+  "wisecobbler": {
+    "name": "Sophia Shoemaker",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/wisecobbler.jpg",
+    "twitter": "wisecobbler",
+    "github": "mrscobbler"
+  },
+  "kentcdodds": {
+    "name": "Kent C. Dodds",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/kentcdodds.png",
+    "twitter": "kentcdodds",
+    "github": "kentcdodds"
+  },
+  "modernserf": {
+    "name": "Justin Falcone",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/modernserf.jpg",
+    "twitter": "modernserf",
+    "github": "modernserf"
+  },
+  "carofine247": {
+    "name": "Caroline Dikibo",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/carofine247.jpg",
+    "twitter": "carofine247",
+    "github": "cdikibo"
+  },
+  "joshwcomeau": {
+    "name": "Joshua Comeau",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/joshwcomeau.jpg",
+    "twitter": "joshwcomeau",
+    "github": "joshwcomeau"
+  },
+  "_jayphelps": {
+    "name": "Jay Phelps",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/_jayphelps.jpg",
+    "twitter": "_jayphelps",
+    "github": "jayphelps"
+  },
+  "panicwhenever": {
+    "name": "Ryan Moore",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/panicwhenever.jpg",
+    "twitter": "panicwhenever",
+    "github": "paniclater"
+  },
+  "chantastic": {
+    "name": "Michael Chan",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/chantastic.jpg",
+    "twitter": "chantastic",
+    "github": "chantastic"
+  },
+  "aweary": {
+    "name": "Brandon Dail",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/aweary.jpg",
+    "twitter": "aweary",
+    "github": "aweary"
+  },
+  "left_pad": {
+    "name": "Henry Zhu",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/left_pad.jpg",
+    "twitter": "left_pad",
+    "github": "hzoo"
+  },
+  "swyx": {
+    "name": "Shawn Swyx Wang",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/swyx.jpg",
+    "twitter": "swyx",
+    "github": "sw-yx"
+  },
+  "ryanflorence": {
+    "name": "Ryan Florence",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/ryanflorence.jpg",
+    "twitter": "ryanflorence",
+    "github": "ryanflorence"
+  },
+  "apvarun": {
+    "name": "Varun A P",
+    "title": "",
+    "avatar": "assets/dist/img/speakers/apvarun.jpg",
+    "twitter": "apvarun",
+    "github": "apvarun"
   }
 }
