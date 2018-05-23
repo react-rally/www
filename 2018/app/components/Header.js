@@ -52,9 +52,7 @@ export default class Header extends Component {
                 )}
                 </span>
               )}
-                {/*
                 <Button href={constants.Links.HOTEL_RESERVATION} className="large transparent">Book Hotel</Button>
-                */}
               </div>
               <ul className="Home__Header__Nav navigation">
                 <li><Link to="/speakers">Speakers</Link></li>

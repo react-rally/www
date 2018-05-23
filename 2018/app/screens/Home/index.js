@@ -34,6 +34,7 @@ export default () => {
       </div>
     ) : null}
 
+      {/*
       <div>
         <Legend>Upcoming Dates</Legend>
         <ul>
@@ -44,6 +45,7 @@ export default () => {
           <li>Standard Tickets <b>{moment.utc(Dates.TICKET_RELEASE).add(14, 'days').format(DATE_FORMAT)}</b></li>
         </ul>
       </div>
+      */}
 
       <div className="align-center">
         <Legend>Tickets</Legend>
