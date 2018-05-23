@@ -3,19 +3,19 @@
     "name": "Early Bird - Round One",
     "price": 400,
     "description": "Early bird tickets for React Rally! 20% off because we love early bird ticket buyers.",
-    "soldOut": false
+    "soldOut": true
   },
   {
     "name": "Early Bird - Round Two",
     "price": 450,
     "description": "One last chance to grab a React Rally ticket at a discounted price.",
-    "soldOut": false
+    "soldOut": true
   },
   {
     "name": "Standard",
     "price": 500,
     "description": "The real deal. One ticket to React Rally.",
-    "soldOut": false
+    "soldOut": true
   },
   {
     "name": "Significant Other Activity Ticket",
