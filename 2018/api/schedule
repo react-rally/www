@@ -1,7 +1,185 @@
 {
   "dayOne": [
+    {
+      "time": "7:00 am",
+      "title": "Registration"
+    },
+    {
+      "time": "7:30 am",
+      "title": "Breakfast"
+    },
+    {
+      "time": "9:00 am",
+      "title": "",
+      "speaker": "sxywu",
+      "description": ""
+    },
+    {
+      "time": "9:30 am",
+      "title": "",
+      "speaker": "threepointone",
+      "description": ""
+    },
+    {
+      "time": "10:00 am",
+      "title": "Break"
+    },
+    {
+      "time": "10:30 am",
+      "title": "Why React is *not* Reactive",
+      "speaker": "swyx",
+      "description": "Functional-reactive libraries like RxJS make it easy to understand how data changes, giving us tools to declaratively handle events and manage state. But while our render methods react to state changes, React isn’t reactive. Instead, we write imperative event-handlers, and trip up on gotchas like async setState and race conditions. Why? In this talk we build a Reactive React to show the difference between the \"push\" and \"pull\" paradigms of data flow and understand why React chooses to manage Scheduling as a core Design Principle, enabling awesome features like async rendering and Suspense!"
+    },
+    {
+      "time": "11:00 am",
+      "title": "React(ing) in a Crisis",
+      "speaker": "carofine247",
+      "description": "Budgets, Housing, and Hurricanes. What do all of these things have in common? Civic Hacking. These were local problems that were tackled by a village of coding warriors using React offerings to deploy quickly."
+    },
+    {
+      "time": "11:30 am",
+      "title": "Algebraic effects, Fibers, Coroutines...Oh my!",
+      "speaker": "aweary",
+      "description": "React Fiber was a full re-write of React that will enable new and exciting patterns around control flow, which we've seen previewed with React Suspense. But what is a fiber? How does it relate to a coroutine? What are algebraic effects, and why do I keep hearing about them? This talk will go over these computer science topics in the context of React Fiber, to help shed some light on how React Fiber is implemented and the control flow concepts behind the new APIs."
+    },
+    {
+      "time": "12:00 pm",
+      "title": "Lunch"
+    },
+    {
+      "time": "2:00 pm",
+      "title": "The Life Cycle Methods and The Wolf: A Musicological Romp",
+      "speaker": "panicwhenever",
+      "description": "In 1936 Sergei Prokofiev introduced his piece Peter and The Wolf, which broke down a complex system of sound and tied it to narrative elements: Peter as the playful Strings, the Wolf as powerful French Horns, etc.\n\nI will apply a similar method to introduce, teach and identify each component life cycle method with a musical accompaniment. I will compose a musical theme for and introduce each one independently. Finally I will conduct a small chamber of orchestral musicians as they perform their themes along with an actual react component performing updates in real(ish) time!"
+    },
+    {
+      "time": "2:30 pm",
+      "title": "A Closer Look at the React Codebase",
+      "speaker": "apvarun",
+      "description": "React, as a UI framework, has come a long way since launch. And if it needs to evolve further, a lot of hands could help. Being a JavaScript library, it is essential for all JavaScript developers to understand the internal beauty of what makes React happen.\n\nIn this talk, I will take you on a journey through the react codebase. More importantly, we will have a look at the reason behind some of the quirks of the library itself."
+    },
+    {
+      "time": "3:00 pm",
+      "title": "Break"
+    },
+    {
+      "time": "4:00 pm",
+      "title": "Explorable Explanations with React",
+      "speaker": "joshwcomeau",
+      "description": "Explorable explanations are dynamic, interactive, visual tools created to teach systems and concepts, the unlikely pairing of a video game and a data visualization. They’re an exciting new form of media that lets the learner develop an intuitive understanding of the subject.\n\nIn this talk, we’ll reconstruct an existing explorable explanation on waveforms and sound. We’ll start from the bottom up, using small, bite-sized components that encapsulate specific UI or behavioural concerns, working our way up to a dynamic, interactive, animated tool."
+    },
+    {
+      "time": "4:30 pm",
+      "title": "AI For Everybody",
+      "speaker": "featherart",
+      "description": "My team is building a platform for AI in the cloud using React. The concept behind this project is to make AI accessible to anyone. \"AI for you! AI for you too! And even you, over there, have some AI!\" This talk will explore unique challenges of writing a complex React app in a totally new domain."
+    },
+    {
+      "time": "5:00 pm",
+      "title": "One Hundred Years of JavaScript",
+      "speaker": "modernserf",
+      "description": "JavaScript is the new COBOL: widely hated but hugely successful, JS defines populist programming in the 21st century much as COBOL did in the punchcard era. But COBOL never really went away -- there are COBOL programs still running our banks and civic institutions half a century after its heyday. Many JS apps will have similar lifespans, yet we struggle with the accumulated cruft of a two year-old codebase; how will we handle a hundred years? Let's examine how software can grow and adapt over the decades, so we can write code that won't be a burden to future generations."
+    },
+
+    {
+      "time": "6:00 pm",
+      "title": "Dinner",
+      "description": "Meet up with conference attendees sharing similar taste in cuisine at pre-arranged restaurants for dinner (self pay)."
+    },
+    {
+      "time": "8:00 pm",
+      "title": "Party",
+      "description": "Meet at Sheraton Ballroom for milkshakes and board games or Sheraton Bar for karaoke."
+    }
   ],
   "dayTwo": [
+    {
+      "time": "7:00 am",
+      "title": "Registration"
+    },
+    {
+      "time": "7:30 am",
+      "title": "Breakfast"
+    },
+    {
+      "time": "9:00 am",
+      "title": "",
+      "speaker": "ken_wheeler",
+      "description": ""
+    },
+    {
+      "time": "9:30 am",
+      "title": "",
+      "speaker": "sugarpirate_",
+      "description": ""
+    },
+    {
+      "time": "10:00 am",
+      "title": "Break"
+    },
+    {
+      "time": "10:30 am",
+      "title": "Help me WebAssembly, you're my only hope!",
+      "speaker": "_jayphelps",
+      "description": "WebAssembly (aka wasm) is a new, standardized compilation target for the web, shipping in all modern browsers. But since it's so low level it can be difficult to see how it will revolutionize the next generation of web apps–and definitely not just games and C++!\n\nIn this talk I will reveal what it is, how you can use it today, and the incredible opportunities it will unlock in the years to come on both the Web and on Desktop. We'll also explore how React itself might some day use WebAssembly to power it's Virtual DOM."
+    },
+    {
+      "time": "11:00 am",
+      "title": "Hot Garbage: Clean Code is Dead",
+      "speaker": "chantastic",
+      "description": "The Code is rising up to enslave us. An army of linter-plugins have given it a voice and it's angry. Clean code isn't the goal, its the enemy. Great code isn't clean, it's hot garbage—hot-swappable and easy to throw out. Code is a means to an end. When we stop fetishizing code and start fighting it, we've found the right enemy and we can get back to to the good work of serving customers."
+    },
+    {
+      "time": "11:30 am",
+      "title": "React: Off the Grid",
+      "speaker": "wisecobbler",
+      "description": "Creating a React application for orphans in Ghana offered some unique challenges. Progressive Web Apps (PWAs) are more than just \"cool\" or \"hip\" — they can be really important for applications where the internet is spotty, if available at all. Learn why I chose React + AWS Lambda for a country with poor internet connectivity, and general lessons on the often messy and exciting world of creating offline applications."
+    },
+    {
+      "time": "12:00 pm",
+      "title": "Lunch"
+    },
+    {
+      "time": "2:00 pm",
+      "title": "Babel 7 and Beyond",
+      "speaker": "left_pad",
+      "description": "It's been a year in the making.. what are the big changes in Babel 7 and what initiatives are we planning to work on for the future of the project? Where are we moving overall and how can you help?"
+    },
+    {
+      "time": "2:30 pm",
+      "title": "Translating React",
+      "speaker": "mybluewristband",
+      "description": "We often use React and write JSX without thinking about the syntax. But what’s React actually doing under the hood? What’s the JavaScript look like? Let’s translate React into JavaScript, transpile that and see what we get. Let’s pick apart what React is really doing and get at the heart of it. We’ll talk about the importance and usefulness of knowing its baselines for beginners and experts alike. We'll gain a clearer understanding of where React’s magic originates. So the next time you use React or write JSX, you’ll be secretly translating in your head for deeper insight and edification."
+    },
+    {
+      "time": "3:00 pm",
+      "title": "Break"
+    },
+    {
+      "time": "4:00 pm",
+      "title": "Reusable React Components",
+      "speaker": "kentcdodds",
+      "description": "Don't you love how easy it is to encapsulate UI code into a React component? I do! Despite this, making those same components reusable can be a challenge. Our components often start simple, but then they have to adapt as unforeseen use cases come up. This often results in a growing list of props and complex implementation full of if statements and a confusing API. An inevitable rewrite of the component eventually hits and now we have two problems.\n\nLet's take a step back and consider some things we can do upfront to keep our components flexible, simple, and optimized for inevitable change."
+
+    },
+    {
+      "time": "4:30 pm",
+      "title": "Everything You Need to Know About GraphQL in 3 Components",
+      "speaker": "eveporcello",
+      "description": "Three components: that’s all you need to know to start building React applications with GraphQL. In this talk, I’ll walk you through brand new ways to get data with the Query Component. We’ll examine how to change data in ways that will explode your mind with the Mutation Component. And just when you think you can’t handle any more excitement, we’ll bring out the Subscription Component. That’s all you’ll need to know to get hooked on GraphQL."
+    },
+    {
+      "time": "5:00 pm",
+      "title": "Route Recalculating",
+      "speaker": "ryanflorence",
+      "description": "React's new async rendering brings with it a whole new set of practices and possibilities. Many of these (if not most) are all about switching from one screen to another, which is exactly the job of a router. We're going to dive in to see what async rendering means for routing in React."
+    },
+    {
+      "time": "6:30 pm",
+      "title": "Party",
+      "description": "Meet at the Gateway for dinner, desert, live music, and lawn games."
+    }
   ]
 }
+
 
