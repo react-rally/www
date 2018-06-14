@@ -1,11 +1,83 @@
 {
   "Premier": [
+    {
+      "name": "AMEX",
+      "url": "https://americanexpress.io/",
+      "image": "assets/dist/img/sponsors/amex.png",
+      "style": {
+        "width": "500px"
+      }
+    }
   ],
   "Platinum": [
+    {
+      "name": "Webflow",
+      "url": "https://webflow.com/",
+      "image": "assets/dist/img/sponsors/webflow.png"
+    },
+    {
+      "name": "Workfront",
+      "url": "https://www.workfront.com/",
+      "image": "assets/dist/img/sponsors/workfront.png"
+    },
+    {
+      "name": "HPE DEV",
+      "url": "",
+      "image": "assets/dist/img/sponsors/hpe.svg",
+      "style": {
+        "width": "100px"
+      }
+    }
   ],
   "Gold": [
+    {
+      "name": "Instructure",
+      "url": "https://www.instructure.com/careers/",
+      "image": "assets/dist/img/sponsors/instructure.png"
+    },
+    {
+      "name": "Progress",
+      "url": "https://www.progress.com/",
+      "image": "assets/dist/img/sponsors/progress.png"
+    },
+    {
+      "name": "Formidable Labs",
+      "url": "https://formidable.com/",
+      "image": "assets/dist/img/sponsors/formidable.png"
+    },
+    {
+      "name": "Bugsnag",
+      "url": "https://www.bugsnag.com/",
+      "image": "assets/dist/img/sponsors/bugsnag.png"
+    }
   ],
   "Silver": [
+    {
+      "name": "Microsoft",
+      "url": "https://azure.microsoft.com/",
+      "image": "assets/dist/img/sponsors/microsoft.png"
+    },
+    {
+      "name": "Underbelly",
+      "url": "https://underbelly.is/",
+      "image": "assets/dist/img/sponsors/underbelly.svg",
+      "style": {
+        "width": "150px"
+      }
+    },
+    {
+      "name": "Egghead",
+      "url": "https://egghead.io/",
+      "image": "assets/dist/img/sponsors/egghead.png"
+    },
+    {
+      "name": "Echobind",
+      "url": "https://echobind.com/",
+      "image": "assets/dist/img/sponsors/echobind.svg",
+      "style": {
+        "width": "150px"
+      }
+    }
   ],
   "Supporters": [
   ]
