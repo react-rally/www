@@ -2,7 +2,7 @@
   "Premier": [
     {
       "name": "AMEX",
-      "url": "https://americanexpress.io/",
+      "url": "https://americanexpress.io/reactrally",
       "image": "assets/dist/img/sponsors/amex.png",
       "style": {
         "width": "500px"
@@ -53,7 +53,7 @@
   ],
   "Silver": [
     {
-      "name": "Microsoft",
+      "name": "Microsoft Azure",
       "url": "https://azure.microsoft.com/",
       "image": "assets/dist/img/sponsors/microsoft.png"
     },
