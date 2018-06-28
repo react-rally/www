@@ -5,6 +5,9 @@ IMGRX="/[a-z0-9]{32}.png"
 find ../ -type f -maxdepth 2 | egrep $IMGRX | xargs rm
 
 # generate bundle
+nvm use
+rm -rf node_modules/
+npm install
 npm run build
 
 # copy new bundle images
