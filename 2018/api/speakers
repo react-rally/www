@@ -136,11 +136,11 @@
     "twitter": "ryanflorence",
     "github": "ryanflorence"
   },
-  "apvarun": {
-    "name": "Varun A P",
+  "holtbt": {
+    "name": "Brian Holt",
     "title": "",
-    "avatar": "assets/dist/img/speakers/apvarun.jpg",
-    "twitter": "apvarun",
-    "github": "apvarun"
+    "avatar": "assets/dist/img/speakers/holtbt.jpg",
+    "twitter": "holtbt",
+    "github": "btholt"
   }
 }
