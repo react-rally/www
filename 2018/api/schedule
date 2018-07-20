@@ -54,9 +54,9 @@
     },
     {
       "time": "2:30 pm",
-      "title": "A Closer Look at the React Codebase",
-      "speaker": "apvarun",
-      "description": "React, as a UI framework, has come a long way since launch. And if it needs to evolve further, a lot of hands could help. Being a JavaScript library, it is essential for all JavaScript developers to understand the internal beauty of what makes React happen.\n\nIn this talk, I will take you on a journey through the react codebase. More importantly, we will have a look at the reason behind some of the quirks of the library itself."
+      "title": "Bitmasks: An Illustrated Guide for React Devs",
+      "speaker": "holtbt",
+      "description": "A lesser known feature of React allows users granular control of updates from context to their React apps using bitmasks. Unfortunately for most of us, we don't know what bitmasks are and are put off by the computer-sciencey term. However as we discover more features and patterns from the new context API this will become more important.\n\nIn this talk we'll demystify the concept of bitmasks using illustrations, jokes, and examples so you can unlock one more super power with React"
     },
     {
       "time": "3:00 pm",
