@@ -19,14 +19,6 @@
       "name": "Workfront",
       "url": "https://www.workfront.com/",
       "image": "assets/dist/img/sponsors/workfront.png"
-    },
-    {
-      "name": "HPE DEV",
-      "url": "",
-      "image": "assets/dist/img/sponsors/hpe.svg",
-      "style": {
-        "width": "100px"
-      }
     }
   ],
   "Gold": [
