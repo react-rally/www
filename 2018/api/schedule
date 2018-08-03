@@ -54,9 +54,9 @@
     },
     {
       "time": "2:30 pm",
-      "title": "Bitmasks: An Illustrated Guide for React Devs",
+      "title": "Chaos Monkeys in Your Browser: What Chaos Engineering Means for the Front End",
       "speaker": "holtbt",
-      "description": "A lesser known feature of React allows users granular control of updates from context to their React apps using bitmasks. Unfortunately for most of us, we don't know what bitmasks are and are put off by the computer-sciencey term. However as we discover more features and patterns from the new context API this will become more important.\n\nIn this talk we'll demystify the concept of bitmasks using illustrations, jokes, and examples so you can unlock one more super power with React"
+      "description": "Chaos Monkey, but for your web app. Come learn how intentional failure injection is not only good for the back end but also for the front end. Hint: it means you’ll get paged less at 3AM, and I think we’re all happy about that."
     },
     {
       "time": "3:00 pm",
