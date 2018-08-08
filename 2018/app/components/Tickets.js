@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
-import constants from 'helpers/constants'
-import DateUtils from 'helpers/DateUtils'
-import Button from 'components/Button'
 import moment from 'moment'
+
+import constants from 'helpers/constants'
+import Button from 'components/Button'
+import Countdown from 'components/Countdown'
 
 const TICKET_RELEASE_TIME = moment.utc(constants.Dates.TICKET_RELEASE)
 
 export default class Tickets extends Component {
   render() {
-    let ticketsAvailable = moment.utc().isSameOrAfter(TICKET_RELEASE_TIME)
-    let diff
+    const ticketsAvailable = moment.utc().isSameOrAfter(TICKET_RELEASE_TIME)
 
     if (!ticketsAvailable) {
-      diff = TICKET_RELEASE_TIME.diff(moment.utc())
       setTimeout(this.forceUpdate.bind(this), 1000)
     }
 
@@ -21,10 +20,7 @@ export default class Tickets extends Component {
       {ticketsAvailable ? (
         <Button href={constants.Links.TICKET_SALES} className="large">Buy Tickets</Button>
       ) : (
-        <div className="Tickets__Countdown">
-          <small>Tickets on sale soon</small>
-          <h2 className="Tickets__Countdown__Timer">{DateUtils.duration(diff)}</h2>
-        </div>
+        <Countdown date={TICKET_RELEASE_TIME} label="Tickets on sale soon" />
       )}
       </div>
     )

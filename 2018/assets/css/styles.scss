@@ -530,11 +530,13 @@ ul.navigation {
   display: inline-block;
   margin: 0 auto;
 }
-.Tickets__Countdown {
+
+/* -- Countdown -- */
+.Countdown {
   display: inline-block;
   min-width: 200px;
 }
-.Tickets__Countdown__Timer {
+.Countdown__Timer {
   color: $color-white;
   font-family: courier;
 }
