@@ -157,7 +157,7 @@
     },
     {
       "time": "4:00 pm",
-      "title": "Reusable React Components",
+      "title": "Simply React",
       "speaker": "kentcdodds",
       "description": "Don't you love how easy it is to encapsulate UI code into a React component? I do! Despite this, making those same components reusable can be a challenge. Our components often start simple, but then they have to adapt as unforeseen use cases come up. This often results in a growing list of props and complex implementation full of if statements and a confusing API. An inevitable rewrite of the component eventually hits and now we have two problems.\n\nLet's take a step back and consider some things we can do upfront to keep our components flexible, simple, and optimized for inevitable change."
 
