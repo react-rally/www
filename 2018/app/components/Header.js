@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import moment from 'moment'
 import constants from 'helpers/constants'
 import Button from 'components/Button'
+import Countdown from 'components/Countdown'
 import Tickets from 'components/Tickets'
 import Newsletter from 'components/Newsletter'
 
@@ -43,16 +44,22 @@ export default class Header extends Component {
               {isConferenceLive ? (
                 <Link to="/stream" className="Button large">Watch Live Stream</Link>
               ) : (
-                <span>
-                  <Tickets />&nbsp;&nbsp;&nbsp;&nbsp;
-                {isCFPOpen && (
+                true ? (
+                  <Countdown date={constants.Dates.CONF_DAY_ONE} label="Live stream coming soon" />
+                ) : (
                   <span>
-                    <Button href={constants.Links.PROPOSAL_FORM} className="large transparent">Submit Proposal</Button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <Tickets />&nbsp;&nbsp;&nbsp;&nbsp;
+                  {isCFPOpen && (
+                    <span>
+                      <Button href={constants.Links.PROPOSAL_FORM} className="large transparent">Submit Proposal</Button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                  )}
                   </span>
-                )}
-                </span>
+                )
               )}
+              {/*
                 <Button href={constants.Links.HOTEL_RESERVATION} className="large transparent">Book Hotel</Button>
+              */}
               </div>
               <ul className="Home__Header__Nav navigation">
                 <li><Link to="/speakers">Speakers</Link></li>
