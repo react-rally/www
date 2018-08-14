@@ -41,6 +41,11 @@
       "name": "Bugsnag",
       "url": "https://www.bugsnag.com/",
       "image": "assets/dist/img/sponsors/bugsnag.png"
+    },
+    {
+      "name": "United States Digital Service",
+      "url": "https://www.usds.gov",
+      "image": "assets/dist/img/sponsors/usds.png"
     }
   ],
   "Silver": [
