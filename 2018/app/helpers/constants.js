@@ -7,7 +7,7 @@ constants.Links = {
   PROPOSAL_FORM: 'http://speak.reactrally.com/events/react-rally-2018',
   VENUE_DIRECTIONS: 'https://goo.gl/maps/V1kpixDA8DF2',
   HOTEL_RESERVATION: 'https://www.starwoodmeeting.com/Book/reactrally2018',
-  PARTY_DIRECTIONS: '',
+  PARTY_DIRECTIONS: 'https://goo.gl/maps/AeYKJrkAFZG2',
   LIVE_STREAM_PLACEHOLDER: 'https://youtu.be/5NNOrp_83RU',
   LIVE_STREAM_DAY_ONE: 'https://www.youtube.com/watch?v=nUhN03Uo6go',
   LIVE_STREAM_DAY_TWO: 'https://www.youtube.com/watch?v=ii-T6HrkZFM',
