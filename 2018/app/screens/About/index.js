@@ -22,7 +22,7 @@ const OrganizerData = {
   "sunny4days": {
     "name": "Sunny Legget",
     "title": "Event manager",
-    "avatar": "https://media.licdn.com/media/p/5/005/093/384/2722c94.jpg",
+    "avatar": "https://pbs.twimg.com/profile_images/648946319013212160/z1_mkLp4_400x400.jpg",
     "twitter": "sunny4days"
   },
   "": {
