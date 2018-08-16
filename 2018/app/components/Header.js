@@ -4,13 +4,13 @@ import cx from 'classnames'
 import { Link } from 'react-router'
 import moment from 'moment'
 import constants from 'helpers/constants'
+import DateUtils from 'helpers/DateUtils'
 import Button from 'components/Button'
 import Countdown from 'components/Countdown'
 import Tickets from 'components/Tickets'
 import Newsletter from 'components/Newsletter'
 
 const CONF_DATES_DISPLAY = moment.utc(constants.Dates.CONF_DAY_ONE).format('MMMM D') + '-' + moment.utc(constants.Dates.CONF_DAY_TWO).format('D YYYY')
-const ONE_HOUR = 1000 * 60 * 60
 
 export default class Header extends Component {
   constructor(props) {
@@ -47,7 +47,7 @@ export default class Header extends Component {
                 <Link to="/stream" className="Button large">Watch Live Stream</Link>
               ) : (
                 true ? (
-                  <Countdown date={new Date(Date.parse(constants.Dates.CONF_DAY_ONE) + (ONE_HOUR * 9)).toISOString()} label="Live stream coming soon" />
+                  <Countdown date={new Date(Date.parse(constants.Dates.CONF_DAY_ONE) + (DateUtils.HOURS * 9)).toISOString()} label="Live stream coming soon" />
                 ) : (
                   <span>
                     <Tickets />&nbsp;&nbsp;&nbsp;&nbsp;

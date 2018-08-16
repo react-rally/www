@@ -55,12 +55,33 @@ export default class extends React.Component {
   }
 
   componentDidMount() {
-    this.timer = setInterval(this.forceUpdate.bind(this), 1 * DateUtils.MINUTES)
+    this.timer = setInterval(this.forceUpdate.bind(this), 10 * DateUtils.SECONDS)
+    this.scrollToActiveSession()
   }
 
   componentWillUnmount() {
     clearInterval(this.timer)
     this.timer = null
+  }
+
+  componentDidUpdate() {
+    this.scrollToActiveSession()
+  }
+
+  scrollToActiveSession() {
+    const activeElement = document.querySelector('.Schedule__Session--active')
+
+    if (activeElement && activeElement !== this.activeElement) {
+      this.activeElement = activeElement
+
+      if (activeElement.scrollIntoView) {
+        activeElement.scrollIntoView({
+          block: 'start',
+          inline: 'nearest',
+          behavior: 'smooth'
+        })
+      }
+    }
   }
 
   renderMenu() {
