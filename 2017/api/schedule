@@ -10,13 +10,13 @@
     },
     {
       "time": "9:00 am",
-      "title": "",
+      "title": "UNPKG - The CDN for everything on npm",
       "speaker": "mjackson",
       "description": ""
     },
     {
       "time": "9:30 am",
-      "title": "",
+      "title": "d3 & React",
       "speaker": "sxywu",
       "description": ""
     },
@@ -103,13 +103,13 @@
     },
     {
       "time": "9:00 am",
-      "title": "",
+      "title": "We All Started Somewhere",
       "speaker": "iam_preethi",
       "description": ""
     },
     {
       "time": "9:30 am",
-      "title": "",
+      "title": "Convergent Evolution",
       "speaker": "czaplic",
       "description": ""
     },
