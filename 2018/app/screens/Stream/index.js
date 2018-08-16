@@ -14,6 +14,7 @@ export default () => {
         height="315"
         src={url}
         frameBorder="0"
+        allow="autoplay; encrypted-media"
         alowfulscreen
       ></iframe>
     </div>
