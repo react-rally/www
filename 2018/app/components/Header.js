@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import cx from 'classnames'
 import { Link } from 'react-router'
 import moment from 'moment'
