@@ -75,11 +75,14 @@ export default class extends React.Component {
       this.activeElement = activeElement
 
       if (activeElement.scrollIntoView) {
-        activeElement.scrollIntoView({
-          block: 'start',
-          inline: 'nearest',
-          behavior: 'smooth'
-        })
+        // Set timeout to run after window.scrollTo being called from onUpdate in Router
+        setTimeout(() => {
+          activeElement.scrollIntoView({
+            block: 'start',
+            inline: 'nearest',
+            behavior: 'smooth'
+          })
+        }, 500)
       }
     }
   }
