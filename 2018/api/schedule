@@ -141,9 +141,9 @@
     },
     {
       "time": "2:00 pm",
-      "title": "Babel 7 and Beyond",
+      "title": "Through the (Open Source) Looking Glass",
       "speaker": "left_pad",
-      "description": "It's been a year in the making.. what are the big changes in Babel 7 and what initiatives are we planning to work on for the future of the project? Where are we moving overall and how can you help?"
+      "description": "Why do releases take so long, what challenges do we still face in open source, and why have I been feeling so anxious all the time? Here's some reflections on open source."
     },
     {
       "time": "2:30 pm",
