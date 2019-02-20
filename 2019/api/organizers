@@ -1,0 +1,28 @@
+{
+  "mzabriskie": {
+    "name": "Matt Zabriskie",
+    "title": "Co-organizer",
+    "avatar": "https://avatars2.githubusercontent.com/u/199035",
+    "twitter": "mzabriskie",
+    "github": "mzabriskie"
+  },
+  "jergason": {
+    "name": "Jamison Dance",
+    "title": "Co-organizer",
+    "avatar": "https://avatars0.githubusercontent.com/u/72027",
+    "twitter": "jergason",
+    "github": "jergason"
+  },
+  "sunny4days": {
+    "name": "Sunny Legget",
+    "title": "Event manager",
+    "avatar": "https://pbs.twimg.com/profile_images/648946319013212160/z1_mkLp4_400x400.jpg",
+    "twitter": "sunny4days"
+  },
+  "": {
+    "name": "Shyloh Belnap",
+    "title": "Event manager",
+    "avatar": "https://pbs.twimg.com/profile_images/859536726292922368/HTVnE9tc_400x400.jpg",
+    "twitter": "shylohb"
+  }
+}
