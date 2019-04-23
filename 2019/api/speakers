@@ -1,2 +1,16 @@
 {
+  "stubbornella": {
+    "name": "Nicole Sullivan",
+    "title": "Chrome PM at Google",
+    "twitter": "stubbornella",
+    "featured": true,
+    "avatar": "assets/dist/img/speakers/nicole.jpg"
+  },
+  "AnjanaVakil": {
+    "name": "Anjana Vakil",
+    "title": "Engineering + Learning + Maps at Mapbox",
+    "twitter": "AnjanaVakil",
+    "featured": true,
+    "avatar": "assets/dist/img/speakers/anjana.png"
+  }
 }
