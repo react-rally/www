@@ -11,6 +11,148 @@
     "title": "Engineering + Learning + Maps at Mapbox",
     "twitter": "AnjanaVakil",
     "featured": true,
-    "avatar": "assets/dist/img/speakers/anjana.png"
+    "avatar": "assets/dist/img/speakers/anjana.jpg"
+  },
+  "DanieC": {
+    "name": "Danielle Carrick",
+    "github": "daniellecarrick",
+    "title": "Data Visualization Engineer at CondeNast",
+    "twitter": "DanieC",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/danielle.jpg"
+  },
+  "revelcw": {
+    "name": "Revel West",
+    "title": "Yes, I'm 10yo",
+    "github": "revelcw",
+    "twitter": "revelcw",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/revel.jpg"
+  },
+  "willslab": {
+    "name": "Will Klein",
+    "title": "Full-stack engineer at Workday",
+    "github": "willklein",
+    "twitter": "willslab",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/will.jpg"
+  },
+  "mcernusca": {
+    "name": "Mihai Cernusca",
+    "github": "mcernusca",
+    "twitter": "mcernusca",
+    "title": "Technically a creative",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/mihai.jpg"
+  },
+  "glenmaddern": {
+    "name": "Glen Maddern",
+    "title": "Local business owner and whipped papaya enthusiast",
+    "github": "geelen",
+    "twitter": "glenmaddern",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/glen.jpg"
+  },
+  "featherart": {
+    "name": "Feather",
+    "github": "featherart",
+    "twitter": "featherart",
+    "title": "Software engineer + artist",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/feather.jpg"
+  },
+  "knitcodemonkey": {
+    "name": "Jen Luker",
+    "github": "knitcodemonkey",
+    "twitter": "knitcodemonkey",
+    "title": "Knitter, Sr. Software Engineer at FormidableLabs",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/jen.jpg"
+  },
+  "emplums": {
+    "name": "Emily Plummer",
+    "github": "emplums",
+    "title": "Design Systems Engineer at GitHub",
+    "twitter": "emplums",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/emily.jpg"
+  },
+  "kentcdodds": {
+    "name": "Kent C. Dodds",
+    "github": "kentcdodds",
+    "twitter": "kentcdodds",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/kent.jpg"
+  },
+  "holtbt": {
+    "name": "Brian Holt",
+    "github": "btholt",
+    "twitter": "holtbt",
+    "title": "Senior Program Manager VS Code & JS on Azure",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/brian.jpg"
+  },
+  "aahfrena": {
+    "name": "Anthony Frehner",
+    "github": "frehner",
+    "twitter": "aahfrena",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/anthony.jpg"
+  },
+  "johnnyxbell": {
+    "name": "Johnny Bell",
+    "github": "johnnyxbell",
+    "twitter": "johnnyxbell",
+    "title": "Frontend Engineer at StackShare",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/johnny.jpg"
+  },
+  "joshwcomeau": {
+    "name": "Josh Comeau",
+    "github": "joshwcomeau",
+    "twitter": "joshwcomeau",
+    "title": "Software developer at Khan Academy",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/josh.jpg"
+  },
+  "modernserf": {
+    "name": "Justin Falcone",
+    "github": "modernserf",
+    "twitter": "modernserf",
+    "title": "Builder at Glitch",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/justin.jpg"
+  },
+  "davidkpiano": {
+    "name": "David Khourshid",
+    "github": "davidkpiano",
+    "twitter": "davidkpiano",
+    "title": "Software Developer at Microsoft",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/david.jpg"
+  },
+  "joelbdenning": {
+    "name": "Joel Denning",
+    "github": "joeldenning",
+    "title": "Frontend educator and consultant",
+    "twitter": "joelbdenning",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/joel.jpg"
+  },
+  "tesseralis": {
+    "name": "Nat Alison",
+    "github": "tesseralis",
+    "twitter": "tesseralis",
+    "title": "Freelance web developer",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/nat.jpg"
+  },
+  "princi_ya": {
+    "name": "Princiya Sequeira",
+    "github": "princiya",
+    "title": "Fondant Developer",
+    "twitter": "princi_ya",
+    "featured": false,
+    "avatar": "assets/dist/img/speakers/princiya.jpg"
   }
 }
