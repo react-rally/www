@@ -1,11 +1,12 @@
 ## Developing
 
 ```bash
+(Set up Environment for Code)
 git clone git@github.com:react-rally/www.git react-rally
 cd react-rally
 cd [YEAR]
 npm install
-npm start
+npm start || yarn start
 open http://127.0.0.1:8080
 ```
 
