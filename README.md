@@ -12,7 +12,7 @@ open http://127.0.0.1:8080
 ## Deploying
 
 ```bash
-# Make your changes on master
+# Make your changes on the master
 git add .
 git commit -m"[DESCRIPTION]"
 git push
