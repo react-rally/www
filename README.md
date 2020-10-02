@@ -1,5 +1,7 @@
 ## Developing
 
+an amazing website
+
 ```bash
 git clone git@github.com:react-rally/www.git react-rally
 cd react-rally
